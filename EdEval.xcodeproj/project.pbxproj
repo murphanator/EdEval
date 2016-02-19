@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25032FD11BD1762400D314AB /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25032FD01BD1762400D314AB /* TeacherData.swift */; };
+		25032FD21BD1762400D314AB /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25032FD01BD1762400D314AB /* TeacherData.swift */; };
+		2565D4EC1C3B612D002DF002 /* CheckboxSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */; };
+		256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */; };
+		2576A9731C5434EA00AB98E4 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576A9721C5434EA00AB98E4 /* Report.swift */; };
+		2576C6E21C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576C6E11C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift */; };
 		257C43F11BCCA8EE00F852B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */; };
-		257C43F31BCCA8EE00F852B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C43F21BCCA8EE00F852B3 /* ViewController.swift */; };
+		257C43F31BCCA8EE00F852B3 /* WalkThruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */; };
 		257C43F61BCCA8EE00F852B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257C43F41BCCA8EE00F852B3 /* Main.storyboard */; };
 		257C43F81BCCA8EE00F852B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257C43F71BCCA8EE00F852B3 /* Assets.xcassets */; };
 		257C43FB1BCCA8EE00F852B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257C43F91BCCA8EE00F852B3 /* LaunchScreen.storyboard */; };
 		257C44061BCCA8EE00F852B3 /* EdEvalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C44051BCCA8EE00F852B3 /* EdEvalTests.swift */; };
+		258960C91C6AC862007D014D /* CheckboxControl2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258960C81C6AC862007D014D /* CheckboxControl2.swift */; };
+		258B48F91C274B6600B0490D /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B48F81C274B6600B0490D /* ExampleTableViewCell.swift */; };
+		258B48FB1C2779CE00B0490D /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B48FA1C2779CE00B0490D /* ExampleTableViewController.swift */; };
+		25904D8A1C3C477E00141AF2 /* CheckboxControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25904D891C3C477E00141AF2 /* CheckboxControl.swift */; };
+		2599FADD1C29CC8F00933673 /* ExampleCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599FADC1C29CC8F00933673 /* ExampleCheckBox.swift */; };
+		25A09B251C5D70C200789F90 /* ReadingK6Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A09B241C5D70C200789F90 /* ReadingK6Data.swift */; };
+		25A0E7A31C58733200DC5899 /* Readingk6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0E7A21C58733200DC5899 /* Readingk6ViewController.swift */; };
+		25A0E7A51C58749100DC5899 /* ReadingK6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0E7A41C58749100DC5899 /* ReadingK6View.swift */; };
+		25A315521C4318A500371340 /* CheckBoxControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A315511C4318A500371340 /* CheckBoxControllerViewController.swift */; };
+		25C00A131C54219C002BD59D /* ReportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */; };
+		25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */; };
+		25CE02FC1C4D698400BD90F6 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25032FD01BD1762400D314AB /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
+		2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxSliderViewController.swift; sourceTree = "<group>"; };
+		256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		2576A9721C5434EA00AB98E4 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		2576C6E11C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxQuestionTableViewController.swift; sourceTree = "<group>"; };
 		257C43ED1BCCA8EE00F852B3 /* EdEval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdEval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		257C43F21BCCA8EE00F852B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThruViewController.swift; sourceTree = "<group>"; };
 		257C43F51BCCA8EE00F852B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		257C43F71BCCA8EE00F852B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257C43FA1BCCA8EE00F852B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +59,18 @@
 		257C44011BCCA8EE00F852B3 /* EdEvalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdEvalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257C44051BCCA8EE00F852B3 /* EdEvalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdEvalTests.swift; sourceTree = "<group>"; };
 		257C44071BCCA8EE00F852B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		258960C81C6AC862007D014D /* CheckboxControl2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxControl2.swift; sourceTree = "<group>"; };
+		258B48F81C274B6600B0490D /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		258B48FA1C2779CE00B0490D /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
+		25904D891C3C477E00141AF2 /* CheckboxControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxControl.swift; sourceTree = "<group>"; };
+		2599FADC1C29CC8F00933673 /* ExampleCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCheckBox.swift; sourceTree = "<group>"; };
+		25A09B241C5D70C200789F90 /* ReadingK6Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingK6Data.swift; sourceTree = "<group>"; };
+		25A0E7A21C58733200DC5899 /* Readingk6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readingk6ViewController.swift; sourceTree = "<group>"; };
+		25A0E7A41C58749100DC5899 /* ReadingK6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingK6View.swift; sourceTree = "<group>"; };
+		25A315511C4318A500371340 /* CheckBoxControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxControllerViewController.swift; sourceTree = "<group>"; };
+		25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsTableViewCell.swift; sourceTree = "<group>"; };
+		25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportsTableControllers.swift; path = ../ReportsTableControllers.swift; sourceTree = "<group>"; };
+		25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +113,25 @@
 			isa = PBXGroup;
 			children = (
 				257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */,
-				257C43F21BCCA8EE00F852B3 /* ViewController.swift */,
+				257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */,
+				25032FD01BD1762400D314AB /* TeacherData.swift */,
+				25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */,
 				257C43F41BCCA8EE00F852B3 /* Main.storyboard */,
+				25A09B241C5D70C200789F90 /* ReadingK6Data.swift */,
+				25A0E7A41C58749100DC5899 /* ReadingK6View.swift */,
+				25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */,
+				25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */,
+				25A0E7A21C58733200DC5899 /* Readingk6ViewController.swift */,
+				2576A9721C5434EA00AB98E4 /* Report.swift */,
+				25A315511C4318A500371340 /* CheckBoxControllerViewController.swift */,
+				2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */,
+				2599FADC1C29CC8F00933673 /* ExampleCheckBox.swift */,
+				258B48FA1C2779CE00B0490D /* ExampleTableViewController.swift */,
+				258B48F81C274B6600B0490D /* ExampleTableViewCell.swift */,
+				2576C6E11C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift */,
+				25904D891C3C477E00141AF2 /* CheckboxControl.swift */,
+				258960C81C6AC862007D014D /* CheckboxControl2.swift */,
+				256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */,
 				257C43F71BCCA8EE00F852B3 /* Assets.xcassets */,
 				257C43F91BCCA8EE00F852B3 /* LaunchScreen.storyboard */,
 				257C43FC1BCCA8EE00F852B3 /* Info.plist */,
@@ -196,8 +248,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257C43F31BCCA8EE00F852B3 /* ViewController.swift in Sources */,
+				2565D4EC1C3B612D002DF002 /* CheckboxSliderViewController.swift in Sources */,
+				25904D8A1C3C477E00141AF2 /* CheckboxControl.swift in Sources */,
+				25A0E7A51C58749100DC5899 /* ReadingK6View.swift in Sources */,
+				25A0E7A31C58733200DC5899 /* Readingk6ViewController.swift in Sources */,
+				25032FD11BD1762400D314AB /* TeacherData.swift in Sources */,
+				256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */,
+				25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */,
+				25A09B251C5D70C200789F90 /* ReadingK6Data.swift in Sources */,
+				25CE02FC1C4D698400BD90F6 /* GlobalVariables.swift in Sources */,
+				257C43F31BCCA8EE00F852B3 /* WalkThruViewController.swift in Sources */,
 				257C43F11BCCA8EE00F852B3 /* AppDelegate.swift in Sources */,
+				2599FADD1C29CC8F00933673 /* ExampleCheckBox.swift in Sources */,
+				258B48FB1C2779CE00B0490D /* ExampleTableViewController.swift in Sources */,
+				258960C91C6AC862007D014D /* CheckboxControl2.swift in Sources */,
+				258B48F91C274B6600B0490D /* ExampleTableViewCell.swift in Sources */,
+				2576A9731C5434EA00AB98E4 /* Report.swift in Sources */,
+				2576C6E21C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift in Sources */,
+				25A315521C4318A500371340 /* CheckBoxControllerViewController.swift in Sources */,
+				25C00A131C54219C002BD59D /* ReportsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25032FD21BD1762400D314AB /* TeacherData.swift in Sources */,
 				257C44061BCCA8EE00F852B3 /* EdEvalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +457,7 @@
 				257C440C1BCCA8EE00F852B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		257C440D1BCCA8EE00F852B3 /* Build configuration list for PBXNativeTarget "EdEvalTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +466,7 @@
 				257C440F1BCCA8EE00F852B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,13 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ccR-N3-dHf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="hCT-9V-1ao">
+            <objects>
+                <viewController id="ccR-N3-dHf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="muc-aC-pMO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4DV-sI-HXL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a7Z-AD-j0q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Xh4-yC-HjG">
+                                <rect key="frame" x="77" y="101" width="453" height="460"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Images" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-sj-kZT">
+                                        <rect key="frame" x="107" y="0.0" width="240" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="0Cg-m6-ni5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQV-6z-Une">
+                                        <rect key="frame" x="13" y="205" width="428" height="115"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <state key="normal" title="New walkthrough">
+                                            <color key="titleColor" red="0.29711174242424243" green="0.16608088287493539" blue="0.080068552937829607" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6v1-v2-eQm" kind="show" id="mIB-Es-7Jb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="428" placeholderIntrinsicHeight="141" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-nB-Zxo">
+                                        <rect key="frame" x="13" y="345" width="428" height="115"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <state key="normal" title="View Reports">
+                                            <color key="titleColor" red="0.29711174242424243" green="0.16608088287493539" blue="0.080068552937829607" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zwX-zI-LSV" kind="show" id="p2n-rZ-xQD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PQV-6z-Une" firstAttribute="height" secondItem="W0O-nB-Zxo" secondAttribute="height" id="Dpv-oF-4Su"/>
+                                    <constraint firstItem="PQV-6z-Une" firstAttribute="width" secondItem="W0O-nB-Zxo" secondAttribute="width" id="SfD-rw-3cZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xh4-yC-HjG" firstAttribute="top" secondItem="muc-aC-pMO" secondAttribute="bottom" constant="81" id="ClO-hi-WDv"/>
+                            <constraint firstItem="Xh4-yC-HjG" firstAttribute="leading" secondItem="a7Z-AD-j0q" secondAttribute="leadingMargin" constant="57" id="NWh-P1-ibL"/>
+                            <constraint firstItem="4DV-sI-HXL" firstAttribute="top" secondItem="Xh4-yC-HjG" secondAttribute="bottom" constant="39" id="Xpn-30-yLb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xh4-yC-HjG" secondAttribute="trailing" constant="50" id="g5D-4U-tHr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3J-W8-svr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="307"/>
+        </scene>
+        <!--Example Table View Controller-->
+        <scene sceneID="Cyn-vp-Yrd">
+            <objects>
+                <tableViewController id="pRX-LC-N2S" customClass="ExampleTableViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uxx-9A-9OX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExampleTableViewCell" id="R6Z-tX-lz9" customClass="ExampleTableViewCell" customModule="EdEval" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6Z-tX-lz9" id="Ejt-Wv-bnG">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmptyBox" highlightedImage="CheckedBox" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-7J-gFT" customClass="ExampleTableViewCell" customModule="EdEval" customModuleProvider="target">
+                                            <rect key="frame" x="43" y="3" width="44" height="37"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkMark" destination="FIa-7J-gFT" id="cPS-yL-HET"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pRX-LC-N2S" id="b4m-e3-0YC"/>
+                            <outlet property="delegate" destination="pRX-LC-N2S" id="tTb-sl-oEH"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGM-8D-Sbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="1006"/>
+        </scene>
+        <!--Start a New Walkthrough-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WalkThruViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +115,505 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="363" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hXp-87-KNw">
+                                <rect key="frame" x="20" y="88" width="560" height="476"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="21" layoutMarginsFollowReadableWidth="YES" text="New Walkthrough" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="td0-7a-iLc">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="23"/>
+                                        <color key="backgroundColor" red="0.9822200259423951" green="1" blue="0.63053541845911742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="29" layoutMarginsFollowReadableWidth="YES" text="Teacher:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-BE-eOn">
+                                        <rect key="frame" x="0.0" y="35" width="560" height="32"/>
+                                        <color key="backgroundColor" red="0.9822200259423951" green="1" blue="0.63053541845911742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="left" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teachers Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmh-LG-Xs3">
+                                        <rect key="frame" x="0.0" y="79" width="560" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="28" text="School:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wF6-ej-bTe">
+                                        <rect key="frame" x="0.0" y="124" width="560" height="31"/>
+                                        <color key="backgroundColor" red="0.9822200259423951" green="1" blue="0.63053541845911742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="left" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter School" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-Sw-E7h">
+                                        <rect key="frame" x="0.0" y="167" width="560" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="29" text="Subject:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dkB-fx-4vf">
+                                        <rect key="frame" x="0.0" y="212" width="560" height="32"/>
+                                        <color key="backgroundColor" red="0.9822200259423951" green="1" blue="0.63053541845911742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="left" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Subject Evaluated" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNo-sh-y6p">
+                                        <rect key="frame" x="0.0" y="256" width="560" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="28" text="Grade:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="B41-Lo-7aR">
+                                        <rect key="frame" x="0.0" y="301" width="560" height="30"/>
+                                        <color key="backgroundColor" red="0.9822200259423951" green="1" blue="0.63053541845911742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="left" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Grade Taught" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vrg-z2-IhZ">
+                                        <rect key="frame" x="0.0" y="343" width="560" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="70" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-kl-FQa">
+                                        <rect key="frame" x="0.0" y="388" width="560" height="88"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <state key="normal" title="Start Walkthrough">
+                                            <color key="titleColor" red="0.29711174239999999" green="0.1660808829" blue="0.080068552939999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startWalkThroughButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUm-zR-duA"/>
+                                            <segue destination="hXV-c1-ZKT" kind="show" id="Esf-kH-uA5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="td0-7a-iLc" firstAttribute="top" secondItem="hXp-87-KNw" secondAttribute="top" id="19h-tg-nzo"/>
+                                    <constraint firstAttribute="trailing" secondItem="dkB-fx-4vf" secondAttribute="trailing" id="8FL-1o-gt8"/>
+                                    <constraint firstItem="B41-Lo-7aR" firstAttribute="top" secondItem="kNo-sh-y6p" secondAttribute="bottom" constant="12" id="AVb-BE-WD3"/>
+                                    <constraint firstItem="Bcg-kl-FQa" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="BmN-uN-JWg"/>
+                                    <constraint firstItem="Vrg-z2-IhZ" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="L87-mh-L8f"/>
+                                    <constraint firstAttribute="trailing" secondItem="WTE-Sw-E7h" secondAttribute="trailing" id="Ol6-YQ-73G"/>
+                                    <constraint firstItem="kNo-sh-y6p" firstAttribute="top" secondItem="dkB-fx-4vf" secondAttribute="bottom" constant="12" id="Pr9-Y6-UaS"/>
+                                    <constraint firstAttribute="trailing" secondItem="wF6-ej-bTe" secondAttribute="trailing" id="QQT-n3-Fvf"/>
+                                    <constraint firstAttribute="trailing" secondItem="wvQ-BE-eOn" secondAttribute="trailing" id="T23-LH-k3O"/>
+                                    <constraint firstItem="B41-Lo-7aR" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="TwC-lq-cj3"/>
+                                    <constraint firstItem="Qmh-LG-Xs3" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="U8p-Qa-nGe"/>
+                                    <constraint firstItem="dkB-fx-4vf" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="VEf-ip-0mN"/>
+                                    <constraint firstItem="wF6-ej-bTe" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="WPI-PJ-BpQ"/>
+                                    <constraint firstItem="WTE-Sw-E7h" firstAttribute="top" secondItem="wF6-ej-bTe" secondAttribute="bottom" constant="12" id="Yb5-vu-3ic"/>
+                                    <constraint firstItem="kNo-sh-y6p" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="bK5-Lf-Opk"/>
+                                    <constraint firstItem="Qmh-LG-Xs3" firstAttribute="top" secondItem="wvQ-BE-eOn" secondAttribute="bottom" constant="12" id="bXv-Mf-BBW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qmh-LG-Xs3" secondAttribute="trailing" id="bqS-AV-CW8"/>
+                                    <constraint firstItem="Vrg-z2-IhZ" firstAttribute="top" secondItem="B41-Lo-7aR" secondAttribute="bottom" constant="12" id="by2-w3-s5A"/>
+                                    <constraint firstAttribute="trailing" secondItem="td0-7a-iLc" secondAttribute="trailing" id="eMa-iD-GHu"/>
+                                    <constraint firstItem="wvQ-BE-eOn" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="hMY-Ij-MeJ"/>
+                                    <constraint firstItem="wvQ-BE-eOn" firstAttribute="top" secondItem="td0-7a-iLc" secondAttribute="bottom" constant="12" id="heo-Up-Dni"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bcg-kl-FQa" secondAttribute="bottom" id="hxD-GN-e9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vrg-z2-IhZ" secondAttribute="trailing" id="mbE-ME-9eW"/>
+                                    <constraint firstAttribute="trailing" secondItem="B41-Lo-7aR" secondAttribute="trailing" id="soQ-sE-A5f"/>
+                                    <constraint firstItem="Bcg-kl-FQa" firstAttribute="top" secondItem="Vrg-z2-IhZ" secondAttribute="bottom" constant="12" id="svd-hB-e2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="kNo-sh-y6p" secondAttribute="trailing" id="tMx-gT-FGV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bcg-kl-FQa" secondAttribute="trailing" id="te5-3T-LfW"/>
+                                    <constraint firstItem="td0-7a-iLc" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="tgp-XD-YoX"/>
+                                    <constraint firstItem="WTE-Sw-E7h" firstAttribute="leading" secondItem="hXp-87-KNw" secondAttribute="leading" id="vm9-ZW-YhW"/>
+                                    <constraint firstItem="dkB-fx-4vf" firstAttribute="top" secondItem="WTE-Sw-E7h" secondAttribute="bottom" constant="12" id="wHJ-zC-uQs"/>
+                                    <constraint firstItem="wF6-ej-bTe" firstAttribute="top" secondItem="Qmh-LG-Xs3" secondAttribute="bottom" constant="12" id="wjX-Ft-Diu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hXp-87-KNw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FJi-pm-L4q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hXp-87-KNw" secondAttribute="trailing" id="Gbq-bw-z3M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hXp-87-KNw" secondAttribute="bottom" constant="36" id="Qap-bW-xnH"/>
+                            <constraint firstItem="hXp-87-KNw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="Tfm-bs-Js9"/>
+                            <constraint firstItem="hXp-87-KNw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ygo-KY-G3R"/>
+                            <constraint firstItem="hXp-87-KNw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Zht-bP-a7n"/>
+                            <constraint firstItem="hXp-87-KNw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="yr5-wP-iU3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gbq-bw-z3M"/>
+                                <exclude reference="Tfm-bs-Js9"/>
+                                <exclude reference="Zht-bP-a7n"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Start a New Walkthrough" id="d2Q-PG-bnE">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="6hq-Jn-sd2">
+                            <connections>
+                                <action selector="back:" destination="BYZ-38-t0r" id="NHe-fd-hhK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gradeTextField" destination="Vrg-z2-IhZ" id="MI3-MP-rJw"/>
+                        <outlet property="nameTextField" destination="Qmh-LG-Xs3" id="iLm-cn-AAw"/>
+                        <outlet property="schoolTextField" destination="WTE-Sw-E7h" id="iLb-Tr-lht"/>
+                        <outlet property="subjectTextField" destination="kNo-sh-y6p" id="XeZ-sg-AJj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1051" y="307"/>
+        </scene>
+        <!--Check Box Question Table View Controller-->
+        <scene sceneID="GXB-8W-zeE">
+            <objects>
+                <tableViewController id="efL-qq-H1i" customClass="CheckBoxQuestionTableViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="285" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gse-dt-7xD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="285" selectionStyle="none" indentationWidth="10" reuseIdentifier="QuestionTableViewCell" rowHeight="285" id="qkF-NW-8mp" customClass="QuestionTableViewCell" customModule="EdEval" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="285"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qkF-NW-8mp" id="9Wy-Zj-kKm">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="284"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaM-oS-YMh">
+                                            <rect key="frame" x="92" y="50" width="500" height="25"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-QT-R3I">
+                                            <rect key="frame" x="16" y="2" width="584" height="28"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="" label="">
+                                                <accessibilityTraits key="traits" none="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-a5-RM3">
+                                            <rect key="frame" x="16" y="44" width="39" height="37"/>
+                                            <accessibility key="accessibilityConfiguration" label="checkboxButton"/>
+                                            <state key="normal" title="checkboxButton" image="EmptyBox"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-LU-otl" customClass="Checkbox" customModule="EdEval" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="89" width="39" height="37"/>
+                                            <accessibility key="accessibilityConfiguration" label="checkboxButton"/>
+                                            <state key="normal" title="checkboxButton" image="EmptyBox"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twc-kX-YZK" userLabel="choice2 for Checkbox">
+                                            <rect key="frame" x="92" y="95" width="500" height="25"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vak-g4-qhs" customClass="Checkbox" customModule="EdEval" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="134" width="39" height="37"/>
+                                            <accessibility key="accessibilityConfiguration" label="checkboxButton"/>
+                                            <state key="normal" title="checkboxButton" image="EmptyBox"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="429-TK-Taq" userLabel="choice3 for Checkbox">
+                                            <rect key="frame" x="92" y="140" width="500" height="25"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-XA-gfx" userLabel="Checkbox Button4" customClass="Checkbox" customModule="EdEval" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="179" width="39" height="37"/>
+                                            <accessibility key="accessibilityConfiguration" label="checkboxButton"/>
+                                            <state key="normal" title="checkboxButton" image="EmptyBox"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-dt-ucY" userLabel="choice4 for Checkbox">
+                                            <rect key="frame" x="92" y="185" width="500" height="25"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ur1-Km-b9T" userLabel="Checkbox Button5" customClass="Checkbox" customModule="EdEval" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="225" width="39" height="37"/>
+                                            <accessibility key="accessibilityConfiguration" label="checkboxButton"/>
+                                            <state key="normal" title="checkboxButton" image="EmptyBox"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kr-xc-41Q" userLabel="choice5 for Checkbox">
+                                            <rect key="frame" x="92" y="231" width="500" height="25"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkboxButton" destination="oUR-a5-RM3" id="Bdh-On-Lmg"/>
+                                    <outlet property="checkboxButton2" destination="eSZ-LU-otl" id="Qp9-b2-zmc"/>
+                                    <outlet property="checkboxButton3" destination="Vak-g4-qhs" id="ZOX-1k-8WU"/>
+                                    <outlet property="checkboxButton4" destination="Rsk-XA-gfx" id="mwl-Gs-omi"/>
+                                    <outlet property="checkboxButton5" destination="ur1-Km-b9T" id="k1m-IY-O6a"/>
+                                    <outlet property="choiceLabelForCheckbox" destination="uaM-oS-YMh" id="Iat-fJ-yij"/>
+                                    <outlet property="choiceLabelForCheckbox2" destination="Twc-kX-YZK" id="eAg-te-nLg"/>
+                                    <outlet property="choiceLabelForCheckbox3" destination="429-TK-Taq" id="7aT-Ra-p46"/>
+                                    <outlet property="choiceLabelForCheckbox4" destination="YP3-dt-ucY" id="MJP-Y8-XRE"/>
+                                    <outlet property="choiceLabelForCheckbox5" destination="4Kr-xc-41Q" id="uAJ-nc-trq"/>
+                                    <outlet property="questionLabel" destination="1ax-QT-R3I" id="Tzt-Ml-Vld"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="efL-qq-H1i" id="XVe-mH-x3R"/>
+                            <outlet property="delegate" destination="efL-qq-H1i" id="saP-ct-hAu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qFF-3q-Fsw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TX1-Zf-bm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="-497"/>
+        </scene>
+        <!--Check Box Controller View Controller-->
+        <scene sceneID="AAL-zD-3oL">
+            <objects>
+                <viewController id="kEt-y4-3nX" customClass="CheckBoxControllerViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Inu-Gm-0Ue"/>
+                        <viewControllerLayoutGuide type="bottom" id="OtG-A1-Hcj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="my1-K6-Ntf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hc9-WL-a5Q" customClass="CheckboxControl" customModule="EdEval" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="560" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hc9-WL-a5Q" firstAttribute="centerX" secondItem="my1-K6-Ntf" secondAttribute="centerX" id="0DK-wR-adA"/>
+                            <constraint firstItem="Hc9-WL-a5Q" firstAttribute="centerY" secondItem="my1-K6-Ntf" secondAttribute="centerY" constant="4" id="Amq-g6-0i0"/>
+                            <constraint firstItem="Hc9-WL-a5Q" firstAttribute="top" secondItem="Inu-Gm-0Ue" secondAttribute="bottom" constant="8" symbolic="YES" id="Kca-ps-YPQ"/>
+                            <constraint firstItem="Hc9-WL-a5Q" firstAttribute="leading" secondItem="my1-K6-Ntf" secondAttribute="leadingMargin" id="mAg-Mm-3zs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CheckBoxOutlet" destination="Hc9-WL-a5Q" id="0e1-qT-5qV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGX-XS-ETw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466" y="-497"/>
+        </scene>
+        <!--Reports-->
+        <scene sceneID="35u-yj-HzZ">
+            <objects>
+                <tableViewController id="BGu-7b-GLb" customClass="ReportsTableControllers" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jEw-W3-58j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReportsTableViewCell" id="eEI-pg-sGY" customClass="ReportsTableViewCell" customModule="EdEval" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eEI-pg-sGY" id="cXA-RT-lLB">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiP-Kw-Nbk">
+                                            <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="reportLabel" destination="yiP-Kw-Nbk" id="ynN-Pv-p22"/>
+                                    <segue destination="roU-RQ-5rd" kind="show" id="6Tb-6H-mcI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BGu-7b-GLb" id="AmM-K6-yFN"/>
+                            <outlet property="delegate" destination="BGu-7b-GLb" id="B5Y-VD-Cht"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="DfH-Aj-XS3"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Reports" id="0jO-5e-fV5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AW6-gF-2q3"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBf-NZ-c0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576" y="674"/>
+        </scene>
+        <!--Checkbox Slider View Controller-->
+        <scene sceneID="2mb-Xh-EpD">
+            <objects>
+                <viewController id="zwX-zI-LSV" customClass="CheckboxSliderViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AXW-rH-ec1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lk2-lb-786"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mg2-lj-Wg7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter how many checkbox items you want:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lre-B3-miP">
+                                <rect key="frame" x="138" y="127" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="R1B-wJ-b8c">
+                                <rect key="frame" x="66" y="170" width="469" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="zwX-zI-LSV" eventType="valueChanged" id="aVn-Ds-ZQj"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMh-Cr-07D">
+                                <rect key="frame" x="286" y="214" width="28" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="42"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAE-64-bH3">
+                                <rect key="frame" x="245" y="298" width="110" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="kEt-y4-3nX" kind="show" identifier="sliderSegue" id="Fc3-Px-8Wt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R1B-wJ-b8c" firstAttribute="centerX" secondItem="OMh-Cr-07D" secondAttribute="centerX" id="CDn-na-VdF"/>
+                            <constraint firstItem="R1B-wJ-b8c" firstAttribute="centerY" secondItem="mg2-lj-Wg7" secondAttribute="centerY" constant="-115" id="Cnx-rg-Xmh"/>
+                            <constraint firstItem="R1B-wJ-b8c" firstAttribute="centerX" secondItem="mg2-lj-Wg7" secondAttribute="centerX" id="Fsk-Io-1Z1"/>
+                            <constraint firstItem="R1B-wJ-b8c" firstAttribute="leading" secondItem="mg2-lj-Wg7" secondAttribute="leadingMargin" constant="48" id="PX5-6a-zxD"/>
+                            <constraint firstItem="AAE-64-bH3" firstAttribute="centerY" secondItem="mg2-lj-Wg7" secondAttribute="centerY" constant="29" id="frQ-nh-Fad"/>
+                            <constraint firstItem="Lre-B3-miP" firstAttribute="centerY" secondItem="mg2-lj-Wg7" secondAttribute="centerY" constant="-162.5" id="gZk-h7-f0n"/>
+                            <constraint firstItem="R1B-wJ-b8c" firstAttribute="centerX" secondItem="Lre-B3-miP" secondAttribute="centerX" id="k1B-yU-kDv"/>
+                            <constraint firstItem="R1B-wJ-b8c" firstAttribute="centerX" secondItem="AAE-64-bH3" secondAttribute="centerX" id="mru-st-pVE"/>
+                            <constraint firstItem="OMh-Cr-07D" firstAttribute="centerY" secondItem="mg2-lj-Wg7" secondAttribute="centerY" constant="-60.5" id="qKV-Yo-Uxz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SliderForCheckbox" destination="R1B-wJ-b8c" id="BLt-eP-TCy"/>
+                        <outlet property="labelForSlider" destination="OMh-Cr-07D" id="Qxe-uc-bcu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDK-IM-9XV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="307"/>
+        </scene>
+        <!--Readingk6 View Controller-->
+        <scene sceneID="DZ4-7w-cGg">
+            <objects>
+                <viewController id="roU-RQ-5rd" customClass="Readingk6ViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MOf-UD-dCM"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgR-jE-Tip"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kO2-q8-0BO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igk-NS-4Hl">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-fF-VqW" customClass="CheckboxControl2" customModule="EdEval" customModuleProvider="target">
+                                <rect key="frame" x="20" y="110" width="560" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Comments:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-rS-QRb">
+                                <rect key="frame" x="20" y="165" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JTl-fF-VqW" firstAttribute="leading" secondItem="TTx-rS-QRb" secondAttribute="leading" id="3Lo-Gb-5jn"/>
+                            <constraint firstItem="JTl-fF-VqW" firstAttribute="trailing" secondItem="igk-NS-4Hl" secondAttribute="trailing" id="DZb-fT-AHe"/>
+                            <constraint firstItem="igk-NS-4Hl" firstAttribute="top" secondItem="MOf-UD-dCM" secondAttribute="bottom" constant="8" symbolic="YES" id="DfZ-Gi-Oqq"/>
+                            <constraint firstItem="TTx-rS-QRb" firstAttribute="trailing" secondItem="JTl-fF-VqW" secondAttribute="trailing" id="EeA-lW-J5E"/>
+                            <constraint firstItem="JTl-fF-VqW" firstAttribute="top" secondItem="igk-NS-4Hl" secondAttribute="bottom" constant="8" symbolic="YES" id="Tqr-1V-40F"/>
+                            <constraint firstItem="TTx-rS-QRb" firstAttribute="top" secondItem="JTl-fF-VqW" secondAttribute="bottom" constant="8" symbolic="YES" id="cLD-Qf-al9"/>
+                            <constraint firstItem="JTl-fF-VqW" firstAttribute="leading" secondItem="kO2-q8-0BO" secondAttribute="leadingMargin" id="e1r-A8-RdF"/>
+                            <constraint firstItem="JgR-jE-Tip" firstAttribute="top" secondItem="TTx-rS-QRb" secondAttribute="bottom" constant="361" id="frq-KH-Kcf"/>
+                            <constraint firstItem="TTx-rS-QRb" firstAttribute="trailing" secondItem="kO2-q8-0BO" secondAttribute="trailingMargin" id="kVm-ya-vdh"/>
+                            <constraint firstItem="igk-NS-4Hl" firstAttribute="leading" secondItem="JTl-fF-VqW" secondAttribute="leading" id="pEM-Xi-iVO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkboxComments" destination="TTx-rS-QRb" id="ekp-Bq-O6J"/>
+                        <outlet property="checkboxLabel" destination="igk-NS-4Hl" id="wzZ-Lj-PO6"/>
+                        <outlet property="readingCheckboxControl2" destination="JTl-fF-VqW" id="Oea-cL-DbX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiQ-RO-5Bg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3998" y="307"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qFz-WW-vHk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6v1-v2-eQm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PeZ-eK-X5p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mcD-u4-70D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shz-QU-nk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="307"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0zp-UB-AsU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hXV-c1-ZKT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UMy-oX-OUs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BGu-7b-GLb" kind="relationship" relationship="rootViewController" id="0qf-ZH-2BG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rV-II-rXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CheckedBox" width="180" height="180"/>
+        <image name="EmptyBox" width="180" height="180"/>
+        <image name="Logo Images" width="252" height="180"/>
+    </resources>
 </document>
