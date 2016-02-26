@@ -535,25 +535,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igk-NS-4Hl">
-                                <rect key="frame" x="20" y="72" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-fF-VqW" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
-                                <rect key="frame" x="20" y="110" width="560" height="47"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Comments:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-rS-QRb">
-                                <rect key="frame" x="20" y="165" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5sy-cU-W1Y">
+                                <rect key="frame" x="20" y="72" width="560" height="301"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igk-NS-4Hl">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Ctx-Gc-iqM"/>
+                                            <constraint firstAttribute="width" constant="560" id="e04-ta-MWg"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-fF-VqW" userLabel="Question 0" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="21" width="560" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="3Ps-OT-qgd"/>
+                                            <constraint firstAttribute="height" constant="50" id="GUU-ew-04i"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-Va-AjT" userLabel="Question 3" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71" width="560" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="QO8-BN-G73"/>
+                                            <constraint firstAttribute="height" constant="50" id="vWl-Rq-iIC"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sp-2p-odA" userLabel="Question 4" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="121" width="560" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MyP-yD-69D"/>
+                                            <constraint firstAttribute="width" constant="560" id="WdV-n6-eEM"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CcM-qm-pNR" userLabel="Question 1" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="171" width="560" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="m6x-OH-e6a"/>
+                                            <constraint firstAttribute="height" constant="50" id="y6X-tj-23D"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYC-Wu-WDZ" userLabel="Question 2" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="221" width="560" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Umy-uU-PaY"/>
+                                            <constraint firstAttribute="width" constant="560" id="xSj-8u-jH8"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Comments:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-rS-QRb">
+                                        <rect key="frame" x="0.0" y="271" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Kyo-sS-iw6"/>
+                                            <constraint firstAttribute="width" constant="560" id="N7e-ya-TjW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JgR-jE-Tip" firstAttribute="top" secondItem="5sy-cU-W1Y" secondAttribute="bottom" constant="183" id="Fqz-Pi-Vxe"/>
+                            <constraint firstItem="5sy-cU-W1Y" firstAttribute="top" secondItem="MOf-UD-dCM" secondAttribute="bottom" constant="8" symbolic="YES" id="JFp-w6-hhi"/>
+                            <constraint firstItem="5sy-cU-W1Y" firstAttribute="leading" secondItem="kO2-q8-0BO" secondAttribute="leadingMargin" id="UD4-8O-dqS"/>
+                            <constraint firstItem="JgR-jE-Tip" firstAttribute="top" secondItem="5sy-cU-W1Y" secondAttribute="bottom" id="nKn-WA-r2l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fqz-Pi-Vxe"/>
+                                <exclude reference="nKn-WA-r2l"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="check" destination="JTl-fF-VqW" id="Ocr-GK-r4b"/>
+                        <outlet property="check0" destination="JTl-fF-VqW" id="mjR-YE-3ai"/>
+                        <outlet property="check1" destination="bGE-Va-AjT" id="wz4-20-9IM"/>
+                        <outlet property="check2" destination="7Sp-2p-odA" id="irc-Fm-bhn"/>
+                        <outlet property="check3" destination="CcM-qm-pNR" id="V2j-zr-Oim"/>
+                        <outlet property="check4" destination="nYC-Wu-WDZ" id="Vdp-6o-hdW"/>
                         <outlet property="checkboxComments" destination="TTx-rS-QRb" id="ekp-Bq-O6J"/>
                         <outlet property="checkboxLabel" destination="igk-NS-4Hl" id="wzZ-Lj-PO6"/>
                     </connections>

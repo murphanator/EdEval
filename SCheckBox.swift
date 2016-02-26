@@ -121,7 +121,12 @@ class SCheckBox: UIControl {
             bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.75000 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.21875 * CGRectGetHeight(frame)))
             bezierPath.closePath()
             
-            self.checkboxColor.setFill()
+           // self.checkboxColor.setFill()
+            
+            //Change the Little checkmark to Red
+            UIColor.redColor().setFill()
+            self.checkboxColor.setStroke()
+            
             bezierPath.fill()
         }
         
