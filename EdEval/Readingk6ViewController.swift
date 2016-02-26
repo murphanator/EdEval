@@ -13,9 +13,33 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     //MARK: Properties
     @IBOutlet weak var checkboxLabel: UITextField!
    // @IBOutlet weak var readingCheckboxControl: CheckboxControl!
+  //  @IBOutlet weak var newCheck: CheckboxControl2!
+    
+    @IBOutlet weak var check: SCheckBox!
+    
+//    @IBOutlet weak var check: SCheckBox!
+    
     @IBOutlet weak var checkboxComments: UITextField!
-    @IBOutlet weak var readingCheckboxControl2: CheckboxControl2!
+   // @IBOutlet weak var readingCheckboxControl2: CheckboxControl2!
 
+/*
+
+    @IBOutlet weak var check: SCheckBox!
+    
+    override func viewDidLoad() {
+    super.viewDidLoad()
+    self.check.color(UIColor.grayColor(), forState: UIControlState.Normal)
+    self.check.textLabel.text = "this is a checkbox"
+    self.check.addTarget(self, action: "tapCheck:", forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func tapCheck(checkBox: SCheckBox!){
+    println("\(checkBox.checked)")
+    }
+
+*/
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,11 +66,15 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
      //   self.readingCheckboxControl2.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]
      //   self.readingCheckboxControl2.checkboxTotal = 5
 
-        readingCheckboxControl2.PassValues(1, arrayOfCheckboxTitles: ["test"])
+      //  newCheck.PassValues(5, arrayOfCheckboxTitles: ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"])
        
         
-        
-        
+        self.check.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.check.textLabel.text = "Phonomic Awareness"
+        self.check.addTarget(self, action: "tapCheck:", forControlEvents: UIControlEvents.ValueChanged)
+    //    self.newCheck.checkboxTotal = 5
+    //    self.newCheck.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]
+
         
         //****8 readingCheckboxControl.checkTxtField.count
         
@@ -58,6 +86,14 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
                 //nameTextField.delegate = self
 
     }
+    
+    func tapCheck(checkBox: SCheckBox!){
+        print("\(checkBox.checked)")
+    }
+
+    
+    
+    
 
    // override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      //   if (segue.identifier == "sliderSegue") {
@@ -71,8 +107,8 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
      //9999   readingCheckboxControl.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]
    
         
-        readingCheckboxControl2.checkboxTotal = 5
-        readingCheckboxControl2.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]
+      //  readingCheckboxControl2.checkboxTotal = 5
+      //  readingCheckboxControl2.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]
                 
         
     }

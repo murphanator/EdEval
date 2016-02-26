@@ -22,12 +22,15 @@
 		258960C91C6AC862007D014D /* CheckboxControl2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258960C81C6AC862007D014D /* CheckboxControl2.swift */; };
 		258B48F91C274B6600B0490D /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B48F81C274B6600B0490D /* ExampleTableViewCell.swift */; };
 		258B48FB1C2779CE00B0490D /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B48FA1C2779CE00B0490D /* ExampleTableViewController.swift */; };
+		258E53CA1C7D491200B7B317 /* SCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E53C91C7D491200B7B317 /* SCheckBox.swift */; };
 		25904D8A1C3C477E00141AF2 /* CheckboxControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25904D891C3C477E00141AF2 /* CheckboxControl.swift */; };
 		2599FADD1C29CC8F00933673 /* ExampleCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599FADC1C29CC8F00933673 /* ExampleCheckBox.swift */; };
 		25A09B251C5D70C200789F90 /* ReadingK6Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A09B241C5D70C200789F90 /* ReadingK6Data.swift */; };
 		25A0E7A31C58733200DC5899 /* Readingk6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0E7A21C58733200DC5899 /* Readingk6ViewController.swift */; };
 		25A0E7A51C58749100DC5899 /* ReadingK6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0E7A41C58749100DC5899 /* ReadingK6View.swift */; };
 		25A315521C4318A500371340 /* CheckBoxControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A315511C4318A500371340 /* CheckBoxControllerViewController.swift */; };
+		25A4ABEE1C7A601D0092FAC4 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4ABED1C7A601D0092FAC4 /* CheckboxView.swift */; };
+		25AA60601C7907CC0027BEBB /* CheckboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25AA605F1C7907CB0027BEBB /* CheckboxView.xib */; };
 		25C00A131C54219C002BD59D /* ReportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */; };
 		25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */; };
 		25CE02FC1C4D698400BD90F6 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */; };
@@ -62,12 +65,15 @@
 		258960C81C6AC862007D014D /* CheckboxControl2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxControl2.swift; sourceTree = "<group>"; };
 		258B48F81C274B6600B0490D /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		258B48FA1C2779CE00B0490D /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
+		258E53C91C7D491200B7B317 /* SCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCheckBox.swift; sourceTree = "<group>"; };
 		25904D891C3C477E00141AF2 /* CheckboxControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxControl.swift; sourceTree = "<group>"; };
 		2599FADC1C29CC8F00933673 /* ExampleCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCheckBox.swift; sourceTree = "<group>"; };
 		25A09B241C5D70C200789F90 /* ReadingK6Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingK6Data.swift; sourceTree = "<group>"; };
 		25A0E7A21C58733200DC5899 /* Readingk6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readingk6ViewController.swift; sourceTree = "<group>"; };
 		25A0E7A41C58749100DC5899 /* ReadingK6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingK6View.swift; sourceTree = "<group>"; };
 		25A315511C4318A500371340 /* CheckBoxControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxControllerViewController.swift; sourceTree = "<group>"; };
+		25A4ABED1C7A601D0092FAC4 /* CheckboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		25AA605F1C7907CB0027BEBB /* CheckboxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckboxView.xib; sourceTree = "<group>"; };
 		25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsTableViewCell.swift; sourceTree = "<group>"; };
 		25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportsTableControllers.swift; path = ../ReportsTableControllers.swift; sourceTree = "<group>"; };
 		25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 		257C43E41BCCA8EE00F852B3 = {
 			isa = PBXGroup;
 			children = (
+				25A4ABED1C7A601D0092FAC4 /* CheckboxView.swift */,
+				258E53C91C7D491200B7B317 /* SCheckBox.swift */,
 				257C43EF1BCCA8EE00F852B3 /* EdEval */,
 				257C44041BCCA8EE00F852B3 /* EdEvalTests */,
 				257C43EE1BCCA8EE00F852B3 /* Products */,
@@ -131,6 +139,7 @@
 				2576C6E11C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift */,
 				25904D891C3C477E00141AF2 /* CheckboxControl.swift */,
 				258960C81C6AC862007D014D /* CheckboxControl2.swift */,
+				25AA605F1C7907CB0027BEBB /* CheckboxView.xib */,
 				256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */,
 				257C43F71BCCA8EE00F852B3 /* Assets.xcassets */,
 				257C43F91BCCA8EE00F852B3 /* LaunchScreen.storyboard */,
@@ -231,6 +240,7 @@
 				257C43FB1BCCA8EE00F852B3 /* LaunchScreen.storyboard in Resources */,
 				257C43F81BCCA8EE00F852B3 /* Assets.xcassets in Resources */,
 				257C43F61BCCA8EE00F852B3 /* Main.storyboard in Resources */,
+				25AA60601C7907CC0027BEBB /* CheckboxView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +261,9 @@
 				2565D4EC1C3B612D002DF002 /* CheckboxSliderViewController.swift in Sources */,
 				25904D8A1C3C477E00141AF2 /* CheckboxControl.swift in Sources */,
 				25A0E7A51C58749100DC5899 /* ReadingK6View.swift in Sources */,
+				25A4ABEE1C7A601D0092FAC4 /* CheckboxView.swift in Sources */,
 				25A0E7A31C58733200DC5899 /* Readingk6ViewController.swift in Sources */,
+				258E53CA1C7D491200B7B317 /* SCheckBox.swift in Sources */,
 				25032FD11BD1762400D314AB /* TeacherData.swift in Sources */,
 				256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */,
 				25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */,

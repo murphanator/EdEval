@@ -434,7 +434,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiP-Kw-Nbk">
                                             <rect key="frame" x="8" y="8" width="584" height="27"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -540,9 +540,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-fF-VqW" customClass="CheckboxControl2" customModule="EdEval" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-fF-VqW" customClass="SCheckBox" customModule="EdEval" customModuleProvider="target">
                                 <rect key="frame" x="20" y="110" width="560" height="47"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Comments:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-rS-QRb">
                                 <rect key="frame" x="20" y="165" width="560" height="30"/>
@@ -551,23 +551,11 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="JTl-fF-VqW" firstAttribute="leading" secondItem="TTx-rS-QRb" secondAttribute="leading" id="3Lo-Gb-5jn"/>
-                            <constraint firstItem="JTl-fF-VqW" firstAttribute="trailing" secondItem="igk-NS-4Hl" secondAttribute="trailing" id="DZb-fT-AHe"/>
-                            <constraint firstItem="igk-NS-4Hl" firstAttribute="top" secondItem="MOf-UD-dCM" secondAttribute="bottom" constant="8" symbolic="YES" id="DfZ-Gi-Oqq"/>
-                            <constraint firstItem="TTx-rS-QRb" firstAttribute="trailing" secondItem="JTl-fF-VqW" secondAttribute="trailing" id="EeA-lW-J5E"/>
-                            <constraint firstItem="JTl-fF-VqW" firstAttribute="top" secondItem="igk-NS-4Hl" secondAttribute="bottom" constant="8" symbolic="YES" id="Tqr-1V-40F"/>
-                            <constraint firstItem="TTx-rS-QRb" firstAttribute="top" secondItem="JTl-fF-VqW" secondAttribute="bottom" constant="8" symbolic="YES" id="cLD-Qf-al9"/>
-                            <constraint firstItem="JTl-fF-VqW" firstAttribute="leading" secondItem="kO2-q8-0BO" secondAttribute="leadingMargin" id="e1r-A8-RdF"/>
-                            <constraint firstItem="JgR-jE-Tip" firstAttribute="top" secondItem="TTx-rS-QRb" secondAttribute="bottom" constant="361" id="frq-KH-Kcf"/>
-                            <constraint firstItem="TTx-rS-QRb" firstAttribute="trailing" secondItem="kO2-q8-0BO" secondAttribute="trailingMargin" id="kVm-ya-vdh"/>
-                            <constraint firstItem="igk-NS-4Hl" firstAttribute="leading" secondItem="JTl-fF-VqW" secondAttribute="leading" id="pEM-Xi-iVO"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="check" destination="JTl-fF-VqW" id="Ocr-GK-r4b"/>
                         <outlet property="checkboxComments" destination="TTx-rS-QRb" id="ekp-Bq-O6J"/>
                         <outlet property="checkboxLabel" destination="igk-NS-4Hl" id="wzZ-Lj-PO6"/>
-                        <outlet property="readingCheckboxControl2" destination="JTl-fF-VqW" id="Oea-cL-DbX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DiQ-RO-5Bg" userLabel="First Responder" sceneMemberID="firstResponder"/>
