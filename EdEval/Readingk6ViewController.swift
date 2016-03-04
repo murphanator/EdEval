@@ -11,6 +11,8 @@ import UIKit
 class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
     //MARK: Properties
+    
+    
     @IBOutlet weak var checkboxLabel: UITextField!
    
     @IBOutlet weak var check0: SCheckBox!
@@ -20,6 +22,28 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     @IBOutlet weak var check4: SCheckBox!
     
     @IBOutlet weak var checkboxComments: UITextField!
+    
+    @IBOutlet weak var timeInTextLabel: UITextField!
+   
+   // @IBOutlet weak var timeInTextSlider: UISlider!
+    @IBOutlet weak var timeInTextSlider: UISlider!
+    
+    @IBOutlet weak var timeInTextSliderLabel: UITextField!
+    @IBOutlet weak var timeInTextCheck: SCheckBox!
+    var timeInTextSliderValue = 2
+    @IBAction func TimeInTextSliderValueChanged(sender: AnyObject) {
+
+        timeInTextSliderValue = Int(timeInTextSlider.value)
+        if timeInTextSliderValue == 1{
+            timeInTextSliderLabel.text = "Less than 1 minute"
+        }
+        if timeInTextSliderValue == 2{
+            timeInTextSliderLabel.text = "1 to 2 minutes"
+        }
+        if timeInTextSliderValue == 3 {
+            timeInTextSliderLabel.text = "More than 2 minutes"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +72,14 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
         self.check4.color(UIColor.blackColor(), forState: UIControlState.Normal)
         self.check4.textLabel.text = "Comprehension"
         self.check4.addTarget(self, action: "tapCheck:", forControlEvents: UIControlEvents.ValueChanged)
+        
+
+        self.timeInTextLabel.text = "Time in Text"
+        self.timeInTextCheck.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.timeInTextCheck.textLabel.text = "Observed Time in Text"
+        self.timeInTextCheck.addTarget(self, action: "tapCheck:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        
         
     //    self.newCheck.checkboxTotal = 5
     //    self.newCheck.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]       
