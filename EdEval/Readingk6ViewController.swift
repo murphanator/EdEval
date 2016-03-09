@@ -12,28 +12,39 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     
     //MARK: Properties
     
-    
-    @IBOutlet weak var checkboxLabel: UITextField!
-   
+    @IBOutlet weak var checkboxLabel: UILabel!
     @IBOutlet weak var check0: SCheckBox!
     @IBOutlet weak var check1: SCheckBox!
     @IBOutlet weak var check2: SCheckBox!
     @IBOutlet weak var check3: SCheckBox!
     @IBOutlet weak var check4: SCheckBox!
-    
     @IBOutlet weak var checkboxComments: UITextField!
+  
+    @IBOutlet weak var timeInTextLabel: UILabel!
+    @IBOutlet weak var timeInTextSlider: UISlider!
+    @IBOutlet weak var timeInTextSliderLabel: UILabel!
+    @IBOutlet weak var timeInTextCheck: SCheckBox!
     
-    @IBOutlet weak var timeInTextLabel: UITextField!
+    //@IBOutlet weak var checkboxLabel: UITextField!
+   
+    //@IBOutlet weak var check0: SCheckBox!
+    //@IBOutlet weak var check1: SCheckBox!
+   // @IBOutlet weak var check2: SCheckBox!
+   // @IBOutlet weak var check3: SCheckBox!
+   // @IBOutlet weak var check4: SCheckBox!
+    
+   // @IBOutlet weak var checkboxComments: UITextField!
+    
+   // @IBOutlet weak var timeInTextLabel: UITextField!
    
    // @IBOutlet weak var timeInTextSlider: UISlider!
-    @IBOutlet weak var timeInTextSlider: UISlider!
+ //   @IBOutlet weak var timeInTextSlider: UISlider!
     
-    @IBOutlet weak var timeInTextSliderLabel: UITextField!
-    @IBOutlet weak var timeInTextCheck: SCheckBox!
+  //  @IBOutlet weak var timeInTextSliderLabel: UITextField!
+   // @IBOutlet weak var timeInTextCheck: SCheckBox!
     var timeInTextSliderValue = 2
     @IBAction func TimeInTextSliderValueChanged(sender: AnyObject) {
-
-        timeInTextSliderValue = Int(timeInTextSlider.value)
+           timeInTextSliderValue = Int(timeInTextSlider.value)
         if timeInTextSliderValue == 1{
             timeInTextSliderLabel.text = "Less than 1 minute"
         }
@@ -52,7 +63,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
         // self refers to the viewController because its referenced there...
         // So viewController is a delegate for the following textFields:
         
-        checkboxLabel.delegate = self
+       // checkboxLabel.delegate = self
         checkboxComments.delegate = self
         
         checkboxLabel.text = "Component of Reading"
