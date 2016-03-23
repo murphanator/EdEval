@@ -142,7 +142,11 @@ class SCheckBox: UIControl {
         
         let textLabelOriginX = self.checkboxSideLength + 5.0
         _ = CGSizeMake(CGRectGetWidth(self.bounds) - textLabelOriginX, CGRectGetHeight(self.bounds))
+        
+        print(self.textLabel.text)
+      
         let myNSString: NSString = NSString(string: self.textLabel.text!)
+        
         let textLabelSize:CGSize =  myNSString.sizeWithAttributes([NSFontAttributeName: self.textLabel.font])
         self.textLabel.frame = CGRectIntegral(CGRectMake(textLabelOriginX, (CGRectGetHeight(self.bounds) - textLabelSize.height) / 2.0, textLabelSize.width, textLabelSize.height))
         

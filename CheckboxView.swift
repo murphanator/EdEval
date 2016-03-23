@@ -36,7 +36,7 @@ import UIKit
         var arrayOfCheckboxTitles:[String] = [""]
     
         var spacing = 5
-        var checkboxTotal:Int = 1 //default number of checkboxes is 5
+        var checkboxTotal:Int = 1 //default number of checkboxes is 1
 
 // The init(coder:) is called when creating your view within another interface file.
 //The init(frame:) is called when creating your view programmatically
