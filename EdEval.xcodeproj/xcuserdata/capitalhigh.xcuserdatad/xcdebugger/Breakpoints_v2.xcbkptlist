@@ -706,17 +706,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EdEval/ReadingK6Data.swift"
-            timestampString = "476253135.12274"
+            timestampString = "481687101.423958"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "init(componentOfReadingCheckboxNumber:textboxTitlesForCheckboxes:)"
-            landmarkType = "5">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "ReadingK6Data"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -806,7 +806,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/GlobalVariables.swift"
-                  timestampString = "480389784.328655"
+                  timestampString = "481687105.430084"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -821,7 +821,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/GlobalVariables.swift"
-                  timestampString = "480389784.328843"
+                  timestampString = "481687105.430253"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -836,7 +836,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/GlobalVariables.swift"
-                  timestampString = "480389784.32912"
+                  timestampString = "481687105.43042"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -1109,7 +1109,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "480389784.333644"
+                  timestampString = "481687105.434389"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1124,7 +1124,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "480389784.333806"
+                  timestampString = "481687105.434544"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1139,7 +1139,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "480389784.334084"
+                  timestampString = "481687105.434687"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1154,7 +1154,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "480389784.334328"
+                  timestampString = "481687105.43483"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1401,6 +1401,116 @@
             startingLineNumber = "194"
             endingLineNumber = "194"
             landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EdEval/Readingk6ViewController.swift"
+            timestampString = "481515180.665005"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EdEval/Readingk6ViewController.swift"
+            timestampString = "481515793.085528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "Readingk6ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EdEval.Readingk6ViewController.saveButton.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  moduleName = "EdEval"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/Readingk6ViewController.swift"
+                  timestampString = "481516243.248609"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EdEval.Readingk6ViewController.saveButton.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  moduleName = "EdEval"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/Readingk6ViewController.swift"
+                  timestampString = "481516243.248764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EdEval.Readingk6ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; EdEval.Readingk6ViewController"
+                  moduleName = "EdEval"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/Readingk6ViewController.swift"
+                  timestampString = "481516243.248897"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EdEval.Readingk6ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;EdEval.Readingk6ViewController&gt;"
+                  moduleName = "EdEval"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/Readingk6ViewController.swift"
+                  timestampString = "481516243.249043"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EdEval/ReadingK6Data.swift"
+            timestampString = "481687717.005875"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "init(label:checkBoxes:checkBoxLabel:comments:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

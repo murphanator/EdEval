@@ -11,6 +11,7 @@ import UIKit
 class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
     //MARK: Properties
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     @IBOutlet weak var readingK6ScrollView: UIScrollView!
     @IBOutlet weak var componentOfReadingLabel: UILabel!
@@ -103,16 +104,16 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     @IBAction func checksForUnderstandingSliderValueChanged(sender: AnyObject) {
         checksForUnderstandingValue = Int(checksForUnderstandingSlider.value)
         if checksForUnderstandingValue == 1 {
-            checksForUnderstandingSliderLabel.text = "1"
+            checksForUnderstandingSliderLabel.text = "Whole Class"
         }
         if checksForUnderstandingValue == 2 {
-            checksForUnderstandingSliderLabel.text = "2"
+            checksForUnderstandingSliderLabel.text = "Partners"
         }
         if checksForUnderstandingValue == 3 {
-            checksForUnderstandingSliderLabel.text = "3"
+            checksForUnderstandingSliderLabel.text = "Groups"
         }
         if checksForUnderstandingValue == 4 {
-            checksForUnderstandingSliderLabel.text = "4"
+            checksForUnderstandingSliderLabel.text = "Individual"
         }
     }
     
@@ -300,18 +301,26 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
 
     
     
-    
+    //MARK: Navigation
 
    // override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      //   if (segue.identifier == "sliderSegue") {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       print("made it into prepareForSegue")
+        if saveButton === sender {
+            ///A Poop-load of save stuff goes here...
+            let label1 = componentOfReadingLabel.text
+            let checkZero = check0.checked ?? false     //if selected, assign Else set to false(~selected)
+                                                        //nil coalescing operator
+            print(label1, checkZero)
+            
+        }
+        
         
     }
 
     
-    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
