@@ -55,7 +55,8 @@ class ReportsTableControllers: UITableViewController {
         //Get the appropiate report for the data source layout
         let report = reportTableData[indexPath.row]
         
-        cell.reportLabel.text = report.reportName
+       cell.reportLabel.text = report.reportName
+        //cell.textLabel!.text = report.reportName    //NEW
 
         return cell
     }
@@ -87,6 +88,7 @@ class ReportsTableControllers: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //Code to be run on tableViewCell touch
         
+        
     }
     
     /*
@@ -98,14 +100,36 @@ class ReportsTableControllers: UITableViewController {
     */
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "reportSegue" {
+            //get the ReadingK6 view controller,downcast
+            let nav = segue.destinationViewController as! UINavigationController
+            let reportVC = nav.topViewController as! Readingk6ViewController
+            
+            //get the selected cell's indexPath
+            let thePath = tableView.indexPathForCell(sender as! UITableViewCell)!
+            //get the cell
+            let theCell = tableView.cellForRowAtIndexPath(thePath)
+            //get the name of the cell
+            let cellName = theCell?.textLabel?.text
+            //let cellName = theCell.reportLabel.text
+            reportVC.title = cellName
+            print("cell Name=",cellName, " the cell= ", theCell)
+            
+        }
+        /*
+         let nav = segue?.destinationViewController as! UINavigationController
+         let svc = nav.topViewController as! SearchViewController
+         svc.toPassSearchKeyword = searchKeyword;
+        */
+        
     }
-    */
+    
 
 }

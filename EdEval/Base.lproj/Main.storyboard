@@ -21,13 +21,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Xh4-yC-HjG">
                                 <rect key="frame" x="77" y="101" width="453" height="460"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Images" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-sj-kZT">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo Images" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-sj-kZT">
                                         <rect key="frame" x="107" y="0.0" width="240" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="0Cg-m6-ni5"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQV-6z-Une">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQV-6z-Une">
                                         <rect key="frame" x="13" y="205" width="428" height="115"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
@@ -38,7 +38,7 @@
                                             <segue destination="6v1-v2-eQm" kind="show" id="mIB-Es-7Jb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="428" placeholderIntrinsicHeight="141" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-nB-Zxo">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="428" placeholderIntrinsicHeight="141" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-nB-Zxo">
                                         <rect key="frame" x="13" y="345" width="428" height="115"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
@@ -442,7 +442,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="reportLabel" destination="yiP-Kw-Nbk" id="ynN-Pv-p22"/>
-                                    <segue destination="diM-SY-7bu" kind="show" id="xDe-ed-WMK"/>
+                                    <segue destination="diM-SY-7bu" kind="show" identifier="reportSegue" id="xDe-ed-WMK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -472,11 +472,11 @@
                         <viewControllerLayoutGuide type="bottom" id="4tJ-ZE-dgc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fl9-36-L4P">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-Ri-lhO">
-                                <rect key="frame" x="20" y="64" width="560" height="1700"/>
+                                <rect key="frame" x="20" y="64" width="560" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRY-GF-9IB">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="1593"/>
@@ -886,6 +886,7 @@
                                             <constraint firstItem="Ap0-4h-OmH" firstAttribute="top" secondItem="dRY-GF-9IB" secondAttribute="top" constant="8" id="N4U-5f-DJc"/>
                                             <constraint firstItem="XT0-wo-gER" firstAttribute="top" secondItem="Vzs-cF-6DW" secondAttribute="bottom" constant="8" id="NlD-Mc-eLt"/>
                                             <constraint firstItem="RrU-7s-mrE" firstAttribute="top" secondItem="neR-fV-oBC" secondAttribute="bottom" constant="8" id="Nny-WS-RwA"/>
+                                            <constraint firstItem="Ap0-4h-OmH" firstAttribute="centerX" secondItem="dRY-GF-9IB" secondAttribute="centerX" id="O5Z-tf-X8k"/>
                                             <constraint firstItem="neR-fV-oBC" firstAttribute="top" secondItem="Ixp-bb-aIH" secondAttribute="bottom" constant="4" id="ONd-8v-QBC"/>
                                             <constraint firstItem="amT-AH-i0d" firstAttribute="top" secondItem="YjR-Ip-Cop" secondAttribute="bottom" constant="6" id="Ohh-UC-KfG"/>
                                             <constraint firstItem="qg8-s8-aPl" firstAttribute="top" secondItem="1gH-qw-xup" secondAttribute="bottom" constant="8" id="Pc0-pG-TCy"/>
@@ -970,6 +971,8 @@
                                             <constraint firstItem="tOV-8K-58n" firstAttribute="top" secondItem="qg8-s8-aPl" secondAttribute="bottom" constant="8" id="yHe-3G-ZIt"/>
                                             <constraint firstAttribute="trailing" secondItem="7hV-Dx-nCx" secondAttribute="trailing" constant="8" id="ySN-tI-WiF"/>
                                             <constraint firstAttribute="trailing" secondItem="bPb-fh-IXX" secondAttribute="trailing" constant="8" id="yd6-Ev-Y8H"/>
+                                            <constraint firstItem="Ap0-4h-OmH" firstAttribute="centerX" secondItem="dRY-GF-9IB" secondAttribute="centerX" id="ypr-ia-QCy"/>
+                                            <constraint firstItem="Ap0-4h-OmH" firstAttribute="centerX" secondItem="dRY-GF-9IB" secondAttribute="centerX" id="zSu-IZ-bnw"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -1005,11 +1008,17 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Reading K6" id="jhX-bx-cc8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="04s-o2-0aQ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GZT-tK-Rfk"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="04s-o2-0aQ">
+                            <connections>
+                                <action selector="cancel:" destination="bPH-dF-b4s" id="gnu-Dd-Jzz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GZT-tK-Rfk">
+                            <connections>
+                                <action selector="unwindToReadingk6:" destination="bPH-dF-b4s" id="sFN-eP-w0k"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="1700"/>
                     <connections>
                         <outlet property="check0" destination="TQ6-H3-XRb" id="S6m-Kw-UWm"/>
                         <outlet property="check1" destination="7n9-bL-1Nu" id="1Ba-4p-xqg"/>
@@ -1056,6 +1065,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEd-uk-KpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4270" y="1516"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="SQc-Qe-qni">
+            <objects>
+                <tableViewController id="of9-vG-fzd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IVj-7I-ViF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="P3J-xS-PM4">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P3J-xS-PM4" id="Pdp-Xy-4YA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="of9-vG-fzd" id="Qf5-xh-yo4"/>
+                            <outlet property="delegate" destination="of9-vG-fzd" id="1Re-lm-I89"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CY-Bs-3AU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4270" y="2272"/>
         </scene>
         <!--Checkbox Slider View Controller-->
         <scene sceneID="2mb-Xh-EpD">
@@ -1166,6 +1203,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="bPH-dF-b4s" kind="relationship" relationship="rootViewController" id="Fuf-NU-y6c"/>
+                        <segue destination="of9-vG-fzd" kind="show" id="aLV-Pe-Xmw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oL-MD-G7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
