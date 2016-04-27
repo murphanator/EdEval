@@ -1,0 +1,200 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ExampleCheckBox"
+provides-nominal:
+- "C6EdEval15ExampleCheckBox"
+provides-member:
+- ["C6EdEval15ExampleCheckBox", ""]
+provides-dynamic-lookup:
+- "exampleCheckedImage"
+- "awakeFromNib"
+- "exampleButtonClicked"
+- "exampleUnCheckedImage"
+- "exampleIsChecked"
+depends-top-level:
+- "UIButton"
+- "StringLiteralType"
+- !private "=="
+- "ExampleCheckBox"
+- "UIImage"
+- !private "print"
+- "BooleanLiteralType"
+- "Bool"
+depends-member:
+- ["Ps9AnyObject", "UIImage"]
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "exampleButtonClicked"]
+- ["Ps9AnyObject", "exampleCheckedImage"]
+- ["Ps9AnyObject", "exampleIsChecked"]
+- ["Ps9AnyObject", "exampleUnCheckedImage"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["Ps11CVarArgType", "UIImage"]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- ["Ps11CVarArgType", "exampleButtonClicked"]
+- ["Ps11CVarArgType", "exampleCheckedImage"]
+- ["Ps11CVarArgType", "exampleIsChecked"]
+- ["Ps11CVarArgType", "exampleUnCheckedImage"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "print"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "UIImage"]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "exampleButtonClicked"]
+- ["Ps28CustomDebugStringConvertible", "exampleCheckedImage"]
+- ["Ps28CustomDebugStringConvertible", "exampleIsChecked"]
+- ["Ps28CustomDebugStringConvertible", "exampleUnCheckedImage"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "exampleButtonClicked"]
+- ["Ps23CustomStringConvertible", "exampleCheckedImage"]
+- ["Ps23CustomStringConvertible", "exampleIsChecked"]
+- ["Ps23CustomStringConvertible", "exampleUnCheckedImage"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "exampleButtonClicked"]
+- ["Ps9Equatable", "exampleCheckedImage"]
+- ["Ps9Equatable", "exampleIsChecked"]
+- ["Ps9Equatable", "exampleUnCheckedImage"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", ""]
+- ["C6EdEval15ExampleCheckBox", "Bool"]
+- ["C6EdEval15ExampleCheckBox", "UIButton"]
+- ["C6EdEval15ExampleCheckBox", "UIImage"]
+- ["C6EdEval15ExampleCheckBox", "awakeFromNib"]
+- ["C6EdEval15ExampleCheckBox", "deinit"]
+- ["C6EdEval15ExampleCheckBox", "exampleButtonClicked"]
+- ["C6EdEval15ExampleCheckBox", "exampleCheckedImage"]
+- ["C6EdEval15ExampleCheckBox", "exampleIsChecked"]
+- ["C6EdEval15ExampleCheckBox", "exampleUnCheckedImage"]
+- ["C6EdEval15ExampleCheckBox", "init"]
+- !private ["C6EdEval15ExampleCheckBox", "print"]
+- ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "exampleButtonClicked"]
+- ["Ps8Hashable", "exampleCheckedImage"]
+- ["Ps8Hashable", "exampleIsChecked"]
+- ["Ps8Hashable", "exampleUnCheckedImage"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", ""]
+- ["PSo8NSCoding", "UIImage"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "exampleButtonClicked"]
+- ["PSo8NSCoding", "exampleCheckedImage"]
+- ["PSo8NSCoding", "exampleIsChecked"]
+- ["PSo8NSCoding", "exampleUnCheckedImage"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "exampleButtonClicked"]
+- ["CSo8NSObject", "exampleCheckedImage"]
+- ["CSo8NSObject", "exampleIsChecked"]
+- ["CSo8NSObject", "exampleUnCheckedImage"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "print"]
+- ["PSo16NSObjectProtocol", "UIImage"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "exampleButtonClicked"]
+- ["PSo16NSObjectProtocol", "exampleCheckedImage"]
+- ["PSo16NSObjectProtocol", "exampleIsChecked"]
+- ["PSo16NSObjectProtocol", "exampleUnCheckedImage"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "UIImage"]
+- ["PSo14NSSecureCoding", "awakeFromNib"]
+- ["PSo14NSSecureCoding", "exampleButtonClicked"]
+- ["PSo14NSSecureCoding", "exampleCheckedImage"]
+- ["PSo14NSSecureCoding", "exampleIsChecked"]
+- ["PSo14NSSecureCoding", "exampleUnCheckedImage"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "print"]
+- ["PSo14NSSecureCoding", ""]
+- ["PSo29UIAccessibilityIdentification", "UIImage"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "exampleButtonClicked"]
+- ["PSo29UIAccessibilityIdentification", "exampleCheckedImage"]
+- ["PSo29UIAccessibilityIdentification", "exampleIsChecked"]
+- ["PSo29UIAccessibilityIdentification", "exampleUnCheckedImage"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "print"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["CSo7UIImage", "Bool"]
+- ["CSo7UIImage", "UIButton"]
+- ["CSo7UIImage", "UIImage"]
+- ["CSo7UIImage", "awakeFromNib"]
+- ["CSo7UIImage", "exampleButtonClicked"]
+- ["CSo7UIImage", "exampleCheckedImage"]
+- ["CSo7UIImage", "exampleIsChecked"]
+- ["CSo7UIImage", "exampleUnCheckedImage"]
+- ["CSo7UIImage", "init"]
+- !private ["CSo7UIImage", "print"]
+- ["CSo7UIImage", ""]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["Ps24_ImageLiteralConvertible", "UIImage"]
+- ["Ps24_ImageLiteralConvertible", "awakeFromNib"]
+- ["Ps24_ImageLiteralConvertible", "exampleButtonClicked"]
+- ["Ps24_ImageLiteralConvertible", "exampleCheckedImage"]
+- ["Ps24_ImageLiteralConvertible", "exampleIsChecked"]
+- ["Ps24_ImageLiteralConvertible", "exampleUnCheckedImage"]
+- ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "print"]
+- ["Ps24_ImageLiteralConvertible", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "C6EdEval15ExampleCheckBox"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "PSo29UIAccessibilityIdentification"
+- "CSo7UIImage"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "70c63cab53a90fa4a7976b04bc13f580"

@@ -1,0 +1,195 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OptionsRow"
+provides-nominal:
+- "C6Eureka10OptionsRow"
+provides-member:
+- ["C6Eureka10OptionsRow", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CellType"
+- "String"
+- !private "DataProvider"
+- !private "Array"
+- "TypedCellType"
+- "BaseCell"
+- "OptionsRow"
+- "Row"
+- "Equatable"
+- !private "??"
+depends-member:
+- !private ["Ps9AnyObject", "DataProvider"]
+- !private ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "dataProvider"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "options"]
+- ["Ps9AnyObject", "selectorTitle"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["C6Eureka8BaseCell", "Value"]
+- !private ["P6Eureka12BaseCellType", "Value"]
+- !private ["C6Eureka7BaseRow", "DataProvider"]
+- ["C6Eureka7BaseRow", "String"]
+- ["C6Eureka7BaseRow", "T"]
+- !private ["C6Eureka7BaseRow", "dataProvider"]
+- ["C6Eureka7BaseRow", "init"]
+- ["C6Eureka7BaseRow", "options"]
+- ["C6Eureka7BaseRow", "selectorTitle"]
+- !private ["P6Eureka11BaseRowType", "DataProvider"]
+- !private ["P6Eureka11BaseRowType", "dataProvider"]
+- ["P6Eureka11BaseRowType", "init"]
+- ["P6Eureka11BaseRowType", "options"]
+- ["P6Eureka11BaseRowType", "selectorTitle"]
+- ["P6Eureka11BaseRowType", ""]
+- !private ["Ps11CVarArgType", "Value"]
+- !private ["P6Eureka8CellType", "Value"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["V6Eureka12DataProvider", "arrayData"]
+- !private ["V6Eureka12DataProvider", "init"]
+- !private ["P6Eureka11Disableable", "DataProvider"]
+- !private ["P6Eureka11Disableable", "dataProvider"]
+- ["P6Eureka11Disableable", "init"]
+- ["P6Eureka11Disableable", "options"]
+- ["P6Eureka11Disableable", "selectorTitle"]
+- ["P6Eureka11Disableable", ""]
+- !private ["Ps9Equatable", "DataProvider"]
+- !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "dataProvider"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "options"]
+- ["Ps9Equatable", "selectorTitle"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Value"]
+- !private ["P6Eureka7Hidable", "DataProvider"]
+- !private ["P6Eureka7Hidable", "dataProvider"]
+- ["P6Eureka7Hidable", "init"]
+- ["P6Eureka7Hidable", "options"]
+- ["P6Eureka7Hidable", "selectorTitle"]
+- ["P6Eureka7Hidable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "Value"]
+- !private ["CSo8NSObject", "Value"]
+- !private ["PSo16NSObjectProtocol", "Value"]
+- !private ["C6Eureka10OptionsRow", "DataProvider"]
+- ["C6Eureka10OptionsRow", "String"]
+- ["C6Eureka10OptionsRow", "T"]
+- !private ["C6Eureka10OptionsRow", "dataProvider"]
+- ["C6Eureka10OptionsRow", "deinit"]
+- ["C6Eureka10OptionsRow", "init"]
+- ["C6Eureka10OptionsRow", "options"]
+- ["C6Eureka10OptionsRow", "selectorTitle"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["C6Eureka3Row", "DataProvider"]
+- ["C6Eureka3Row", "String"]
+- ["C6Eureka3Row", "T"]
+- !private ["C6Eureka3Row", "dataProvider"]
+- ["C6Eureka3Row", "init"]
+- ["C6Eureka3Row", "options"]
+- ["C6Eureka3Row", "selectorTitle"]
+- ["C6Eureka3Row", ""]
+- !private ["C6Eureka5RowOf", "DataProvider"]
+- ["C6Eureka5RowOf", "String"]
+- ["C6Eureka5RowOf", "T"]
+- !private ["C6Eureka5RowOf", "dataProvider"]
+- ["C6Eureka5RowOf", "init"]
+- ["C6Eureka5RowOf", "options"]
+- ["C6Eureka5RowOf", "selectorTitle"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["P6Eureka8Taggable", "DataProvider"]
+- !private ["P6Eureka8Taggable", "dataProvider"]
+- ["P6Eureka8Taggable", "init"]
+- ["P6Eureka8Taggable", "options"]
+- ["P6Eureka8Taggable", "selectorTitle"]
+- ["P6Eureka8Taggable", ""]
+- !private ["P6Eureka13TypedCellType", "Value"]
+- !private ["P6Eureka12TypedRowType", "DataProvider"]
+- !private ["P6Eureka12TypedRowType", "dataProvider"]
+- ["P6Eureka12TypedRowType", "init"]
+- ["P6Eureka12TypedRowType", "options"]
+- ["P6Eureka12TypedRowType", "selectorTitle"]
+- ["P6Eureka12TypedRowType", ""]
+- !private ["PSo29UIAccessibilityIdentification", "Value"]
+- !private ["PSo12UIAppearance", "Value"]
+- !private ["PSo21UIAppearanceContainer", "Value"]
+- !private ["PSo17UICoordinateSpace", "Value"]
+- !private ["PSo13UIDynamicItem", "Value"]
+- !private ["PSo18UIFocusEnvironment", "Value"]
+- !private ["PSo27UIGestureRecognizerDelegate", "Value"]
+- !private ["CSo11UIResponder", "Value"]
+- !private ["CSo15UITableViewCell", "Value"]
+- !private ["PSo18UITraitEnvironment", "Value"]
+- !private ["CSo6UIView", "Value"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Value"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "C6Eureka8BaseCell"
+- !private "P6Eureka12BaseCellType"
+- "C6Eureka7BaseRow"
+- "P6Eureka11BaseRowType"
+- !private "Ps11CVarArgType"
+- !private "P6Eureka8CellType"
+- !private "Ps14CollectionType"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "V6Eureka12DataProvider"
+- "P6Eureka11Disableable"
+- "Ps9Equatable"
+- !private "Ps8Hashable"
+- "P6Eureka7Hidable"
+- !private "Ps9Indexable"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "C6Eureka10OptionsRow"
+- !private "Ps30RangeReplaceableCollectionType"
+- "C6Eureka3Row"
+- "C6Eureka5RowOf"
+- !private "Ps12SequenceType"
+- "P6Eureka8Taggable"
+- !private "P6Eureka13TypedCellType"
+- "P6Eureka12TypedRowType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo11UIResponder"
+- !private "CSo15UITableViewCell"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps10_ArrayType"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/capitalhigh/Desktop/Eureka-master/Source/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/unextended-module.modulemap"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "00608331b78c3ec8828cbe31a20b57f7"

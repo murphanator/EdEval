@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6EdEval28CheckboxSliderViewController", ""]
 provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "SliderForCheckbox"
 - "currentValue"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
+- "sliderValueChanged"
 - "labelForSlider"
 - "prepareForSegue"
-- "sliderValueChanged"
 depends-top-level:
-- "UIViewController"
-- "UISlider"
-- !private "Int"
-- "UILabel"
-- "AnyObject"
 - "CheckboxSliderViewController"
-- !private "GlobalVariables1"
-- "UIStoryboardSegue"
+- "UILabel"
 - !private "globalVariablesInstance"
+- "UIStoryboardSegue"
+- !private "Int"
 - !private "StringLiteralType"
 - !private "=="
+- "AnyObject"
+- "UIViewController"
+- "UISlider"
+- !private "GlobalVariables1"
 - !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "GlobalVariables1"]
@@ -159,6 +159,7 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Element"]
+- !private ["P6Eureka18InputTypeInitiable", "init"]
 - !private ["Si", "deinit"]
 - !private ["Si", "init"]
 - !private ["Vs5Int16", "deinit"]
@@ -413,6 +414,7 @@ depends-nominal:
 - !private "C6EdEval16GlobalVariables1"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
+- !private "P6Eureka18InputTypeInitiable"
 - !private "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -494,5 +496,9 @@ depends-external:
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "26ede1bccc27cf5eb5d131f093ae222a"

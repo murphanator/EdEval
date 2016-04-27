@@ -1,0 +1,681 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "_DateRow"
+- "_TimeRow"
+- "_DateTimeRow"
+- "_CountDownRow"
+- "DateRow"
+- "TimeRow"
+- "DateTimeRow"
+- "CountDownRow"
+provides-nominal:
+- "C6Eureka8_DateRow"
+- "C6Eureka8_TimeRow"
+- "C6Eureka12_DateTimeRow"
+- "C6Eureka13_CountDownRow"
+- "C6Eureka7DateRow"
+- "C6Eureka7TimeRow"
+- "C6Eureka11DateTimeRow"
+- "C6Eureka12CountDownRow"
+provides-member:
+- ["C6Eureka8_DateRow", ""]
+- ["C6Eureka8_TimeRow", ""]
+- ["C6Eureka12_DateTimeRow", ""]
+- ["C6Eureka13_CountDownRow", ""]
+- ["C6Eureka7DateRow", ""]
+- ["C6Eureka7TimeRow", ""]
+- ["C6Eureka11DateTimeRow", ""]
+- ["C6Eureka12CountDownRow", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "_DateRow"
+- !private "NSCalendar"
+- !private "!="
+- "_CountDownRow"
+- "String"
+- "_TimeRow"
+- "RowType"
+- "TimeRow"
+- "DateTimeRow"
+- "_DateTimeRow"
+- "DateRow"
+- "UnicodeScalarType"
+- !private "+="
+- !private "NSDateFormatter"
+- "_DateFieldRow"
+- !private "NSLocale"
+- "StringLiteralType"
+- "CountDownRow"
+- !private "NSCalendarUnit"
+depends-member:
+- ["Ps9AnyObject", "Cell"]
+- !private ["Ps9AnyObject", "NSCalendar"]
+- !private ["Ps9AnyObject", "NSCalendarUnit"]
+- !private ["Ps9AnyObject", "NSDateFormatter"]
+- !private ["Ps9AnyObject", "NSLocale"]
+- ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "components"]
+- !private ["Ps9AnyObject", "currentCalendar"]
+- !private ["Ps9AnyObject", "currentLocale"]
+- !private ["Ps9AnyObject", "dateFormatter"]
+- !private ["Ps9AnyObject", "dateStyle"]
+- !private ["Ps9AnyObject", "detailTextLabel"]
+- !private ["Ps9AnyObject", "displayValueFor"]
+- !private ["Ps9AnyObject", "hour"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "locale"]
+- !private ["Ps9AnyObject", "minute"]
+- !private ["Ps9AnyObject", "onCellHighlight"]
+- !private ["Ps9AnyObject", "onCellUnHighlight"]
+- !private ["Ps9AnyObject", "stringFromDate"]
+- !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "timeStyle"]
+- !private ["Ps9AnyObject", "tintColor"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "Hour"]
+- !private ["Ps23ArrayLiteralConvertible", "Minute"]
+- !private ["Ps23ArrayLiteralConvertible", "union"]
+- ["C6Eureka8BaseCell", "Value"]
+- !private ["C6Eureka8BaseCell", "detailTextLabel"]
+- !private ["C6Eureka8BaseCell", "tintColor"]
+- ["P6Eureka12BaseCellType", "Value"]
+- !private ["P6Eureka12BaseCellType", "detailTextLabel"]
+- !private ["P6Eureka12BaseCellType", "tintColor"]
+- ["C6Eureka7BaseRow", "Cell"]
+- !private ["C6Eureka7BaseRow", "NSCalendar"]
+- !private ["C6Eureka7BaseRow", "NSCalendarUnit"]
+- !private ["C6Eureka7BaseRow", "NSDateFormatter"]
+- !private ["C6Eureka7BaseRow", "NSLocale"]
+- ["C6Eureka7BaseRow", "String"]
+- ["C6Eureka7BaseRow", "Value"]
+- !private ["C6Eureka7BaseRow", "dateFormatter"]
+- !private ["C6Eureka7BaseRow", "displayValueFor"]
+- ["C6Eureka7BaseRow", "init"]
+- !private ["C6Eureka7BaseRow", "onCellHighlight"]
+- !private ["C6Eureka7BaseRow", "onCellUnHighlight"]
+- ["P6Eureka11BaseRowType", "Cell"]
+- !private ["P6Eureka11BaseRowType", "NSCalendar"]
+- !private ["P6Eureka11BaseRowType", "NSCalendarUnit"]
+- !private ["P6Eureka11BaseRowType", "NSDateFormatter"]
+- !private ["P6Eureka11BaseRowType", "NSLocale"]
+- ["P6Eureka11BaseRowType", "Value"]
+- !private ["P6Eureka11BaseRowType", "dateFormatter"]
+- !private ["P6Eureka11BaseRowType", "displayValueFor"]
+- ["P6Eureka11BaseRowType", "init"]
+- !private ["P6Eureka11BaseRowType", "onCellHighlight"]
+- !private ["P6Eureka11BaseRowType", "onCellUnHighlight"]
+- ["P6Eureka11BaseRowType", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["Ps11CVarArgType", "Value"]
+- !private ["Ps11CVarArgType", "components"]
+- !private ["Ps11CVarArgType", "currentCalendar"]
+- !private ["Ps11CVarArgType", "currentLocale"]
+- !private ["Ps11CVarArgType", "dateStyle"]
+- !private ["Ps11CVarArgType", "detailTextLabel"]
+- !private ["Ps11CVarArgType", "hour"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "locale"]
+- !private ["Ps11CVarArgType", "minute"]
+- !private ["Ps11CVarArgType", "stringFromDate"]
+- !private ["Ps11CVarArgType", "textColor"]
+- !private ["Ps11CVarArgType", "timeStyle"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- ["C6Eureka4Cell", "Value"]
+- !private ["C6Eureka4Cell", "detailTextLabel"]
+- !private ["C6Eureka4Cell", "tintColor"]
+- ["P6Eureka8CellType", "Value"]
+- !private ["P6Eureka8CellType", "detailTextLabel"]
+- !private ["P6Eureka8CellType", "tintColor"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- ["C6Eureka12CountDownRow", "Cell"]
+- ["C6Eureka12CountDownRow", "String"]
+- ["C6Eureka12CountDownRow", "Value"]
+- ["C6Eureka12CountDownRow", "deinit"]
+- ["C6Eureka12CountDownRow", "init"]
+- !private ["C6Eureka12CountDownRow", "onCellHighlight"]
+- !private ["C6Eureka12CountDownRow", "onCellUnHighlight"]
+- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "components"]
+- !private ["Ps28CustomDebugStringConvertible", "currentCalendar"]
+- !private ["Ps28CustomDebugStringConvertible", "currentLocale"]
+- !private ["Ps28CustomDebugStringConvertible", "dateStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "detailTextLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "hour"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "locale"]
+- !private ["Ps28CustomDebugStringConvertible", "minute"]
+- !private ["Ps28CustomDebugStringConvertible", "stringFromDate"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps28CustomDebugStringConvertible", "timeStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "components"]
+- !private ["Ps23CustomStringConvertible", "currentCalendar"]
+- !private ["Ps23CustomStringConvertible", "currentLocale"]
+- !private ["Ps23CustomStringConvertible", "dateStyle"]
+- !private ["Ps23CustomStringConvertible", "detailTextLabel"]
+- !private ["Ps23CustomStringConvertible", "hour"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "locale"]
+- !private ["Ps23CustomStringConvertible", "minute"]
+- !private ["Ps23CustomStringConvertible", "stringFromDate"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
+- !private ["Ps23CustomStringConvertible", "timeStyle"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- ["C6Eureka8DateCell", "Value"]
+- ["C6Eureka8DateCell", "deinit"]
+- !private ["C6Eureka8DateCell", "detailTextLabel"]
+- !private ["C6Eureka8DateCell", "tintColor"]
+- ["P6Eureka21DatePickerRowProtocol", "Cell"]
+- !private ["P6Eureka21DatePickerRowProtocol", "NSCalendar"]
+- !private ["P6Eureka21DatePickerRowProtocol", "NSCalendarUnit"]
+- !private ["P6Eureka21DatePickerRowProtocol", "NSDateFormatter"]
+- !private ["P6Eureka21DatePickerRowProtocol", "NSLocale"]
+- ["P6Eureka21DatePickerRowProtocol", "Value"]
+- !private ["P6Eureka21DatePickerRowProtocol", "dateFormatter"]
+- !private ["P6Eureka21DatePickerRowProtocol", "displayValueFor"]
+- ["P6Eureka21DatePickerRowProtocol", "init"]
+- !private ["P6Eureka21DatePickerRowProtocol", "onCellHighlight"]
+- !private ["P6Eureka21DatePickerRowProtocol", "onCellUnHighlight"]
+- ["P6Eureka21DatePickerRowProtocol", ""]
+- ["C6Eureka7DateRow", "Cell"]
+- ["C6Eureka7DateRow", "String"]
+- ["C6Eureka7DateRow", "Value"]
+- ["C6Eureka7DateRow", "deinit"]
+- ["C6Eureka7DateRow", "init"]
+- !private ["C6Eureka7DateRow", "onCellHighlight"]
+- !private ["C6Eureka7DateRow", "onCellUnHighlight"]
+- ["C6Eureka11DateTimeRow", "Cell"]
+- ["C6Eureka11DateTimeRow", "String"]
+- ["C6Eureka11DateTimeRow", "Value"]
+- ["C6Eureka11DateTimeRow", "deinit"]
+- ["C6Eureka11DateTimeRow", "init"]
+- !private ["C6Eureka11DateTimeRow", "onCellHighlight"]
+- !private ["C6Eureka11DateTimeRow", "onCellUnHighlight"]
+- ["P6Eureka11Disableable", "Cell"]
+- !private ["P6Eureka11Disableable", "NSCalendar"]
+- !private ["P6Eureka11Disableable", "NSCalendarUnit"]
+- !private ["P6Eureka11Disableable", "NSDateFormatter"]
+- !private ["P6Eureka11Disableable", "NSLocale"]
+- ["P6Eureka11Disableable", "Value"]
+- !private ["P6Eureka11Disableable", "dateFormatter"]
+- !private ["P6Eureka11Disableable", "displayValueFor"]
+- ["P6Eureka11Disableable", "init"]
+- !private ["P6Eureka11Disableable", "onCellHighlight"]
+- !private ["P6Eureka11Disableable", "onCellUnHighlight"]
+- ["P6Eureka11Disableable", ""]
+- !private ["Sd", "deinit"]
+- ["Ps9Equatable", "Cell"]
+- !private ["Ps9Equatable", "Hour"]
+- !private ["Ps9Equatable", "MediumStyle"]
+- !private ["Ps9Equatable", "Minute"]
+- !private ["Ps9Equatable", "NSCalendar"]
+- !private ["Ps9Equatable", "NSCalendarUnit"]
+- !private ["Ps9Equatable", "NSDateFormatter"]
+- !private ["Ps9Equatable", "NSLocale"]
+- !private ["Ps9Equatable", "NoStyle"]
+- !private ["Ps9Equatable", "ShortStyle"]
+- ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "components"]
+- !private ["Ps9Equatable", "currentCalendar"]
+- !private ["Ps9Equatable", "currentLocale"]
+- !private ["Ps9Equatable", "dateFormatter"]
+- !private ["Ps9Equatable", "dateStyle"]
+- !private ["Ps9Equatable", "detailTextLabel"]
+- !private ["Ps9Equatable", "displayValueFor"]
+- !private ["Ps9Equatable", "hour"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "locale"]
+- !private ["Ps9Equatable", "minute"]
+- !private ["Ps9Equatable", "onCellHighlight"]
+- !private ["Ps9Equatable", "onCellUnHighlight"]
+- !private ["Ps9Equatable", "stringFromDate"]
+- !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "timeStyle"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "union"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "MediumStyle"]
+- !private ["Ps8Hashable", "NoStyle"]
+- !private ["Ps8Hashable", "ShortStyle"]
+- ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "components"]
+- !private ["Ps8Hashable", "currentCalendar"]
+- !private ["Ps8Hashable", "currentLocale"]
+- !private ["Ps8Hashable", "dateStyle"]
+- !private ["Ps8Hashable", "detailTextLabel"]
+- !private ["Ps8Hashable", "hour"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "locale"]
+- !private ["Ps8Hashable", "minute"]
+- !private ["Ps8Hashable", "stringFromDate"]
+- !private ["Ps8Hashable", "textColor"]
+- !private ["Ps8Hashable", "timeStyle"]
+- !private ["Ps8Hashable", "tintColor"]
+- ["P6Eureka7Hidable", "Cell"]
+- !private ["P6Eureka7Hidable", "NSCalendar"]
+- !private ["P6Eureka7Hidable", "NSCalendarUnit"]
+- !private ["P6Eureka7Hidable", "NSDateFormatter"]
+- !private ["P6Eureka7Hidable", "NSLocale"]
+- ["P6Eureka7Hidable", "Value"]
+- !private ["P6Eureka7Hidable", "dateFormatter"]
+- !private ["P6Eureka7Hidable", "displayValueFor"]
+- ["P6Eureka7Hidable", "init"]
+- !private ["P6Eureka7Hidable", "onCellHighlight"]
+- !private ["P6Eureka7Hidable", "onCellUnHighlight"]
+- ["P6Eureka7Hidable", ""]
+- !private ["P6Eureka18InputTypeInitiable", "init"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["CSo10NSCalendar", "components"]
+- !private ["CSo10NSCalendar", "currentCalendar"]
+- !private ["VSC14NSCalendarUnit", "Hour"]
+- !private ["VSC14NSCalendarUnit", "Minute"]
+- !private ["VSC14NSCalendarUnit", "union"]
+- ["PSo8NSCoding", "Value"]
+- !private ["PSo8NSCoding", "components"]
+- !private ["PSo8NSCoding", "currentCalendar"]
+- !private ["PSo8NSCoding", "currentLocale"]
+- !private ["PSo8NSCoding", "dateStyle"]
+- !private ["PSo8NSCoding", "detailTextLabel"]
+- !private ["PSo8NSCoding", "hour"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "locale"]
+- !private ["PSo8NSCoding", "minute"]
+- !private ["PSo8NSCoding", "stringFromDate"]
+- !private ["PSo8NSCoding", "textColor"]
+- !private ["PSo8NSCoding", "timeStyle"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo9NSCopying", "components"]
+- !private ["PSo9NSCopying", "currentCalendar"]
+- !private ["PSo9NSCopying", "currentLocale"]
+- !private ["PSo9NSCopying", "dateStyle"]
+- !private ["PSo9NSCopying", "hour"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "locale"]
+- !private ["PSo9NSCopying", "minute"]
+- !private ["PSo9NSCopying", "stringFromDate"]
+- !private ["PSo9NSCopying", "timeStyle"]
+- !private ["CSo16NSDateComponents", "hour"]
+- !private ["CSo16NSDateComponents", "minute"]
+- !private ["CSo15NSDateFormatter", "dateStyle"]
+- !private ["CSo15NSDateFormatter", "init"]
+- !private ["CSo15NSDateFormatter", "locale"]
+- !private ["CSo15NSDateFormatter", "stringFromDate"]
+- !private ["CSo15NSDateFormatter", "timeStyle"]
+- !private ["OSC20NSDateFormatterStyle", "MediumStyle"]
+- !private ["OSC20NSDateFormatterStyle", "NoStyle"]
+- !private ["OSC20NSDateFormatterStyle", "ShortStyle"]
+- !private ["CSo11NSFormatter", "dateStyle"]
+- !private ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSFormatter", "locale"]
+- !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo11NSFormatter", "timeStyle"]
+- !private ["CSo8NSLocale", "currentLocale"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Value"]
+- !private ["CSo8NSObject", "components"]
+- !private ["CSo8NSObject", "currentCalendar"]
+- !private ["CSo8NSObject", "currentLocale"]
+- !private ["CSo8NSObject", "dateStyle"]
+- !private ["CSo8NSObject", "detailTextLabel"]
+- !private ["CSo8NSObject", "hour"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "locale"]
+- !private ["CSo8NSObject", "minute"]
+- !private ["CSo8NSObject", "stringFromDate"]
+- !private ["CSo8NSObject", "textColor"]
+- !private ["CSo8NSObject", "timeStyle"]
+- !private ["CSo8NSObject", "tintColor"]
+- ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "components"]
+- !private ["PSo16NSObjectProtocol", "currentCalendar"]
+- !private ["PSo16NSObjectProtocol", "currentLocale"]
+- !private ["PSo16NSObjectProtocol", "dateStyle"]
+- !private ["PSo16NSObjectProtocol", "detailTextLabel"]
+- !private ["PSo16NSObjectProtocol", "hour"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "locale"]
+- !private ["PSo16NSObjectProtocol", "minute"]
+- !private ["PSo16NSObjectProtocol", "stringFromDate"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
+- !private ["PSo16NSObjectProtocol", "timeStyle"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo14NSSecureCoding", "components"]
+- !private ["PSo14NSSecureCoding", "currentCalendar"]
+- !private ["PSo14NSSecureCoding", "currentLocale"]
+- !private ["PSo14NSSecureCoding", "hour"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "minute"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Hour"]
+- !private ["Ps13OptionSetType", "Minute"]
+- !private ["Ps13OptionSetType", "union"]
+- !private ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16RawRepresentable", "Hour"]
+- !private ["Ps16RawRepresentable", "MediumStyle"]
+- !private ["Ps16RawRepresentable", "Minute"]
+- !private ["Ps16RawRepresentable", "NoStyle"]
+- !private ["Ps16RawRepresentable", "ShortStyle"]
+- !private ["Ps16RawRepresentable", "union"]
+- ["C6Eureka3Row", "Cell"]
+- !private ["C6Eureka3Row", "NSCalendar"]
+- !private ["C6Eureka3Row", "NSCalendarUnit"]
+- !private ["C6Eureka3Row", "NSDateFormatter"]
+- !private ["C6Eureka3Row", "NSLocale"]
+- ["C6Eureka3Row", "String"]
+- ["C6Eureka3Row", "Value"]
+- !private ["C6Eureka3Row", "dateFormatter"]
+- !private ["C6Eureka3Row", "displayValueFor"]
+- ["C6Eureka3Row", "init"]
+- !private ["C6Eureka3Row", "onCellHighlight"]
+- !private ["C6Eureka3Row", "onCellUnHighlight"]
+- ["C6Eureka5RowOf", "Cell"]
+- !private ["C6Eureka5RowOf", "NSCalendar"]
+- !private ["C6Eureka5RowOf", "NSCalendarUnit"]
+- !private ["C6Eureka5RowOf", "NSDateFormatter"]
+- !private ["C6Eureka5RowOf", "NSLocale"]
+- ["C6Eureka5RowOf", "String"]
+- ["C6Eureka5RowOf", "Value"]
+- !private ["C6Eureka5RowOf", "dateFormatter"]
+- !private ["C6Eureka5RowOf", "displayValueFor"]
+- ["C6Eureka5RowOf", "init"]
+- !private ["C6Eureka5RowOf", "onCellHighlight"]
+- !private ["C6Eureka5RowOf", "onCellUnHighlight"]
+- ["P6Eureka7RowType", "Cell"]
+- ["P6Eureka7RowType", "Value"]
+- ["P6Eureka7RowType", "init"]
+- !private ["P6Eureka7RowType", "onCellHighlight"]
+- !private ["P6Eureka7RowType", "onCellUnHighlight"]
+- ["P6Eureka7RowType", ""]
+- !private ["Ps14SetAlgebraType", "Hour"]
+- !private ["Ps14SetAlgebraType", "Minute"]
+- !private ["Ps14SetAlgebraType", "union"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- ["P6Eureka8Taggable", "Cell"]
+- !private ["P6Eureka8Taggable", "NSCalendar"]
+- !private ["P6Eureka8Taggable", "NSCalendarUnit"]
+- !private ["P6Eureka8Taggable", "NSDateFormatter"]
+- !private ["P6Eureka8Taggable", "NSLocale"]
+- ["P6Eureka8Taggable", "Value"]
+- !private ["P6Eureka8Taggable", "dateFormatter"]
+- !private ["P6Eureka8Taggable", "displayValueFor"]
+- ["P6Eureka8Taggable", "init"]
+- !private ["P6Eureka8Taggable", "onCellHighlight"]
+- !private ["P6Eureka8Taggable", "onCellUnHighlight"]
+- ["P6Eureka8Taggable", ""]
+- ["C6Eureka7TimeRow", "Cell"]
+- ["C6Eureka7TimeRow", "String"]
+- ["C6Eureka7TimeRow", "Value"]
+- ["C6Eureka7TimeRow", "deinit"]
+- ["C6Eureka7TimeRow", "init"]
+- !private ["C6Eureka7TimeRow", "onCellHighlight"]
+- !private ["C6Eureka7TimeRow", "onCellUnHighlight"]
+- ["P6Eureka13TypedCellType", "Value"]
+- !private ["P6Eureka13TypedCellType", "detailTextLabel"]
+- !private ["P6Eureka13TypedCellType", "tintColor"]
+- ["P6Eureka12TypedRowType", "Cell"]
+- !private ["P6Eureka12TypedRowType", "NSCalendar"]
+- !private ["P6Eureka12TypedRowType", "NSCalendarUnit"]
+- !private ["P6Eureka12TypedRowType", "NSDateFormatter"]
+- !private ["P6Eureka12TypedRowType", "NSLocale"]
+- ["P6Eureka12TypedRowType", "Value"]
+- !private ["P6Eureka12TypedRowType", "dateFormatter"]
+- !private ["P6Eureka12TypedRowType", "displayValueFor"]
+- ["P6Eureka12TypedRowType", "init"]
+- !private ["P6Eureka12TypedRowType", "onCellHighlight"]
+- !private ["P6Eureka12TypedRowType", "onCellUnHighlight"]
+- ["P6Eureka12TypedRowType", ""]
+- ["PSo29UIAccessibilityIdentification", "Value"]
+- !private ["PSo29UIAccessibilityIdentification", "detailTextLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- ["PSo12UIAppearance", "Value"]
+- !private ["PSo12UIAppearance", "detailTextLabel"]
+- !private ["PSo12UIAppearance", "textColor"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- ["PSo21UIAppearanceContainer", "Value"]
+- !private ["PSo21UIAppearanceContainer", "detailTextLabel"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- ["PSo17UICoordinateSpace", "Value"]
+- !private ["PSo17UICoordinateSpace", "detailTextLabel"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- ["PSo13UIDynamicItem", "Value"]
+- !private ["PSo13UIDynamicItem", "detailTextLabel"]
+- !private ["PSo13UIDynamicItem", "textColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- ["PSo18UIFocusEnvironment", "Value"]
+- !private ["PSo18UIFocusEnvironment", "detailTextLabel"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- ["PSo27UIGestureRecognizerDelegate", "Value"]
+- !private ["PSo27UIGestureRecognizerDelegate", "detailTextLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "tintColor"]
+- !private ["CSo7UILabel", "textColor"]
+- ["CSo11UIResponder", "Value"]
+- !private ["CSo11UIResponder", "detailTextLabel"]
+- !private ["CSo11UIResponder", "textColor"]
+- !private ["CSo11UIResponder", "tintColor"]
+- ["CSo15UITableViewCell", "Value"]
+- !private ["CSo15UITableViewCell", "detailTextLabel"]
+- !private ["CSo15UITableViewCell", "tintColor"]
+- ["PSo18UITraitEnvironment", "Value"]
+- !private ["PSo18UITraitEnvironment", "detailTextLabel"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- ["CSo6UIView", "Value"]
+- !private ["CSo6UIView", "detailTextLabel"]
+- !private ["CSo6UIView", "textColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- ["C6Eureka13_CountDownRow", "Cell"]
+- !private ["C6Eureka13_CountDownRow", "NSCalendar"]
+- !private ["C6Eureka13_CountDownRow", "NSCalendarUnit"]
+- ["C6Eureka13_CountDownRow", "String"]
+- ["C6Eureka13_CountDownRow", "Value"]
+- !private ["C6Eureka13_CountDownRow", "dateFormatter"]
+- ["C6Eureka13_CountDownRow", "deinit"]
+- !private ["C6Eureka13_CountDownRow", "displayValueFor"]
+- ["C6Eureka13_CountDownRow", "init"]
+- !private ["C6Eureka13_CountDownRow", "onCellHighlight"]
+- !private ["C6Eureka13_CountDownRow", "onCellUnHighlight"]
+- ["C6Eureka13_CountDownRow", ""]
+- ["C6Eureka13_DateFieldRow", "Cell"]
+- !private ["C6Eureka13_DateFieldRow", "NSCalendar"]
+- !private ["C6Eureka13_DateFieldRow", "NSCalendarUnit"]
+- !private ["C6Eureka13_DateFieldRow", "NSDateFormatter"]
+- !private ["C6Eureka13_DateFieldRow", "NSLocale"]
+- ["C6Eureka13_DateFieldRow", "String"]
+- ["C6Eureka13_DateFieldRow", "Value"]
+- !private ["C6Eureka13_DateFieldRow", "dateFormatter"]
+- !private ["C6Eureka13_DateFieldRow", "displayValueFor"]
+- ["C6Eureka13_DateFieldRow", "init"]
+- !private ["C6Eureka13_DateFieldRow", "onCellHighlight"]
+- !private ["C6Eureka13_DateFieldRow", "onCellUnHighlight"]
+- ["C6Eureka13_DateFieldRow", ""]
+- ["C6Eureka8_DateRow", "Cell"]
+- !private ["C6Eureka8_DateRow", "NSDateFormatter"]
+- !private ["C6Eureka8_DateRow", "NSLocale"]
+- ["C6Eureka8_DateRow", "String"]
+- ["C6Eureka8_DateRow", "Value"]
+- !private ["C6Eureka8_DateRow", "dateFormatter"]
+- ["C6Eureka8_DateRow", "deinit"]
+- ["C6Eureka8_DateRow", "init"]
+- !private ["C6Eureka8_DateRow", "onCellHighlight"]
+- !private ["C6Eureka8_DateRow", "onCellUnHighlight"]
+- ["C6Eureka8_DateRow", ""]
+- ["C6Eureka12_DateTimeRow", "Cell"]
+- !private ["C6Eureka12_DateTimeRow", "NSDateFormatter"]
+- !private ["C6Eureka12_DateTimeRow", "NSLocale"]
+- ["C6Eureka12_DateTimeRow", "String"]
+- ["C6Eureka12_DateTimeRow", "Value"]
+- !private ["C6Eureka12_DateTimeRow", "dateFormatter"]
+- ["C6Eureka12_DateTimeRow", "deinit"]
+- ["C6Eureka12_DateTimeRow", "init"]
+- !private ["C6Eureka12_DateTimeRow", "onCellHighlight"]
+- !private ["C6Eureka12_DateTimeRow", "onCellUnHighlight"]
+- ["C6Eureka12_DateTimeRow", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "detailTextLabel"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "textColor"]
+- !private ["Ps12_Reflectable", "tintColor"]
+- ["C6Eureka8_TimeRow", "Cell"]
+- !private ["C6Eureka8_TimeRow", "NSDateFormatter"]
+- !private ["C6Eureka8_TimeRow", "NSLocale"]
+- ["C6Eureka8_TimeRow", "String"]
+- ["C6Eureka8_TimeRow", "Value"]
+- !private ["C6Eureka8_TimeRow", "dateFormatter"]
+- ["C6Eureka8_TimeRow", "deinit"]
+- ["C6Eureka8_TimeRow", "init"]
+- !private ["C6Eureka8_TimeRow", "onCellHighlight"]
+- !private ["C6Eureka8_TimeRow", "onCellUnHighlight"]
+- ["C6Eureka8_TimeRow", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- "C6Eureka8BaseCell"
+- "P6Eureka12BaseCellType"
+- "C6Eureka7BaseRow"
+- "P6Eureka11BaseRowType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "C6Eureka4Cell"
+- "P6Eureka8CellType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "C6Eureka12CountDownRow"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C6Eureka8DateCell"
+- "P6Eureka21DatePickerRowProtocol"
+- "C6Eureka7DateRow"
+- "C6Eureka11DateTimeRow"
+- "P6Eureka11Disableable"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- "P6Eureka7Hidable"
+- !private "P6Eureka18InputTypeInitiable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- !private "CSo10NSCalendar"
+- !private "VSC14NSCalendarUnit"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo16NSDateComponents"
+- !private "CSo15NSDateFormatter"
+- !private "OSC20NSDateFormatterStyle"
+- !private "CSo11NSFormatter"
+- !private "CSo8NSLocale"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps16RawRepresentable"
+- "C6Eureka3Row"
+- "C6Eureka5RowOf"
+- "P6Eureka7RowType"
+- !private "Ps14SetAlgebraType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "P6Eureka8Taggable"
+- "C6Eureka7TimeRow"
+- "P6Eureka13TypedCellType"
+- "P6Eureka12TypedRowType"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- "C6Eureka13_CountDownRow"
+- "C6Eureka13_DateFieldRow"
+- "C6Eureka8_DateRow"
+- "C6Eureka12_DateTimeRow"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+- "C6Eureka8_TimeRow"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/capitalhigh/Desktop/Eureka-master/Source/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/unextended-module.modulemap"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "79a4304a3fdcb81496a53dd46ff98730"

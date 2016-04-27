@@ -14,6 +14,8 @@
 		256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */; };
 		2576A9731C5434EA00AB98E4 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576A9721C5434EA00AB98E4 /* Report.swift */; };
 		2576C6E21C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576C6E11C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift */; };
+		2579F1861CD05BDA007F0AF3 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2579F1831CD0592F007F0AF3 /* Eureka.framework */; };
+		2579F1871CD05BDA007F0AF3 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2579F1831CD0592F007F0AF3 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		257C43F11BCCA8EE00F852B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */; };
 		257C43F31BCCA8EE00F852B3 /* WalkThruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */; };
 		257C43F61BCCA8EE00F852B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257C43F41BCCA8EE00F852B3 /* Main.storyboard */; };
@@ -39,6 +41,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2579F1821CD0592F007F0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2579F17D1CD0592F007F0AF3 /* Eureka.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
+			remoteInfo = Eureka;
+		};
+		2579F1841CD0592F007F0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2579F17D1CD0592F007F0AF3 /* Eureka.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
+			remoteInfo = EurekaTests;
+		};
+		2579F1881CD05BDA007F0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2579F17D1CD0592F007F0AF3 /* Eureka.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 51729DEA1B9A4F5E004A00EB;
+			remoteInfo = Eureka;
+		};
 		257C44021BCCA8EE00F852B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 257C43E51BCCA8EE00F852B3 /* Project object */;
@@ -48,6 +71,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2579F18A1CD05BDA007F0AF3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2579F1871CD05BDA007F0AF3 /* Eureka.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		25032FD01BD1762400D314AB /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
 		25087A7A1CD0491A00B1253B /* MathK6TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathK6TableViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +92,7 @@
 		256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		2576A9721C5434EA00AB98E4 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		2576C6E11C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxQuestionTableViewController.swift; sourceTree = "<group>"; };
+		2579F17D1CD0592F007F0AF3 /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = "../../../Eureka-master/Eureka.xcodeproj"; sourceTree = "<group>"; };
 		257C43ED1BCCA8EE00F852B3 /* EdEval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdEval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThruViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2579F1861CD05BDA007F0AF3 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2579F17E1CD0592F007F0AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2579F1831CD0592F007F0AF3 /* Eureka.framework */,
+				2579F1851CD0592F007F0AF3 /* EurekaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		257C43E41BCCA8EE00F852B3 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +173,7 @@
 		257C43EF1BCCA8EE00F852B3 /* EdEval */ = {
 			isa = PBXGroup;
 			children = (
+				2579F17D1CD0592F007F0AF3 /* Eureka.xcodeproj */,
 				257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */,
 				257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */,
 				25032FD01BD1762400D314AB /* TeacherData.swift */,
@@ -173,10 +222,12 @@
 				257C43E91BCCA8EE00F852B3 /* Sources */,
 				257C43EA1BCCA8EE00F852B3 /* Frameworks */,
 				257C43EB1BCCA8EE00F852B3 /* Resources */,
+				2579F18A1CD05BDA007F0AF3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2579F1891CD05BDA007F0AF3 /* PBXTargetDependency */,
 			);
 			name = EdEval;
 			productName = EdEval;
@@ -230,6 +281,12 @@
 			mainGroup = 257C43E41BCCA8EE00F852B3;
 			productRefGroup = 257C43EE1BCCA8EE00F852B3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2579F17E1CD0592F007F0AF3 /* Products */;
+					ProjectRef = 2579F17D1CD0592F007F0AF3 /* Eureka.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				257C43EC1BCCA8EE00F852B3 /* EdEval */,
@@ -237,6 +294,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2579F1831CD0592F007F0AF3 /* Eureka.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Eureka.framework;
+			remoteRef = 2579F1821CD0592F007F0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2579F1851CD0592F007F0AF3 /* EurekaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EurekaTests.xctest;
+			remoteRef = 2579F1841CD0592F007F0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		257C43EB1BCCA8EE00F852B3 /* Resources */ = {
@@ -302,6 +376,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2579F1891CD05BDA007F0AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Eureka;
+			targetProxy = 2579F1881CD05BDA007F0AF3 /* PBXContainerItemProxy */;
+		};
 		257C44031BCCA8EE00F852B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 257C43EC1BCCA8EE00F852B3 /* EdEval */;
@@ -416,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = EdEval/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OurCompanyName.EdEval;
@@ -427,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = EdEval/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OurCompanyName.EdEval;

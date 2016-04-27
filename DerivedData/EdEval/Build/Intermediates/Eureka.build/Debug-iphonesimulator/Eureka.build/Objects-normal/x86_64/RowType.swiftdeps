@@ -1,0 +1,451 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Disableable"
+- "Hidable"
+- "KeyboardReturnHandler"
+- "Taggable"
+- "BaseRowType"
+- "TypedRowType"
+- "RowType"
+provides-nominal:
+- "P6Eureka11Disableable"
+- "P6Eureka7Hidable"
+- "P6Eureka21KeyboardReturnHandler"
+- "P6Eureka8Taggable"
+- "P6Eureka11BaseRowType"
+- "P6Eureka12TypedRowType"
+- "P6Eureka7RowType"
+provides-member:
+- ["P6Eureka11Disableable", ""]
+- ["P6Eureka7Hidable", ""]
+- ["P6Eureka21KeyboardReturnHandler", ""]
+- ["P6Eureka8Taggable", ""]
+- ["P6Eureka11BaseRowType", ""]
+- ["P6Eureka12TypedRowType", ""]
+- ["P6Eureka7RowType", ""]
+- ["P6Eureka7RowType", "init"]
+- ["P6Eureka7RowType", "defaultCellUpdate"]
+- ["P6Eureka7RowType", "defaultCellSetup"]
+- ["P6Eureka7RowType", "defaultOnCellHighlight"]
+- ["P6Eureka7RowType", "defaultOnCellUnHighlight"]
+- ["P6Eureka7RowType", "defaultRowInitializer"]
+- ["P6Eureka7RowType", "onChange"]
+- ["P6Eureka7RowType", "cellUpdate"]
+- ["P6Eureka7RowType", "cellSetup"]
+- ["P6Eureka7RowType", "onCellSelection"]
+- ["P6Eureka7RowType", "onCellHighlight"]
+- ["P6Eureka7RowType", "onCellUnHighlight"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Condition"
+- "TypedCellType"
+- "Bool"
+- "TypedRowType"
+- "BaseCell"
+- "Hidable"
+- "UITableViewCellStyle"
+- "RowType"
+- "String"
+- "Disableable"
+- "Section"
+- "AnyObject"
+- "KeyboardReturnHandler"
+- "BaseRow"
+- "KeyboardReturnTypeConfiguration"
+- !private "StringLiteralType"
+- !private "RowDefaults"
+- "Taggable"
+- "BaseRowType"
+- !private "Void"
+- "Equatable"
+depends-member:
+- ["Ps9AnyObject", "BaseCell"]
+- !private ["Ps9AnyObject", "BaseRow"]
+- ["Ps9AnyObject", "Bool"]
+- ["Ps9AnyObject", "Cell"]
+- ["Ps9AnyObject", "Condition"]
+- ["Ps9AnyObject", "Equatable"]
+- ["Ps9AnyObject", "KeyboardReturnTypeConfiguration"]
+- !private ["Ps9AnyObject", "RowDefaults"]
+- ["Ps9AnyObject", "Section"]
+- ["Ps9AnyObject", "Self"]
+- ["Ps9AnyObject", "String"]
+- ["Ps9AnyObject", "TypedCellType"]
+- ["Ps9AnyObject", "UITableViewCellStyle"]
+- ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "Void"]
+- !private ["Ps9AnyObject", "callbackCellOnSelection"]
+- !private ["Ps9AnyObject", "callbackCellSetup"]
+- !private ["Ps9AnyObject", "callbackCellUpdate"]
+- !private ["Ps9AnyObject", "callbackOnCellHighlight"]
+- !private ["Ps9AnyObject", "callbackOnCellUnHighlight"]
+- !private ["Ps9AnyObject", "callbackOnChange"]
+- !private ["Ps9AnyObject", "cell"]
+- !private ["Ps9AnyObject", "cellSetup"]
+- !private ["Ps9AnyObject", "cellUpdate"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "onCellHighlight"]
+- !private ["Ps9AnyObject", "onCellUnHighlight"]
+- !private ["Ps9AnyObject", "rawCellSetup"]
+- !private ["Ps9AnyObject", "rawCellUpdate"]
+- !private ["Ps9AnyObject", "rawOnCellHighlight"]
+- !private ["Ps9AnyObject", "rawOnCellUnHighlight"]
+- !private ["Ps9AnyObject", "rawRowInitialization"]
+- !private ["Ps9AnyObject", "rowInitialization"]
+- ["Ps9AnyObject", ""]
+- !private ["C6Eureka8BaseCell", "Value"]
+- !private ["C6Eureka8BaseCell", "deinit"]
+- !private ["P6Eureka12BaseCellType", "Value"]
+- !private ["C6Eureka7BaseRow", "BaseCell"]
+- !private ["C6Eureka7BaseRow", "BaseRow"]
+- ["C6Eureka7BaseRow", "Cell"]
+- !private ["C6Eureka7BaseRow", "RowDefaults"]
+- ["C6Eureka7BaseRow", "Self"]
+- ["C6Eureka7BaseRow", "String"]
+- !private ["C6Eureka7BaseRow", "Value"]
+- !private ["C6Eureka7BaseRow", "Void"]
+- !private ["C6Eureka7BaseRow", "callbackCellOnSelection"]
+- !private ["C6Eureka7BaseRow", "callbackCellSetup"]
+- !private ["C6Eureka7BaseRow", "callbackCellUpdate"]
+- !private ["C6Eureka7BaseRow", "callbackOnCellHighlight"]
+- !private ["C6Eureka7BaseRow", "callbackOnCellUnHighlight"]
+- !private ["C6Eureka7BaseRow", "callbackOnChange"]
+- !private ["C6Eureka7BaseRow", "cell"]
+- !private ["C6Eureka7BaseRow", "deinit"]
+- !private ["C6Eureka7BaseRow", "init"]
+- ["P6Eureka11BaseRowType", "BaseCell"]
+- !private ["P6Eureka11BaseRowType", "BaseRow"]
+- ["P6Eureka11BaseRowType", "Cell"]
+- ["P6Eureka11BaseRowType", "Equatable"]
+- ["P6Eureka11BaseRowType", "KeyboardReturnTypeConfiguration"]
+- !private ["P6Eureka11BaseRowType", "RowDefaults"]
+- ["P6Eureka11BaseRowType", "Section"]
+- ["P6Eureka11BaseRowType", "Self"]
+- ["P6Eureka11BaseRowType", "String"]
+- ["P6Eureka11BaseRowType", "TypedCellType"]
+- ["P6Eureka11BaseRowType", "UITableViewCellStyle"]
+- ["P6Eureka11BaseRowType", "Value"]
+- !private ["P6Eureka11BaseRowType", "Void"]
+- ["P6Eureka11BaseRowType", "baseCell"]
+- !private ["P6Eureka11BaseRowType", "callbackCellOnSelection"]
+- !private ["P6Eureka11BaseRowType", "callbackCellSetup"]
+- !private ["P6Eureka11BaseRowType", "callbackCellUpdate"]
+- !private ["P6Eureka11BaseRowType", "callbackOnCellHighlight"]
+- !private ["P6Eureka11BaseRowType", "callbackOnCellUnHighlight"]
+- !private ["P6Eureka11BaseRowType", "callbackOnChange"]
+- !private ["P6Eureka11BaseRowType", "cell"]
+- ["P6Eureka11BaseRowType", "cellStyle"]
+- ["P6Eureka11BaseRowType", "didSelect"]
+- !private ["P6Eureka11BaseRowType", "init"]
+- ["P6Eureka11BaseRowType", "section"]
+- ["P6Eureka11BaseRowType", "title"]
+- ["P6Eureka11BaseRowType", "updateCell"]
+- ["P6Eureka11BaseRowType", ""]
+- !private ["Sb", "deinit"]
+- !private ["Ps11CVarArgType", "Value"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- ["P6Eureka11Disableable", "Bool"]
+- !private ["P6Eureka11Disableable", "Cell"]
+- ["P6Eureka11Disableable", "Condition"]
+- !private ["P6Eureka11Disableable", "RowDefaults"]
+- !private ["P6Eureka11Disableable", "Value"]
+- !private ["P6Eureka11Disableable", "callbackCellOnSelection"]
+- !private ["P6Eureka11Disableable", "callbackCellSetup"]
+- !private ["P6Eureka11Disableable", "callbackCellUpdate"]
+- !private ["P6Eureka11Disableable", "callbackOnCellHighlight"]
+- !private ["P6Eureka11Disableable", "callbackOnCellUnHighlight"]
+- !private ["P6Eureka11Disableable", "callbackOnChange"]
+- ["P6Eureka11Disableable", "disabled"]
+- ["P6Eureka11Disableable", "evaluateDisabled"]
+- ["P6Eureka11Disableable", "isDisabled"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Cell"]
+- !private ["Ps9Equatable", "RowDefaults"]
+- !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "callbackCellOnSelection"]
+- !private ["Ps9Equatable", "callbackCellSetup"]
+- !private ["Ps9Equatable", "callbackCellUpdate"]
+- !private ["Ps9Equatable", "callbackOnCellHighlight"]
+- !private ["Ps9Equatable", "callbackOnCellUnHighlight"]
+- !private ["Ps9Equatable", "callbackOnChange"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "init"]
+- ["P6Eureka7Hidable", "Bool"]
+- !private ["P6Eureka7Hidable", "Cell"]
+- ["P6Eureka7Hidable", "Condition"]
+- !private ["P6Eureka7Hidable", "RowDefaults"]
+- !private ["P6Eureka7Hidable", "Value"]
+- !private ["P6Eureka7Hidable", "callbackCellOnSelection"]
+- !private ["P6Eureka7Hidable", "callbackCellSetup"]
+- !private ["P6Eureka7Hidable", "callbackCellUpdate"]
+- !private ["P6Eureka7Hidable", "callbackOnCellHighlight"]
+- !private ["P6Eureka7Hidable", "callbackOnCellUnHighlight"]
+- !private ["P6Eureka7Hidable", "callbackOnChange"]
+- ["P6Eureka7Hidable", "evaluateHidden"]
+- ["P6Eureka7Hidable", "hidden"]
+- ["P6Eureka7Hidable", "isHidden"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["P6Eureka18InputTypeInitiable", "init"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- ["P6Eureka21KeyboardReturnHandler", "KeyboardReturnTypeConfiguration"]
+- ["P6Eureka21KeyboardReturnHandler", "keyboardReturnType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "Value"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Value"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["C6Eureka11RowDefaults", "cellSetup"]
+- !private ["C6Eureka11RowDefaults", "cellUpdate"]
+- !private ["C6Eureka11RowDefaults", "onCellHighlight"]
+- !private ["C6Eureka11RowDefaults", "onCellUnHighlight"]
+- !private ["C6Eureka11RowDefaults", "rawCellSetup"]
+- !private ["C6Eureka11RowDefaults", "rawCellUpdate"]
+- !private ["C6Eureka11RowDefaults", "rawOnCellHighlight"]
+- !private ["C6Eureka11RowDefaults", "rawOnCellUnHighlight"]
+- !private ["C6Eureka11RowDefaults", "rawRowInitialization"]
+- !private ["C6Eureka11RowDefaults", "rowInitialization"]
+- !private ["P6Eureka7RowType", "BaseCell"]
+- ["P6Eureka7RowType", "BaseRow"]
+- ["P6Eureka7RowType", "Cell"]
+- !private ["P6Eureka7RowType", "RowDefaults"]
+- ["P6Eureka7RowType", "Self"]
+- ["P6Eureka7RowType", "String"]
+- ["P6Eureka7RowType", "TypedRowType"]
+- !private ["P6Eureka7RowType", "Value"]
+- !private ["P6Eureka7RowType", "Void"]
+- !private ["P6Eureka7RowType", "callbackCellOnSelection"]
+- !private ["P6Eureka7RowType", "callbackCellSetup"]
+- !private ["P6Eureka7RowType", "callbackCellUpdate"]
+- !private ["P6Eureka7RowType", "callbackOnCellHighlight"]
+- !private ["P6Eureka7RowType", "callbackOnCellUnHighlight"]
+- !private ["P6Eureka7RowType", "callbackOnChange"]
+- !private ["P6Eureka7RowType", "cell"]
+- ["P6Eureka7RowType", "cellSetup"]
+- ["P6Eureka7RowType", "cellUpdate"]
+- ["P6Eureka7RowType", "defaultCellSetup"]
+- ["P6Eureka7RowType", "defaultCellUpdate"]
+- ["P6Eureka7RowType", "defaultOnCellHighlight"]
+- ["P6Eureka7RowType", "defaultOnCellUnHighlight"]
+- ["P6Eureka7RowType", "defaultRowInitializer"]
+- ["P6Eureka7RowType", "init"]
+- ["P6Eureka7RowType", "onCellHighlight"]
+- ["P6Eureka7RowType", "onCellSelection"]
+- ["P6Eureka7RowType", "onCellUnHighlight"]
+- ["P6Eureka7RowType", "onChange"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- ["P6Eureka8Taggable", "BaseCell"]
+- !private ["P6Eureka8Taggable", "BaseRow"]
+- ["P6Eureka8Taggable", "Bool"]
+- ["P6Eureka8Taggable", "Cell"]
+- ["P6Eureka8Taggable", "Condition"]
+- ["P6Eureka8Taggable", "Equatable"]
+- ["P6Eureka8Taggable", "KeyboardReturnTypeConfiguration"]
+- !private ["P6Eureka8Taggable", "RowDefaults"]
+- ["P6Eureka8Taggable", "Section"]
+- ["P6Eureka8Taggable", "Self"]
+- ["P6Eureka8Taggable", "String"]
+- ["P6Eureka8Taggable", "TypedCellType"]
+- ["P6Eureka8Taggable", "UITableViewCellStyle"]
+- ["P6Eureka8Taggable", "Value"]
+- !private ["P6Eureka8Taggable", "Void"]
+- !private ["P6Eureka8Taggable", "callbackCellOnSelection"]
+- !private ["P6Eureka8Taggable", "callbackCellSetup"]
+- !private ["P6Eureka8Taggable", "callbackCellUpdate"]
+- !private ["P6Eureka8Taggable", "callbackOnCellHighlight"]
+- !private ["P6Eureka8Taggable", "callbackOnCellUnHighlight"]
+- !private ["P6Eureka8Taggable", "callbackOnChange"]
+- !private ["P6Eureka8Taggable", "cell"]
+- !private ["P6Eureka8Taggable", "init"]
+- ["P6Eureka8Taggable", "tag"]
+- ["P6Eureka8Taggable", ""]
+- !private ["P6Eureka13TypedCellType", "Value"]
+- ["P6Eureka12TypedRowType", "BaseCell"]
+- !private ["P6Eureka12TypedRowType", "BaseRow"]
+- ["P6Eureka12TypedRowType", "Cell"]
+- ["P6Eureka12TypedRowType", "Equatable"]
+- !private ["P6Eureka12TypedRowType", "RowDefaults"]
+- ["P6Eureka12TypedRowType", "Self"]
+- ["P6Eureka12TypedRowType", "String"]
+- ["P6Eureka12TypedRowType", "TypedCellType"]
+- ["P6Eureka12TypedRowType", "Value"]
+- !private ["P6Eureka12TypedRowType", "Void"]
+- !private ["P6Eureka12TypedRowType", "callbackCellOnSelection"]
+- !private ["P6Eureka12TypedRowType", "callbackCellSetup"]
+- !private ["P6Eureka12TypedRowType", "callbackCellUpdate"]
+- !private ["P6Eureka12TypedRowType", "callbackOnCellHighlight"]
+- !private ["P6Eureka12TypedRowType", "callbackOnCellUnHighlight"]
+- !private ["P6Eureka12TypedRowType", "callbackOnChange"]
+- ["P6Eureka12TypedRowType", "cell"]
+- !private ["P6Eureka12TypedRowType", "init"]
+- ["P6Eureka12TypedRowType", "value"]
+- !private ["PSo29UIAccessibilityIdentification", "Value"]
+- !private ["PSo12UIAppearance", "Value"]
+- !private ["PSo21UIAppearanceContainer", "Value"]
+- !private ["PSo17UICoordinateSpace", "Value"]
+- !private ["PSo13UIDynamicItem", "Value"]
+- !private ["PSo18UIFocusEnvironment", "Value"]
+- !private ["PSo27UIGestureRecognizerDelegate", "Value"]
+- !private ["CSo11UIResponder", "Value"]
+- !private ["CSo15UITableViewCell", "Value"]
+- !private ["PSo18UITraitEnvironment", "Value"]
+- !private ["CSo6UIView", "Value"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "C6Eureka8BaseCell"
+- !private "P6Eureka12BaseCellType"
+- "C6Eureka7BaseRow"
+- "P6Eureka11BaseRowType"
+- !private "Sb"
+- !private "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "P6Eureka11Disableable"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps13GeneratorType"
+- !private "Ps8Hashable"
+- "P6Eureka7Hidable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "P6Eureka18InputTypeInitiable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- "P6Eureka21KeyboardReturnHandler"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "C6Eureka11RowDefaults"
+- "P6Eureka7RowType"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "P6Eureka8Taggable"
+- !private "P6Eureka13TypedCellType"
+- "P6Eureka12TypedRowType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo11UIResponder"
+- !private "CSo15UITableViewCell"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/capitalhigh/Desktop/Eureka-master/Source/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/unextended-module.modulemap"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "6bf6730a85cb65c17f9df4909662533b"

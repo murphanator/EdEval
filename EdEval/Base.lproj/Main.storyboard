@@ -21,13 +21,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Xh4-yC-HjG">
                                 <rect key="frame" x="77" y="101" width="453" height="460"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo Images" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-sj-kZT">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Images" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-sj-kZT">
                                         <rect key="frame" x="107" y="0.0" width="240" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="0Cg-m6-ni5"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQV-6z-Une">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQV-6z-Une">
                                         <rect key="frame" x="13" y="205" width="428" height="115"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
@@ -38,7 +38,7 @@
                                             <segue destination="6v1-v2-eQm" kind="show" id="mIB-Es-7Jb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="428" placeholderIntrinsicHeight="141" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-nB-Zxo">
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="428" placeholderIntrinsicHeight="141" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-nB-Zxo">
                                         <rect key="frame" x="13" y="345" width="428" height="115"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>

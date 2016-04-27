@@ -1,0 +1,53 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "checky"
+- "textboxy"
+- "GlobalVariables1"
+- "globalVariablesInstance"
+provides-nominal:
+- "C6EdEval16GlobalVariables1"
+provides-member:
+- ["C6EdEval16GlobalVariables1", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "checky"
+- "String"
+- "IntegerLiteralType"
+- "Int"
+- "StringLiteralType"
+- "GlobalVariables1"
+- "globalVariablesInstance"
+- "textboxy"
+- "FloatLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "checky"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "textboxy"]
+- ["Ps9AnyObject", ""]
+- ["C6EdEval16GlobalVariables1", "Int"]
+- ["C6EdEval16GlobalVariables1", "String"]
+- !private ["C6EdEval16GlobalVariables1", "checky"]
+- ["C6EdEval16GlobalVariables1", "deinit"]
+- ["C6EdEval16GlobalVariables1", "init"]
+- ["C6EdEval16GlobalVariables1", "numberOfCheckboxes"]
+- ["C6EdEval16GlobalVariables1", "textboxTitleArray"]
+- !private ["C6EdEval16GlobalVariables1", "textboxy"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C6EdEval16GlobalVariables1"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "81010b428b9fd9bc50f0f8a0e36fe64d"

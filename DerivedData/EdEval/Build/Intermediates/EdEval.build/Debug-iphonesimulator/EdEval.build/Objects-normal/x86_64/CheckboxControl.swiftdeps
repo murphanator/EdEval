@@ -6,39 +6,39 @@ provides-nominal:
 provides-member:
 - ["C6EdEval15CheckboxControl", ""]
 provides-dynamic-lookup:
+- "checkboxTotal"
 - "spacing"
-- "layoutSubviews"
 - "checkboxTapped"
 - "checkButtons"
-- "checkTxtField"
-- "checkboxTotal"
-- "buttonNumberTapped"
 - "arrayOfCheckboxTitles"
+- "checkTxtField"
 - "updateButtonSelectionStates"
+- "layoutSubviews"
+- "buttonNumberTapped"
 depends-top-level:
+- !private "print"
 - "UITextField"
-- !private "/"
-- !private "=="
-- "UIButton"
 - !private "*"
 - "StringLiteralType"
-- !private "+="
-- !private "UIColor"
-- !private "print"
-- !private "+"
+- !private "=="
 - "String"
 - !private "UITextBorderStyle"
 - "UIView"
+- "CheckboxControl"
+- !private "..<"
+- !private "+="
+- "Int"
+- !private "UIColor"
+- "NSCoder"
+- !private "CGFloat"
+- !private "+"
+- !private "Array"
+- !private "UIImage"
+- "UIButton"
+- !private "/"
+- !private "BooleanLiteralType"
 - !private "-"
 - !private "CGRect"
-- "NSCoder"
-- "Int"
-- !private "..<"
-- !private "Array"
-- !private "CGFloat"
-- "CheckboxControl"
-- !private "UIImage"
-- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -442,6 +442,11 @@ depends-member:
 - !private ["Ps9Indexable", "selected"]
 - !private ["Ps9Indexable", "subscript"]
 - ["Vs17IndexingGenerator", "Element"]
+- ["P6Eureka18InputTypeInitiable", "Distance"]
+- ["P6Eureka18InputTypeInitiable", "IntegerLiteralType"]
+- !private ["P6Eureka18InputTypeInitiable", "Stride"]
+- !private ["P6Eureka18InputTypeInitiable", "_DisabledRangeIndex"]
+- !private ["P6Eureka18InputTypeInitiable", "init"]
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
 - !private ["Si", "Stride"]
@@ -1257,6 +1262,7 @@ depends-nominal:
 - "Ps8Hashable"
 - "Ps9Indexable"
 - "Vs17IndexingGenerator"
+- "P6Eureka18InputTypeInitiable"
 - "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -1350,5 +1356,9 @@ depends-external:
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "ca22f731a392f6ba3c22e8cae7b30685"

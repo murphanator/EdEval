@@ -1,0 +1,342 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "_PushRow"
+- "PushRow"
+provides-nominal:
+- "C6Eureka8_PushRow"
+- "C6Eureka7PushRow"
+provides-member:
+- ["C6Eureka8_PushRow", ""]
+- ["C6Eureka7PushRow", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "BooleanLiteralType"
+- "CellType"
+- "SelectorRow"
+- "PushSelectorCell"
+- "TypedCellType"
+- "BaseCell"
+- "PushRow"
+- "SelectorViewController"
+- "_PushRow"
+- "Equatable"
+- !private "ControllerProvider"
+- "RowType"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "Cell"]
+- !private ["Ps9AnyObject", "ControllerProvider"]
+- !private ["Ps9AnyObject", "RowValue"]
+- !private ["Ps9AnyObject", "SelectorViewController"]
+- ["Ps9AnyObject", "Value"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "popViewControllerAnimated"]
+- !private ["Ps9AnyObject", "presentationMode"]
+- ["Ps9AnyObject", ""]
+- ["C6Eureka8BaseCell", "Value"]
+- ["P6Eureka12BaseCellType", "Value"]
+- ["C6Eureka7BaseRow", "Cell"]
+- !private ["C6Eureka7BaseRow", "ControllerProvider"]
+- !private ["C6Eureka7BaseRow", "SelectorViewController"]
+- ["C6Eureka7BaseRow", "String"]
+- !private ["C6Eureka7BaseRow", "T"]
+- ["C6Eureka7BaseRow", "Value"]
+- ["C6Eureka7BaseRow", "init"]
+- !private ["C6Eureka7BaseRow", "presentationMode"]
+- ["P6Eureka11BaseRowType", "Cell"]
+- !private ["P6Eureka11BaseRowType", "ControllerProvider"]
+- !private ["P6Eureka11BaseRowType", "SelectorViewController"]
+- ["P6Eureka11BaseRowType", "Value"]
+- ["P6Eureka11BaseRowType", "init"]
+- !private ["P6Eureka11BaseRowType", "presentationMode"]
+- ["P6Eureka11BaseRowType", ""]
+- !private ["Ps11CVarArgType", "RowValue"]
+- ["Ps11CVarArgType", "Value"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "popViewControllerAnimated"]
+- ["C6Eureka4Cell", "Value"]
+- ["P6Eureka8CellType", "Value"]
+- !private ["O6Eureka18ControllerProvider", "Callback"]
+- !private ["Ps28CustomDebugStringConvertible", "RowValue"]
+- !private ["Ps28CustomDebugStringConvertible", "Show"]
+- ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "popViewControllerAnimated"]
+- !private ["Ps23CustomStringConvertible", "RowValue"]
+- ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "popViewControllerAnimated"]
+- ["P6Eureka11Disableable", "Cell"]
+- !private ["P6Eureka11Disableable", "ControllerProvider"]
+- !private ["P6Eureka11Disableable", "SelectorViewController"]
+- ["P6Eureka11Disableable", "Value"]
+- ["P6Eureka11Disableable", "init"]
+- !private ["P6Eureka11Disableable", "presentationMode"]
+- ["P6Eureka11Disableable", ""]
+- ["Ps9Equatable", "Cell"]
+- !private ["Ps9Equatable", "ControllerProvider"]
+- !private ["Ps9Equatable", "RowValue"]
+- !private ["Ps9Equatable", "SelectorViewController"]
+- ["Ps9Equatable", "Value"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "popViewControllerAnimated"]
+- !private ["Ps9Equatable", "presentationMode"]
+- ["Ps9Equatable", ""]
+- !private ["P6Eureka12FormDelegate", "RowValue"]
+- !private ["P6Eureka12FormDelegate", "init"]
+- !private ["C6Eureka18FormViewController", "RowValue"]
+- !private ["P6Eureka26FormViewControllerProtocol", "RowValue"]
+- !private ["P6Eureka26FormViewControllerProtocol", "init"]
+- !private ["Ps8Hashable", "RowValue"]
+- ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "popViewControllerAnimated"]
+- ["P6Eureka7Hidable", "Cell"]
+- !private ["P6Eureka7Hidable", "ControllerProvider"]
+- !private ["P6Eureka7Hidable", "SelectorViewController"]
+- ["P6Eureka7Hidable", "Value"]
+- ["P6Eureka7Hidable", "init"]
+- !private ["P6Eureka7Hidable", "presentationMode"]
+- ["P6Eureka7Hidable", ""]
+- !private ["C6Eureka13ListCheckCell", "Value"]
+- !private ["C6Eureka13ListCheckCell", "deinit"]
+- !private ["C6Eureka12ListCheckRow", "Cell"]
+- !private ["C6Eureka12ListCheckRow", "Value"]
+- !private ["C6Eureka12ListCheckRow", "deinit"]
+- !private ["PSo8NSCoding", "RowValue"]
+- ["PSo8NSCoding", "Value"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "popViewControllerAnimated"]
+- !private ["PSo26NSExtensionRequestHandling", "RowValue"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
+- !private ["CSo8NSObject", "RowValue"]
+- ["CSo8NSObject", "Value"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "popViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "RowValue"]
+- ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
+- !private ["Ps21NilLiteralConvertible", "Show"]
+- !private ["Sq", "Show"]
+- ["C6Eureka10OptionsRow", "Cell"]
+- !private ["C6Eureka10OptionsRow", "ControllerProvider"]
+- !private ["C6Eureka10OptionsRow", "SelectorViewController"]
+- ["C6Eureka10OptionsRow", "String"]
+- !private ["C6Eureka10OptionsRow", "T"]
+- ["C6Eureka10OptionsRow", "Value"]
+- ["C6Eureka10OptionsRow", "init"]
+- !private ["C6Eureka10OptionsRow", "presentationMode"]
+- !private ["O6Eureka16PresentationMode", "Show"]
+- ["P6Eureka16PresenterRowType", "Cell"]
+- !private ["P6Eureka16PresenterRowType", "ControllerProvider"]
+- !private ["P6Eureka16PresenterRowType", "SelectorViewController"]
+- ["P6Eureka16PresenterRowType", "Value"]
+- ["P6Eureka16PresenterRowType", "init"]
+- !private ["P6Eureka16PresenterRowType", "presentationMode"]
+- ["P6Eureka16PresenterRowType", ""]
+- ["C6Eureka7PushRow", "Cell"]
+- ["C6Eureka7PushRow", "String"]
+- ["C6Eureka7PushRow", "Value"]
+- ["C6Eureka7PushRow", "deinit"]
+- ["C6Eureka7PushRow", "init"]
+- ["C6Eureka16PushSelectorCell", "Value"]
+- ["C6Eureka16PushSelectorCell", "deinit"]
+- ["C6Eureka3Row", "Cell"]
+- !private ["C6Eureka3Row", "ControllerProvider"]
+- !private ["C6Eureka3Row", "SelectorViewController"]
+- ["C6Eureka3Row", "String"]
+- !private ["C6Eureka3Row", "T"]
+- ["C6Eureka3Row", "Value"]
+- ["C6Eureka3Row", "init"]
+- !private ["C6Eureka3Row", "presentationMode"]
+- !private ["P6Eureka17RowControllerType", "RowValue"]
+- !private ["P6Eureka17RowControllerType", "init"]
+- ["C6Eureka5RowOf", "Cell"]
+- !private ["C6Eureka5RowOf", "ControllerProvider"]
+- !private ["C6Eureka5RowOf", "SelectorViewController"]
+- ["C6Eureka5RowOf", "String"]
+- !private ["C6Eureka5RowOf", "T"]
+- ["C6Eureka5RowOf", "Value"]
+- ["C6Eureka5RowOf", "init"]
+- !private ["C6Eureka5RowOf", "presentationMode"]
+- ["P6Eureka7RowType", "Cell"]
+- ["P6Eureka7RowType", "Value"]
+- ["P6Eureka7RowType", "init"]
+- ["P6Eureka7RowType", ""]
+- !private ["P6Eureka17SelectableRowType", "Cell"]
+- !private ["P6Eureka17SelectableRowType", "Value"]
+- ["C6Eureka11SelectorRow", "Cell"]
+- !private ["C6Eureka11SelectorRow", "ControllerProvider"]
+- !private ["C6Eureka11SelectorRow", "SelectorViewController"]
+- ["C6Eureka11SelectorRow", "String"]
+- !private ["C6Eureka11SelectorRow", "T"]
+- ["C6Eureka11SelectorRow", "Value"]
+- ["C6Eureka11SelectorRow", "init"]
+- !private ["C6Eureka11SelectorRow", "presentationMode"]
+- ["C6Eureka11SelectorRow", ""]
+- !private ["C6Eureka22SelectorViewController", "RowValue"]
+- ["C6Eureka22SelectorViewController", "deinit"]
+- !private ["C6Eureka22SelectorViewController", "init"]
+- ["P6Eureka8Taggable", "Cell"]
+- !private ["P6Eureka8Taggable", "ControllerProvider"]
+- !private ["P6Eureka8Taggable", "SelectorViewController"]
+- ["P6Eureka8Taggable", "Value"]
+- ["P6Eureka8Taggable", "init"]
+- !private ["P6Eureka8Taggable", "presentationMode"]
+- ["P6Eureka8Taggable", ""]
+- ["P6Eureka13TypedCellType", "Value"]
+- !private ["P6Eureka22TypedRowControllerType", "RowValue"]
+- !private ["P6Eureka22TypedRowControllerType", "init"]
+- ["P6Eureka12TypedRowType", "Cell"]
+- !private ["P6Eureka12TypedRowType", "ControllerProvider"]
+- !private ["P6Eureka12TypedRowType", "SelectorViewController"]
+- ["P6Eureka12TypedRowType", "Value"]
+- ["P6Eureka12TypedRowType", "init"]
+- !private ["P6Eureka12TypedRowType", "presentationMode"]
+- ["P6Eureka12TypedRowType", ""]
+- ["PSo29UIAccessibilityIdentification", "Value"]
+- ["PSo12UIAppearance", "Value"]
+- !private ["PSo21UIAppearanceContainer", "RowValue"]
+- ["PSo21UIAppearanceContainer", "Value"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
+- !private ["PSo18UIContentContainer", "RowValue"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
+- ["PSo17UICoordinateSpace", "Value"]
+- ["PSo13UIDynamicItem", "Value"]
+- !private ["PSo18UIFocusEnvironment", "RowValue"]
+- ["PSo18UIFocusEnvironment", "Value"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
+- ["PSo27UIGestureRecognizerDelegate", "Value"]
+- !private ["CSo22UINavigationController", "popViewControllerAnimated"]
+- !private ["CSo11UIResponder", "RowValue"]
+- ["CSo11UIResponder", "Value"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "popViewControllerAnimated"]
+- !private ["PSo20UIScrollViewDelegate", "RowValue"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo16UIStateRestoring", "RowValue"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
+- ["CSo15UITableViewCell", "Value"]
+- !private ["PSo21UITableViewDataSource", "RowValue"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo19UITableViewDelegate", "RowValue"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo18UITraitEnvironment", "RowValue"]
+- ["PSo18UITraitEnvironment", "Value"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
+- ["CSo6UIView", "Value"]
+- !private ["CSo16UIViewController", "RowValue"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "popViewControllerAnimated"]
+- ["C6Eureka8_PushRow", "Cell"]
+- !private ["C6Eureka8_PushRow", "ControllerProvider"]
+- !private ["C6Eureka8_PushRow", "SelectorViewController"]
+- ["C6Eureka8_PushRow", "String"]
+- !private ["C6Eureka8_PushRow", "T"]
+- ["C6Eureka8_PushRow", "Value"]
+- ["C6Eureka8_PushRow", "deinit"]
+- ["C6Eureka8_PushRow", "init"]
+- !private ["C6Eureka8_PushRow", "presentationMode"]
+- ["C6Eureka8_PushRow", ""]
+- !private ["Ps12_Reflectable", "Show"]
+- ["Ps12_Reflectable", "Value"]
+- !private ["C6Eureka23_SelectorViewController", "RowValue"]
+- !private ["C6Eureka23_SelectorViewController", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C6Eureka8BaseCell"
+- "P6Eureka12BaseCellType"
+- "C6Eureka7BaseRow"
+- "P6Eureka11BaseRowType"
+- "Ps11CVarArgType"
+- "C6Eureka4Cell"
+- "P6Eureka8CellType"
+- !private "O6Eureka18ControllerProvider"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "P6Eureka11Disableable"
+- "Ps9Equatable"
+- !private "P6Eureka12FormDelegate"
+- !private "C6Eureka18FormViewController"
+- !private "P6Eureka26FormViewControllerProtocol"
+- "Ps8Hashable"
+- "P6Eureka7Hidable"
+- !private "C6Eureka13ListCheckCell"
+- !private "C6Eureka12ListCheckRow"
+- "PSo8NSCoding"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps21NilLiteralConvertible"
+- !private "Sq"
+- "C6Eureka10OptionsRow"
+- !private "O6Eureka16PresentationMode"
+- "P6Eureka16PresenterRowType"
+- "C6Eureka7PushRow"
+- "C6Eureka16PushSelectorCell"
+- "C6Eureka3Row"
+- !private "P6Eureka17RowControllerType"
+- "C6Eureka5RowOf"
+- "P6Eureka7RowType"
+- !private "P6Eureka17SelectableRowType"
+- "C6Eureka11SelectorRow"
+- "C6Eureka22SelectorViewController"
+- "P6Eureka8Taggable"
+- "P6Eureka13TypedCellType"
+- !private "P6Eureka22TypedRowControllerType"
+- "P6Eureka12TypedRowType"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- !private "PSo20UIScrollViewDelegate"
+- !private "PSo16UIStateRestoring"
+- "CSo15UITableViewCell"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "CSo16UIViewController"
+- "C6Eureka8_PushRow"
+- "Ps12_Reflectable"
+- !private "C6Eureka23_SelectorViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/capitalhigh/Desktop/Eureka-master/Source/Eureka.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/unextended-module.modulemap"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "0d7867aabe0f90d8fc7accbc52910d71"
