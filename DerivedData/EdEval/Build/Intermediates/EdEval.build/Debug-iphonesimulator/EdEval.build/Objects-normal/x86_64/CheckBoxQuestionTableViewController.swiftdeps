@@ -6,7 +6,6 @@ provides-nominal:
 provides-member:
 - ["C6EdEval35CheckBoxQuestionTableViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "questions"
 - "tblView"
 - "didReceiveMemoryWarning"
@@ -18,20 +17,21 @@ provides-dynamic-lookup:
 - "tableView"
 - "numberOfSectionsInTableView"
 - "CellIdentifier"
+- "viewDidLoad"
 depends-top-level:
-- "Bool"
-- !private "=="
 - "Int"
-- "UITableView"
+- "CheckBoxQuestionTableViewController"
+- !private "Array"
 - "StringLiteralType"
+- !private "=="
+- "UITableViewCell"
+- "Bool"
+- "UITableViewController"
 - "UITableViewCellEditingStyle"
 - "QuestionTableViewCell"
-- !private "Array"
-- "UITableViewCell"
+- "UITableView"
 - "NSIndexPath"
 - !private "BooleanLiteralType"
-- "UITableViewController"
-- "CheckBoxQuestionTableViewController"
 depends-member:
 - ["Ps9AnyObject", "CellIdentifier"]
 - ["Ps9AnyObject", "QuestionTableViewCell"]

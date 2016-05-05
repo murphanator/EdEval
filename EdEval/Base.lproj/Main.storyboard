@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -442,7 +443,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="reportLabel" destination="yiP-Kw-Nbk" id="ynN-Pv-p22"/>
-                                    <segue destination="diM-SY-7bu" kind="show" identifier="reportSegue" id="xDe-ed-WMK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -452,16 +452,29 @@
                         </connections>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="DfH-Aj-XS3"/>
+                        <barButtonItem title="New2" id="DfH-Aj-XS3"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Reports" id="0jO-5e-fV5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AW6-gF-2q3"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="AW6-gF-2q3"/>
+                            <barButtonItem style="plain" id="ckh-xx-Idd">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fsf-CS-Hya">
+                                    <rect key="frame" x="411" y="7" width="133" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="NEW"/>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="bPH-dF-b4s" kind="show" identifier="reportSegue" id="c5u-Bw-A7C"/>
+                        <segue destination="B5Z-I9-SR2" kind="show" identifier="mathK6Segue" id="YsV-6y-DA7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBf-NZ-c0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2628" y="966"/>
+            <point key="canvasLocation" x="2517" y="1146"/>
         </scene>
         <!--Reading K6-->
         <scene sceneID="Eyw-25-Nk1">
@@ -1064,7 +1077,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEd-uk-KpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="1516"/>
+            <point key="canvasLocation" x="3544" y="1146"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="SQc-Qe-qni">
@@ -1089,10 +1102,14 @@
                             <outlet property="delegate" destination="of9-vG-fzd" id="1Re-lm-I89"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="efv-x0-jHV">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="mjs-ga-4HW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="zmD-bH-x8k"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CY-Bs-3AU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="2272"/>
+            <point key="canvasLocation" x="5127" y="2272"/>
         </scene>
         <!--Checkbox Slider View Controller-->
         <scene sceneID="2mb-Xh-EpD">
@@ -1191,24 +1208,41 @@
             </objects>
             <point key="canvasLocation" x="1764" y="674"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5jZ-Lx-13E">
+        <!--Math K6 View-->
+        <scene sceneID="x07-c0-9jK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="diM-SY-7bu" sceneMemberID="viewController">
+                <viewController id="B5Z-I9-SR2" userLabel="Math K6 View" customClass="MathK6View" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="906-g4-8bY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ec9-xf-Eqq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YP6-X1-xSf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgu-Bu-UWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3544" y="1889"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5qW-YQ-TnS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JSS-Sb-OcQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fym-3x-E4M">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ub-8R-WNl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bPH-dF-b4s" kind="relationship" relationship="rootViewController" id="Fuf-NU-y6c"/>
-                        <segue destination="of9-vG-fzd" kind="show" id="aLV-Pe-Xmw"/>
+                        <segue destination="of9-vG-fzd" kind="relationship" relationship="rootViewController" id="Ase-pD-GPM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0oL-MD-G7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tj6-E1-0Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3458" y="1516"/>
+            <point key="canvasLocation" x="4270" y="2272"/>
         </scene>
     </scenes>
     <resources>

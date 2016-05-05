@@ -7,9 +7,9 @@ provides-member:
 - ["P6Eureka17SelectableRowType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "RowType"
 - "TypedRowType"
 - "SelectableRowType"
+- "RowType"
 depends-member:
 - ["Ps9AnyObject", "Value"]
 - ["P6Eureka11BaseRowType", "Value"]

@@ -7,25 +7,25 @@ provides-member:
 - ["C6EdEval28CheckboxSliderViewController", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "SliderForCheckbox"
 - "currentValue"
+- "viewDidLoad"
 - "sliderValueChanged"
 - "labelForSlider"
 - "prepareForSegue"
 depends-top-level:
-- "CheckboxSliderViewController"
 - "UILabel"
-- !private "globalVariablesInstance"
+- "CheckboxSliderViewController"
+- !private "GlobalVariables1"
 - "UIStoryboardSegue"
-- !private "Int"
 - !private "StringLiteralType"
 - !private "=="
-- "AnyObject"
 - "UIViewController"
 - "UISlider"
-- !private "GlobalVariables1"
+- !private "Int"
 - !private "Array"
+- !private "globalVariablesInstance"
+- "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "GlobalVariables1"]
 - !private ["Ps9AnyObject", "Int"]

@@ -10,6 +10,7 @@
 		25032FD11BD1762400D314AB /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25032FD01BD1762400D314AB /* TeacherData.swift */; };
 		25032FD21BD1762400D314AB /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25032FD01BD1762400D314AB /* TeacherData.swift */; };
 		25087A7B1CD0491A00B1253B /* MathK6TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25087A7A1CD0491A00B1253B /* MathK6TableViewController.swift */; };
+		253305781CD97D1E0072BECA /* MathK6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253305771CD97D1E0072BECA /* MathK6View.swift */; };
 		2565D4EC1C3B612D002DF002 /* CheckboxSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */; };
 		256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */; };
 		2576A9731C5434EA00AB98E4 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576A9721C5434EA00AB98E4 /* Report.swift */; };
@@ -88,6 +89,7 @@
 /* Begin PBXFileReference section */
 		25032FD01BD1762400D314AB /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
 		25087A7A1CD0491A00B1253B /* MathK6TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathK6TableViewController.swift; sourceTree = "<group>"; };
+		253305771CD97D1E0072BECA /* MathK6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathK6View.swift; sourceTree = "<group>"; };
 		2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxSliderViewController.swift; sourceTree = "<group>"; };
 		256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		2576A9721C5434EA00AB98E4 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				25032FD01BD1762400D314AB /* TeacherData.swift */,
 				25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */,
 				257C43F41BCCA8EE00F852B3 /* Main.storyboard */,
+				253305771CD97D1E0072BECA /* MathK6View.swift */,
 				25A09B241C5D70C200789F90 /* ReadingK6Data.swift */,
 				25A0E7A41C58749100DC5899 /* ReadingK6View.swift */,
 				25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */,
@@ -263,6 +266,7 @@
 				TargetAttributes = {
 					257C43EC1BCCA8EE00F852B3 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 4N4A98TWR9;
 					};
 					257C44001BCCA8EE00F852B3 = {
 						CreatedOnToolsVersion = 7.1;
@@ -350,6 +354,7 @@
 				256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */,
 				25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */,
 				25A09B251C5D70C200789F90 /* ReadingK6Data.swift in Sources */,
+				253305781CD97D1E0072BECA /* MathK6View.swift in Sources */,
 				25CE02FC1C4D698400BD90F6 /* GlobalVariables.swift in Sources */,
 				257C43F31BCCA8EE00F852B3 /* WalkThruViewController.swift in Sources */,
 				257C43F11BCCA8EE00F852B3 /* AppDelegate.swift in Sources */,
@@ -495,11 +500,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = EdEval/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OurCompanyName.EdEval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -507,11 +515,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = EdEval/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OurCompanyName.EdEval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

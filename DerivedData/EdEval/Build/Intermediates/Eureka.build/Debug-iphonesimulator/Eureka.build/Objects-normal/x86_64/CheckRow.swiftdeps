@@ -12,26 +12,26 @@ provides-member:
 - ["C6Eureka9_CheckRow", ""]
 - ["C6Eureka8CheckRow", ""]
 provides-dynamic-lookup:
+- "update"
 - "setup"
 - "didSelect"
-- "update"
 depends-top-level:
 - "CheckCell"
-- "_CheckRow"
-- !private "BaseRow"
-- "Row"
-- "Bool"
-- !private "=="
 - "UITableViewCellStyle"
-- "RowType"
-- "Cell"
-- !private "??"
-- "CellType"
-- "CheckRow"
-- !private "CGFloat"
-- !private "BooleanLiteralType"
+- "Bool"
 - !private "UIColor"
 - "String"
+- !private "=="
+- "_CheckRow"
+- "RowType"
+- "Row"
+- !private "BaseRow"
+- "Cell"
+- !private "BooleanLiteralType"
+- "CheckRow"
+- !private "??"
+- "CellType"
+- !private "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "BaseRow"]
 - ["Ps9AnyObject", "Cell"]

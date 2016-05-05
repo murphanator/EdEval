@@ -16,19 +16,19 @@ provides-member:
 provides-dynamic-lookup:
 - "eurekaInvalidate"
 depends-top-level:
-- "Section"
-- "CGFloat"
-- "HeaderFooterType"
-- "HeaderFooterView"
-- "=="
-- "StringLiteralConvertible"
 - "UIView"
-- !private "??"
-- "FormViewController"
-- "NSBundle"
+- "HeaderFooterType"
+- "StringLiteralConvertible"
+- "=="
 - "String"
+- "CGFloat"
+- "HeaderFooterView"
+- !private "??"
+- "NSBundle"
+- "FormViewController"
 - "HeaderFooterViewRepresentable"
 - "HeaderFooterProvider"
+- "Section"
 depends-member:
 - ["Ps9AnyObject", "eurekaInvalidate"]
 - !private ["Ps9AnyObject", "footerView"]

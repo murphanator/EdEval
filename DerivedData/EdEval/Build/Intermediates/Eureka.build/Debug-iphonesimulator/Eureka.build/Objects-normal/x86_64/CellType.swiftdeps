@@ -13,15 +13,15 @@ provides-member:
 - ["P6Eureka8CellType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CellType"
 - "CGFloat"
-- "RowOf"
-- "Direction"
-- "Equatable"
-- "BaseCellType"
-- "Bool"
-- "TypedCellType"
+- "CellType"
 - "FormViewController"
+- "TypedCellType"
+- "RowOf"
+- "Bool"
+- "BaseCellType"
+- "Equatable"
+- "Direction"
 depends-member:
 - ["P6Eureka12BaseCellType", "Bool"]
 - ["P6Eureka12BaseCellType", "CGFloat"]

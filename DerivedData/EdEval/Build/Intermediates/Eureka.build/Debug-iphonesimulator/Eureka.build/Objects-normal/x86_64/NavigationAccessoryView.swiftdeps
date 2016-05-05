@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C6Eureka23NavigationAccessoryView", ""]
 provides-dynamic-lookup:
-- "previousButton"
 - "doneButton"
-- "touchesBegan"
+- "previousButton"
 - "nextButton"
+- "touchesBegan"
 depends-top-level:
-- "UIBarButtonSystemItem"
-- "UIBarButtonItem"
-- "UIEvent"
-- "NavigationAccessoryView"
-- "NSCoder"
 - "UITouch"
+- "NavigationAccessoryView"
 - "UIToolbar"
-- !private "BooleanLiteralType"
-- !private "Array"
 - "CGRect"
 - !private "CGRectMake"
 - "Set"
+- "UIBarButtonItem"
+- !private "Array"
+- "UIBarButtonSystemItem"
+- "NSCoder"
+- "UIEvent"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
 - ["Ps9AnyObject", "UIBarButtonItem"]

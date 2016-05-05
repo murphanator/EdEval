@@ -7,10 +7,10 @@ provides-member:
 - ["C6EdEval13ReadingK6Data", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "Bool"
-- "Int"
 - "ReadingK6Data"
+- "String"
+- "Int"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "checkBoxLabel"]
 - !private ["Ps9AnyObject", "checkBoxes"]

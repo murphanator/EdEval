@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C6EdEval20ExampleTableViewCell", ""]
 provides-dynamic-lookup:
+- "awakeFromNib"
 - "checkMark"
 - "setSelected"
-- "awakeFromNib"
 depends-top-level:
 - "UITableViewDelegate"
-- "Bool"
 - "UIImageView"
-- "ExampleTableViewCell"
 - "UITableViewCell"
+- "ExampleTableViewCell"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "checkMark"]

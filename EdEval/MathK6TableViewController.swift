@@ -14,11 +14,50 @@ import CoreLocation
 
 //class MathK6TableViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
 
-class MathK6TableViewController: FormViewController {
+class MathK6TableViewController: FormViewController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("MathK6 ... Made it in")
+        URLRow.defaultCellUpdate = {cell,row in cell.textField.textColor = .blueColor()}
+        LabelRow.defaultCellUpdate = {cell, row in cell.detailTextLabel?.textColor = .orangeColor()}
+        CheckRow.defaultCellUpdate = {cell, row in cell.tintColor = .orangeColor()}
+        DateRow.defaultRowInitializer = {row in row.minimumDate = NSDate()}
+        
+        form =
+            Section()
+            <<< LabelRow(){
+                    $0.title = " Math LabelRow Example"
+                    $0.value = " Tap the Row"
+                }
+            .onCellSelection{cell, row in
+                row.title = "Math Title thingy"
+                row.reload()
+            }
+            <<< DateRow() {
+                $0.value = NSDate()
+                $0.title = "DateRow"
+            }
+        
+            <<< CheckRow(){
+                $0.title = "CheckRow"
+                $0.value = true
+            }
+            <<< SwitchRow(){
+                $0.title = "SwitchRow"
+                $0.value = true
+            }
+        
+        +++ Section("Section test")
+            <<< SliderRow(){
+                $0.title = "SliderRow"
+                $0.value = 5.0
+            }
+        
+        
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,6 +67,7 @@ class MathK6TableViewController: FormViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        print("didReceiveMemoryWarning...MADE IT IN")
         // Dispose of any resources that can be recreated.
     }
 
@@ -35,11 +75,13 @@ class MathK6TableViewController: FormViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        print("number of Sections in tableview ...MADE IT IN")
         return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print("tableview ...MADE IT IN")
         return 0
     }
 

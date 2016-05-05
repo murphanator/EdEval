@@ -7,8 +7,13 @@
 //
 
 import UIKit
+//import Eureka
+//import CoreLocation
+
+//MARK: ReportsTableControllers
 
 class ReportsTableControllers: UITableViewController {
+//class ReportsTableControllers: FormViewController {
     
     //This array will store the names of each report
     var reportTableData = [Report]()
@@ -19,7 +24,7 @@ class ReportsTableControllers: UITableViewController {
         loadDefaultReports()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
@@ -87,8 +92,16 @@ class ReportsTableControllers: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //Code to be run on tableViewCell touch
+       //4.30 let cellIndex = indexPath.row
+        let cellIndex = indexPath.row
+        print("cellIndex= ", cellIndex)
         
-        
+        if cellIndex == 0 {
+            self.performSegueWithIdentifier("reportSegue", sender: self)
+        }
+        else if cellIndex == 1 {
+            self.performSegueWithIdentifier("mathK6Segue", sender: self)
+        }
     }
     
     /*
@@ -104,25 +117,81 @@ class ReportsTableControllers: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "reportSegue" {
+        if (segue.identifier == "reportSegue"){
+            //let nav = segue.destinationViewController as? UINavigationController
+            //let reportVC = nav!.topViewController as! Readingk6ViewController
+            let reportVC = segue.destinationViewController as? Readingk6ViewController
+            //let row = (sender as! NSIndexPath).row
+            print("reportVC = ", reportVC)
+            //print("row = ", row)
+        }
+        // Pass the selected object to the new view controller.
+        else if (segue.identifier == "mathK6Segue"){
+            //let nav2 = (segue.destinationViewController as! UINavigationController).topViewController as! MathK6View
+            //let row2 = (sender as! NSIndexPath).row
+            let mathK6VC = segue.destinationViewController as? MathK6View
+            print("mathK6VC = ", mathK6VC)
+            //print("row = ", row2)
+        }
+
+        
+        
+        
+        //let nav = segue.destinationViewController as! UINavigationController
+/************************
+        if (segue.identifier == "reportSegue") {
             //get the ReadingK6 view controller,downcast
             let nav = segue.destinationViewController as! UINavigationController
+
             let reportVC = nav.topViewController as! Readingk6ViewController
+            //let reportVC = segue.destinationViewController as! Readingk6ViewController
+            
+            print("report segue= ", reportVC)
             
             //get the selected cell's indexPath
-            let thePath = tableView.indexPathForCell(sender as! UITableViewCell)!
+        //    let thePath = tableView.indexPathForCell(sender as! UITableViewCell)!
             //get the cell
-            let theCell = tableView.cellForRowAtIndexPath(thePath)
+        //    let theCell = tableView.cellForRowAtIndexPath(thePath)
             //get the name of the cell
-            let cellName = theCell?.textLabel?.text
+        //    let cellName = theCell?.textLabel?.text
             //let cellName = theCell.reportLabel.text
-            reportVC.title = cellName
-            print("cell Name=",cellName, " the cell= ", theCell)
+        //    reportVC.title = cellName
+        //    print("cell Name=",cellName, " the cell= ", theCell)
             
         }
+ ***********************/
+
+ /// else if (segue.identifier == "mathK6Segue"){
+       ///     let nav2 = segue.destinationViewController as! UINavigationController
+       ///     nav2.performSegueWithIdentifier("mathK6Segue", sender: self)
+            
+      ///  }
+        /*
+        else if (segue.identifier == "mathK6Segue") {
+            let nav2 = segue.destinationViewController 
+            //let mathReportVC = nav2.topViewController as! MathK6TableViewController
+            
+            
+            ///ERROR: could not cast value of type UINavigationController to EdEval.MathK6TableViewController
+            
+            let mathK6VC = nav2.performSegueWithIdentifier("MathK6Segue", sender: self)
+            //let mathK6VC = segue.destinationViewController as! MathK6TableViewController
+            //mathK6VC.newTagArray = newTagArray
+            print("math K6 Segue= ", mathK6VC)
+
+            
+        //    let thePath2 = tableView.indexPathForCell(sender as! UITableViewCell)!
+        //    let theCell = tableView.cellForRowAtIndexPath(thePath2)
+        //    let cellName2 = theCell?.textLabel?.text
+        //    mathReportVC.title = cellName2
+        //    print("Segue: mathK6Segue ", cellName2)
+            
+        }
+        */
+
         /*
          let nav = segue?.destinationViewController as! UINavigationController
          let svc = nav.topViewController as! SearchViewController

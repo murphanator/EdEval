@@ -10,23 +10,23 @@ provides-member:
 - ["C6Eureka18PopoverSelectorRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "_PopoverSelectorRow"
 - "PushSelectorCell"
+- "BooleanLiteralType"
 - "SelectorViewController"
-- "BaseCell"
-- "String"
 - "TypedCellType"
-- "PopoverSelectorRow"
-- "RowType"
-- "StringLiteralType"
-- !private "Void"
+- "BaseCell"
 - !private "ControllerProvider"
+- "String"
+- "RowType"
+- "Equatable"
+- !private "fatalError"
+- "StringLiteralType"
+- "_PopoverSelectorRow"
+- "PopoverSelectorRow"
+- !private "Void"
 - "SelectorRow"
 - !private "??"
 - "CellType"
-- "BooleanLiteralType"
-- !private "fatalError"
-- "Equatable"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - !private ["Ps9AnyObject", "ControllerProvider"]

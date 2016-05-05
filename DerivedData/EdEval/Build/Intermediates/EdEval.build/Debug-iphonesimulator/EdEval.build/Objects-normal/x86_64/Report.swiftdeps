@@ -8,18 +8,18 @@ provides-member:
 - ["C6EdEval6Report", ""]
 - ["VC6EdEval6Report11PropertyKey", ""]
 provides-dynamic-lookup:
-- "ArchiveURL"
-- "DocumentsDirectory"
 - "encodeWithCoder"
+- "DocumentsDirectory"
+- "ArchiveURL"
 - "reportName"
 depends-top-level:
-- "NSFileManager"
-- "NSCoder"
-- "String"
 - "StringLiteralType"
-- "NSObject"
 - "Report"
 - "NSCoding"
+- "String"
+- "NSObject"
+- "NSCoder"
+- "NSFileManager"
 depends-member:
 - ["Ps9AnyObject", "ArchiveURL"]
 - ["Ps9AnyObject", "DocumentsDirectory"]

@@ -9,11 +9,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "PresenterRowType"
-- "TypedRowControllerType"
-- "FormViewController"
-- "PresentationMode"
 - "UIViewController"
+- "PresentationMode"
+- "FormViewController"
 - "TypedRowType"
+- "TypedRowControllerType"
 depends-member:
 - !private ["Ps9AnyObject", "Cell"]
 - ["Ps9AnyObject", "FormViewController"]

@@ -7,8 +7,8 @@ provides-member:
 - ["C6EdEval11TeacherData", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "TeacherData"
 - "String"
+- "TeacherData"
 depends-member:
 - !private ["Ps9AnyObject", "gradeLevel"]
 - !private ["Ps9AnyObject", "isEmpty"]

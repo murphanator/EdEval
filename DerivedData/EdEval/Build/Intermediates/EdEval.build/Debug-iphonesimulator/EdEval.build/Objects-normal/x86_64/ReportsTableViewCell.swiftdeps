@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "setSelected"
 - "reportLabel"
 depends-top-level:
-- "UITableViewCell"
-- "ReportsTableViewCell"
 - "UILabel"
+- "UITableViewCell"
 - "Bool"
+- "ReportsTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]

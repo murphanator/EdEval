@@ -7,8 +7,8 @@ provides-member:
 - ["P6Eureka17RowControllerType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSObjectProtocol"
 - "RowControllerType"
+- "NSObjectProtocol"
 - "UIViewController"
 depends-member:
 - ["PSo16NSObjectProtocol", "UIViewController"]

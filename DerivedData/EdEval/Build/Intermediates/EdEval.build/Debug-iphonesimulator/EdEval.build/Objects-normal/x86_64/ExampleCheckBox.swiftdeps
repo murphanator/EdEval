@@ -7,19 +7,19 @@ provides-member:
 - ["C6EdEval15ExampleCheckBox", ""]
 provides-dynamic-lookup:
 - "exampleCheckedImage"
+- "exampleUnCheckedImage"
 - "awakeFromNib"
 - "exampleButtonClicked"
-- "exampleUnCheckedImage"
 - "exampleIsChecked"
 depends-top-level:
-- "UIButton"
 - "StringLiteralType"
 - !private "=="
 - "ExampleCheckBox"
-- "UIImage"
 - !private "print"
-- "BooleanLiteralType"
+- "UIButton"
 - "Bool"
+- "UIImage"
+- "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "awakeFromNib"]
