@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import RealmSwift
+//@interface MyViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 class WalkThruViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     //MARK: Properties
 
@@ -23,6 +24,9 @@ class WalkThruViewController: UIViewController, UITextFieldDelegate, UINavigatio
     
     //Test the textField...
     var myTextField = ""
+    
+    var newTeacher = TeacherDataRealm()
+
     
     
     
@@ -82,6 +86,16 @@ class WalkThruViewController: UIViewController, UITextFieldDelegate, UINavigatio
         print(subjectTextField.text)
         print(gradeTextField.text)
         
+        newTeacher.teacherName = nameTextField.text!
+        newTeacher.schoolName = schoolTextField.text!
+        newTeacher.subjectName = subjectTextField.text!
+        newTeacher.gradeLevel = gradeTextField.text!
+        
+       let realm = try! Realm()
+    
+        try! realm.write {
+            realm.add(newTeacher)   //Add to Database
+        }
     }
     @IBAction func setPageController(sender: UIPageControl) {
         

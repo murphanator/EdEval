@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "NSFormatter"
-- "Bool"
 - "FormatterConformance"
+- "Bool"
 depends-member:
 - ["P6Eureka20FormatterConformance", "Bool"]
 - ["P6Eureka20FormatterConformance", "NSFormatter"]

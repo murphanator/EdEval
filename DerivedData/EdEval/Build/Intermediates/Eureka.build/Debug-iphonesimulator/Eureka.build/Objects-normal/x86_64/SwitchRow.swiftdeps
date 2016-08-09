@@ -12,26 +12,26 @@ provides-member:
 - ["C6Eureka10_SwitchRow", ""]
 - ["C6Eureka9SwitchRow", ""]
 provides-dynamic-lookup:
-- "update"
 - "switchControl"
 - "setup"
+- "update"
 - "valueChanged"
 depends-top-level:
-- !private "??"
 - "SwitchCell"
-- "Bool"
-- "_SwitchRow"
-- "Cell"
-- "CellType"
-- "SwitchRow"
-- !private "BaseRow"
-- "UISwitch"
-- "Row"
-- "String"
-- "RowType"
 - !private "!"
-- !private "BooleanLiteralType"
+- "String"
 - "UITableViewCellStyle"
+- "_SwitchRow"
+- "UISwitch"
+- "SwitchRow"
+- !private "??"
+- !private "BaseRow"
+- "CellType"
+- "Cell"
+- "RowType"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Row"
 depends-member:
 - !private ["Ps9AnyObject", "BaseRow"]
 - ["Ps9AnyObject", "Cell"]

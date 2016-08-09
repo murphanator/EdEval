@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA48895E270B63904282DA0 /* Pods_EdEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4808E3E479B2E0B58F7A03 /* Pods_EdEval.framework */; };
 		25032FD11BD1762400D314AB /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25032FD01BD1762400D314AB /* TeacherData.swift */; };
 		25032FD21BD1762400D314AB /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25032FD01BD1762400D314AB /* TeacherData.swift */; };
 		25087A7B1CD0491A00B1253B /* MathK6TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25087A7A1CD0491A00B1253B /* MathK6TableViewController.swift */; };
+		252DF1791D35E4B2005FA6DB /* BYOCustomLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DF1781D35E4B2005FA6DB /* BYOCustomLabelCell.swift */; };
+		252DF17C1D35E677005FA6DB /* BYOCustomSegConCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DF17B1D35E677005FA6DB /* BYOCustomSegConCell.swift */; };
+		252DF17E1D35E826005FA6DB /* BYOCustomTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DF17D1D35E826005FA6DB /* BYOCustomTextFieldCell.swift */; };
 		253305781CD97D1E0072BECA /* MathK6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253305771CD97D1E0072BECA /* MathK6View.swift */; };
+		2537A9201D0C802300AB69A2 /* TeacherDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537A91F1D0C802300AB69A2 /* TeacherDataRealm.swift */; };
 		2565D4EC1C3B612D002DF002 /* CheckboxSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */; };
 		256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */; };
 		2576A9731C5434EA00AB98E4 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576A9721C5434EA00AB98E4 /* Report.swift */; };
@@ -39,6 +44,8 @@
 		25C00A131C54219C002BD59D /* ReportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */; };
 		25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */; };
 		25CE02FC1C4D698400BD90F6 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */; };
+		25E348CD1D33134000D3B95D /* BuildYourOwnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E348CC1D33134000D3B95D /* BuildYourOwnTableViewController.swift */; };
+		41841D2B7BCB7C5E42CF2063 /* Pods_EdEvalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA81C7F6B74564186C729E04 /* Pods_EdEvalTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +96,11 @@
 /* Begin PBXFileReference section */
 		25032FD01BD1762400D314AB /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
 		25087A7A1CD0491A00B1253B /* MathK6TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathK6TableViewController.swift; sourceTree = "<group>"; };
+		252DF1781D35E4B2005FA6DB /* BYOCustomLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYOCustomLabelCell.swift; sourceTree = "<group>"; };
+		252DF17B1D35E677005FA6DB /* BYOCustomSegConCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYOCustomSegConCell.swift; sourceTree = "<group>"; };
+		252DF17D1D35E826005FA6DB /* BYOCustomTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYOCustomTextFieldCell.swift; sourceTree = "<group>"; };
 		253305771CD97D1E0072BECA /* MathK6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathK6View.swift; sourceTree = "<group>"; };
+		2537A91F1D0C802300AB69A2 /* TeacherDataRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDataRealm.swift; sourceTree = "<group>"; };
 		2565D4EB1C3B612D002DF002 /* CheckboxSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxSliderViewController.swift; sourceTree = "<group>"; };
 		256F0E551C090C1700A91536 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		2576A9721C5434EA00AB98E4 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
@@ -121,6 +132,13 @@
 		25C00A121C54219C002BD59D /* ReportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsTableViewCell.swift; sourceTree = "<group>"; };
 		25C00A141C5422AB002BD59D /* ReportsTableControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportsTableControllers.swift; path = ../ReportsTableControllers.swift; sourceTree = "<group>"; };
 		25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		25E348CC1D33134000D3B95D /* BuildYourOwnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildYourOwnTableViewController.swift; sourceTree = "<group>"; };
+		2A4808E3E479B2E0B58F7A03 /* Pods_EdEval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdEval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1364FE7F8D45BA1524787D /* Pods-EdEvalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdEvalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdEvalTests/Pods-EdEvalTests.release.xcconfig"; sourceTree = "<group>"; };
+		71B0C8F2B35BE73915652FCE /* Pods-EdEval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdEval.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdEval/Pods-EdEval.release.xcconfig"; sourceTree = "<group>"; };
+		A3CB8D830D6E215A67540694 /* Pods-EdEval.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdEval.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdEval/Pods-EdEval.debug.xcconfig"; sourceTree = "<group>"; };
+		B39F803746286CCD5ED87DF2 /* Pods-EdEvalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdEvalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdEvalTests/Pods-EdEvalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA81C7F6B74564186C729E04 /* Pods_EdEvalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdEvalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2579F1861CD05BDA007F0AF3 /* Eureka.framework in Frameworks */,
+				0AA48895E270B63904282DA0 /* Pods_EdEval.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +155,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41841D2B7BCB7C5E42CF2063 /* Pods_EdEvalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAC2A9F552367F8207BAB53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4808E3E479B2E0B58F7A03 /* Pods_EdEval.framework */,
+				CA81C7F6B74564186C729E04 /* Pods_EdEvalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2579F17E1CD0592F007F0AF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +189,8 @@
 				257C43EF1BCCA8EE00F852B3 /* EdEval */,
 				257C44041BCCA8EE00F852B3 /* EdEvalTests */,
 				257C43EE1BCCA8EE00F852B3 /* Products */,
+				4C13030BAC6853B78A5020BA /* Pods */,
+				1FAC2A9F552367F8207BAB53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,8 +210,13 @@
 				257C43F01BCCA8EE00F852B3 /* AppDelegate.swift */,
 				257C43F21BCCA8EE00F852B3 /* WalkThruViewController.swift */,
 				25032FD01BD1762400D314AB /* TeacherData.swift */,
+				2537A91F1D0C802300AB69A2 /* TeacherDataRealm.swift */,
 				25CE02FB1C4D698400BD90F6 /* GlobalVariables.swift */,
 				257C43F41BCCA8EE00F852B3 /* Main.storyboard */,
+				25E348CC1D33134000D3B95D /* BuildYourOwnTableViewController.swift */,
+				252DF17D1D35E826005FA6DB /* BYOCustomTextFieldCell.swift */,
+				252DF17B1D35E677005FA6DB /* BYOCustomSegConCell.swift */,
+				252DF1781D35E4B2005FA6DB /* BYOCustomLabelCell.swift */,
 				253305771CD97D1E0072BECA /* MathK6View.swift */,
 				25A09B241C5D70C200789F90 /* ReadingK6Data.swift */,
 				25A0E7A41C58749100DC5899 /* ReadingK6View.swift */,
@@ -215,6 +251,17 @@
 			path = EdEvalTests;
 			sourceTree = "<group>";
 		};
+		4C13030BAC6853B78A5020BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB8D830D6E215A67540694 /* Pods-EdEval.debug.xcconfig */,
+				71B0C8F2B35BE73915652FCE /* Pods-EdEval.release.xcconfig */,
+				B39F803746286CCD5ED87DF2 /* Pods-EdEvalTests.debug.xcconfig */,
+				2D1364FE7F8D45BA1524787D /* Pods-EdEvalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,10 +269,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 257C440A1BCCA8EE00F852B3 /* Build configuration list for PBXNativeTarget "EdEval" */;
 			buildPhases = (
+				38257A29704C23332C1B53BF /* 📦 Check Pods Manifest.lock */,
 				257C43E91BCCA8EE00F852B3 /* Sources */,
 				257C43EA1BCCA8EE00F852B3 /* Frameworks */,
 				257C43EB1BCCA8EE00F852B3 /* Resources */,
 				2579F18A1CD05BDA007F0AF3 /* Embed Frameworks */,
+				494BBA2D63DE4B113AFE118C /* 📦 Embed Pods Frameworks */,
+				56AF130B90BD9E865F8CB301 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 257C440D1BCCA8EE00F852B3 /* Build configuration list for PBXNativeTarget "EdEvalTests" */;
 			buildPhases = (
+				09FF4EF2E75E9FDD74C6796E /* 📦 Check Pods Manifest.lock */,
 				257C43FD1BCCA8EE00F852B3 /* Sources */,
 				257C43FE1BCCA8EE00F852B3 /* Frameworks */,
 				257C43FF1BCCA8EE00F852B3 /* Resources */,
+				496BA3AE32576668B9155D2A /* 📦 Embed Pods Frameworks */,
+				E8E249F83F6F7B9615819702 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +391,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09FF4EF2E75E9FDD74C6796E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38257A29704C23332C1B53BF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		494BBA2D63DE4B113AFE118C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdEval/Pods-EdEval-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		496BA3AE32576668B9155D2A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdEvalTests/Pods-EdEvalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56AF130B90BD9E865F8CB301 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdEval/Pods-EdEval-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E249F83F6F7B9615819702 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdEvalTests/Pods-EdEvalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		257C43E91BCCA8EE00F852B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -349,8 +495,10 @@
 				25A0E7A51C58749100DC5899 /* ReadingK6View.swift in Sources */,
 				25A4ABEE1C7A601D0092FAC4 /* CheckboxView.swift in Sources */,
 				25A0E7A31C58733200DC5899 /* Readingk6ViewController.swift in Sources */,
+				252DF17C1D35E677005FA6DB /* BYOCustomSegConCell.swift in Sources */,
 				258E53CA1C7D491200B7B317 /* SCheckBox.swift in Sources */,
 				25032FD11BD1762400D314AB /* TeacherData.swift in Sources */,
+				252DF17E1D35E826005FA6DB /* BYOCustomTextFieldCell.swift in Sources */,
 				256F0E561C090C1700A91536 /* QuestionTableViewCell.swift in Sources */,
 				25C00A151C5422AB002BD59D /* ReportsTableControllers.swift in Sources */,
 				25A09B251C5D70C200789F90 /* ReadingK6Data.swift in Sources */,
@@ -359,10 +507,13 @@
 				257C43F31BCCA8EE00F852B3 /* WalkThruViewController.swift in Sources */,
 				257C43F11BCCA8EE00F852B3 /* AppDelegate.swift in Sources */,
 				2599FADD1C29CC8F00933673 /* ExampleCheckBox.swift in Sources */,
+				2537A9201D0C802300AB69A2 /* TeacherDataRealm.swift in Sources */,
 				258B48FB1C2779CE00B0490D /* ExampleTableViewController.swift in Sources */,
 				258960C91C6AC862007D014D /* CheckboxControl2.swift in Sources */,
 				258B48F91C274B6600B0490D /* ExampleTableViewCell.swift in Sources */,
+				25E348CD1D33134000D3B95D /* BuildYourOwnTableViewController.swift in Sources */,
 				2576A9731C5434EA00AB98E4 /* Report.swift in Sources */,
+				252DF1791D35E4B2005FA6DB /* BYOCustomLabelCell.swift in Sources */,
 				2576C6E21C0C01EB00254EF5 /* CheckBoxQuestionTableViewController.swift in Sources */,
 				25A315521C4318A500371340 /* CheckBoxControllerViewController.swift in Sources */,
 				25C00A131C54219C002BD59D /* ReportsTableViewCell.swift in Sources */,
@@ -498,6 +649,7 @@
 		};
 		257C440B1BCCA8EE00F852B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CB8D830D6E215A67540694 /* Pods-EdEval.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -513,6 +665,7 @@
 		};
 		257C440C1BCCA8EE00F852B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B0C8F2B35BE73915652FCE /* Pods-EdEval.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -528,6 +681,7 @@
 		};
 		257C440E1BCCA8EE00F852B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B39F803746286CCD5ED87DF2 /* Pods-EdEvalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = EdEvalTests/Info.plist;
@@ -540,6 +694,7 @@
 		};
 		257C440F1BCCA8EE00F852B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D1364FE7F8D45BA1524787D /* Pods-EdEvalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = EdEvalTests/Info.plist;

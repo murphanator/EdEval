@@ -10,15 +10,15 @@ provides-member:
 - ["C6Eureka15PickerInlineRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "_PickerInlineRow"
 - "Equatable"
-- "Row"
-- "LabelCellOf"
-- "InlineRowType"
-- "String"
-- "RowType"
-- "PickerInlineRow"
 - "PickerRow"
+- "_PickerInlineRow"
+- "PickerInlineRow"
+- "LabelCellOf"
+- "String"
+- "Row"
+- "RowType"
+- "InlineRowType"
 - !private "!"
 depends-member:
 - ["Ps9AnyObject", "Cell"]

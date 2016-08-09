@@ -6,37 +6,44 @@ provides-nominal:
 provides-member:
 - ["C6EdEval22WalkThruViewController", ""]
 provides-dynamic-lookup:
-- "gradeTextField"
-- "nameTextField"
-- "myTextField"
-- "textFieldDidEndEditing"
-- "textFieldShouldReturn"
 - "subjectTextField"
-- "startWalkThroughButton"
-- "viewDidLoad"
-- "back"
 - "setPageController"
-- "didReceiveMemoryWarning"
+- "myTextField"
+- "nameTextField"
+- "gradeTextField"
+- "newTeacher"
+- "startWalkThroughButton"
+- "textFieldDidEndEditing"
+- "viewDidLoad"
+- "textFieldShouldReturn"
 - "schoolTextField"
+- "didReceiveMemoryWarning"
 - "walkthroughPageControl"
+- "back"
 depends-top-level:
-- "UINavigationControllerDelegate"
-- !private "print"
-- "StringLiteralType"
-- "UITextFieldDelegate"
-- "UITextField"
-- "UIBarButtonItem"
-- "UIPageControl"
-- "UIButton"
 - "Bool"
+- "UIBarButtonItem"
+- "UIButton"
+- "StringLiteralType"
+- "UINavigationControllerDelegate"
+- !private "Realm"
+- "TeacherDataRealm"
+- "UITextField"
+- "UIPageControl"
+- !private "print"
 - "UIViewController"
 - "WalkThruViewController"
+- "UITextFieldDelegate"
 - !private "BooleanLiteralType"
 depends-member:
+- !private ["Ps9AnyObject", "Realm"]
+- ["Ps9AnyObject", "TeacherDataRealm"]
+- !private ["Ps9AnyObject", "add"]
 - ["Ps9AnyObject", "back"]
 - !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- !private ["Ps9AnyObject", "gradeLevel"]
 - ["Ps9AnyObject", "gradeTextField"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "myTextField"]
@@ -44,12 +51,16 @@ depends-member:
 - ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
+- ["Ps9AnyObject", "newTeacher"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
+- !private ["Ps9AnyObject", "schoolName"]
 - ["Ps9AnyObject", "schoolTextField"]
 - ["Ps9AnyObject", "setPageController"]
 - ["Ps9AnyObject", "startWalkThroughButton"]
+- !private ["Ps9AnyObject", "subjectName"]
 - ["Ps9AnyObject", "subjectTextField"]
+- !private ["Ps9AnyObject", "teacherName"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textField"]
 - ["Ps9AnyObject", "textFieldDidBeginEditing"]
@@ -60,7 +71,10 @@ depends-member:
 - ["Ps9AnyObject", "textFieldShouldReturn"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "walkthroughPageControl"]
+- !private ["Ps9AnyObject", "write"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "Realm"]
+- ["Ps11CVarArgType", "TeacherDataRealm"]
 - ["Ps11CVarArgType", "back"]
 - !private ["Ps11CVarArgType", "delegate"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -72,6 +86,7 @@ depends-member:
 - ["Ps11CVarArgType", "navigationController"]
 - ["Ps11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
+- ["Ps11CVarArgType", "newTeacher"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
 - ["Ps11CVarArgType", "schoolTextField"]
@@ -89,6 +104,8 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "walkthroughPageControl"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "Realm"]
+- ["Ps28CustomDebugStringConvertible", "TeacherDataRealm"]
 - ["Ps28CustomDebugStringConvertible", "back"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -100,6 +117,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
+- ["Ps28CustomDebugStringConvertible", "newTeacher"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "schoolTextField"]
@@ -117,6 +135,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "walkthroughPageControl"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Realm"]
+- ["Ps23CustomStringConvertible", "TeacherDataRealm"]
 - ["Ps23CustomStringConvertible", "back"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -128,6 +148,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
+- ["Ps23CustomStringConvertible", "newTeacher"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - ["Ps23CustomStringConvertible", "schoolTextField"]
@@ -145,6 +166,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "walkthroughPageControl"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Realm"]
+- ["Ps9Equatable", "TeacherDataRealm"]
+- !private ["Ps9Equatable", "add"]
 - ["Ps9Equatable", "back"]
 - !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -156,6 +180,7 @@ depends-member:
 - ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
+- ["Ps9Equatable", "newTeacher"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - ["Ps9Equatable", "schoolTextField"]
@@ -172,7 +197,10 @@ depends-member:
 - ["Ps9Equatable", "textFieldShouldReturn"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "walkthroughPageControl"]
+- !private ["Ps9Equatable", "write"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "Realm"]
+- ["Ps8Hashable", "TeacherDataRealm"]
 - ["Ps8Hashable", "back"]
 - !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -184,6 +212,7 @@ depends-member:
 - ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
+- ["Ps8Hashable", "newTeacher"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - ["Ps8Hashable", "schoolTextField"]
@@ -201,6 +230,8 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "walkthroughPageControl"]
 - ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "Realm"]
+- ["PSo8NSCoding", "TeacherDataRealm"]
 - ["PSo8NSCoding", "back"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -212,6 +243,7 @@ depends-member:
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo8NSCoding", "newTeacher"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "schoolTextField"]
@@ -229,6 +261,8 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "walkthroughPageControl"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Realm"]
+- ["PSo26NSExtensionRequestHandling", "TeacherDataRealm"]
 - ["PSo26NSExtensionRequestHandling", "back"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
@@ -239,6 +273,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo26NSExtensionRequestHandling", "newTeacher"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "schoolTextField"]
 - ["PSo26NSExtensionRequestHandling", "setPageController"]
@@ -255,14 +290,18 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "walkthroughPageControl"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Realm"]
+- ["CSo8NSObject", "TeacherDataRealm"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIPageControl"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "back"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- !private ["CSo8NSObject", "gradeLevel"]
 - ["CSo8NSObject", "gradeTextField"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "myTextField"]
@@ -270,12 +309,16 @@ depends-member:
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
+- ["CSo8NSObject", "newTeacher"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
+- !private ["CSo8NSObject", "schoolName"]
 - ["CSo8NSObject", "schoolTextField"]
 - ["CSo8NSObject", "setPageController"]
 - ["CSo8NSObject", "startWalkThroughButton"]
+- !private ["CSo8NSObject", "subjectName"]
 - ["CSo8NSObject", "subjectTextField"]
+- !private ["CSo8NSObject", "teacherName"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textField"]
 - ["CSo8NSObject", "textFieldDidBeginEditing"]
@@ -286,6 +329,8 @@ depends-member:
 - ["CSo8NSObject", "textFieldShouldReturn"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "walkthroughPageControl"]
+- !private ["PSo16NSObjectProtocol", "Realm"]
+- ["PSo16NSObjectProtocol", "TeacherDataRealm"]
 - ["PSo16NSObjectProtocol", "back"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -297,6 +342,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo16NSObjectProtocol", "newTeacher"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "schoolTextField"]
@@ -314,12 +360,35 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "walkthroughPageControl"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["C10RealmSwift6Object", "deinit"]
+- !private ["C10RealmSwift6Object", "gradeLevel"]
+- ["C10RealmSwift6Object", "init"]
+- !private ["C10RealmSwift6Object", "schoolName"]
+- !private ["C10RealmSwift6Object", "subjectName"]
+- !private ["C10RealmSwift6Object", "teacherName"]
+- !private ["CSo13RLMObjectBase", "deinit"]
+- !private ["CSo13RLMObjectBase", "gradeLevel"]
+- ["CSo13RLMObjectBase", "init"]
+- !private ["CSo13RLMObjectBase", "schoolName"]
+- !private ["CSo13RLMObjectBase", "subjectName"]
+- !private ["CSo13RLMObjectBase", "teacherName"]
+- !private ["C10RealmSwift5Realm", "add"]
+- !private ["C10RealmSwift5Realm", "init"]
+- !private ["C10RealmSwift5Realm", "write"]
+- !private ["C6EdEval16TeacherDataRealm", "deinit"]
+- !private ["C6EdEval16TeacherDataRealm", "gradeLevel"]
+- ["C6EdEval16TeacherDataRealm", "init"]
+- !private ["C6EdEval16TeacherDataRealm", "schoolName"]
+- !private ["C6EdEval16TeacherDataRealm", "subjectName"]
+- !private ["C6EdEval16TeacherDataRealm", "teacherName"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Realm"]
+- ["PSo21UIAppearanceContainer", "TeacherDataRealm"]
 - ["PSo21UIAppearanceContainer", "back"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -331,6 +400,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo21UIAppearanceContainer", "newTeacher"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "schoolTextField"]
@@ -348,6 +418,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "walkthroughPageControl"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Realm"]
+- ["PSo18UIContentContainer", "TeacherDataRealm"]
 - ["PSo18UIContentContainer", "back"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
@@ -358,6 +430,7 @@ depends-member:
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo18UIContentContainer", "newTeacher"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "schoolTextField"]
 - ["PSo18UIContentContainer", "setPageController"]
@@ -382,6 +455,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Realm"]
+- ["PSo18UIFocusEnvironment", "TeacherDataRealm"]
 - ["PSo18UIFocusEnvironment", "back"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -393,6 +468,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo18UIFocusEnvironment", "newTeacher"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "schoolTextField"]
@@ -413,6 +489,8 @@ depends-member:
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["PSo30UINavigationControllerDelegate", "Realm"]
+- ["PSo30UINavigationControllerDelegate", "TeacherDataRealm"]
 - !private ["PSo30UINavigationControllerDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo30UINavigationControllerDelegate", "gradeTextField"]
 - !private ["PSo30UINavigationControllerDelegate", "myTextField"]
@@ -420,6 +498,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "navigationController"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo30UINavigationControllerDelegate", "newTeacher"]
 - !private ["PSo30UINavigationControllerDelegate", "print"]
 - !private ["PSo30UINavigationControllerDelegate", "schoolTextField"]
 - !private ["PSo30UINavigationControllerDelegate", "subjectTextField"]
@@ -432,6 +511,8 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "textFieldShouldReturn"]
 - ["PSo30UINavigationControllerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Realm"]
+- ["CSo11UIResponder", "TeacherDataRealm"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIPageControl"]
@@ -447,6 +528,7 @@ depends-member:
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
+- ["CSo11UIResponder", "newTeacher"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "schoolTextField"]
@@ -463,6 +545,8 @@ depends-member:
 - ["CSo11UIResponder", "textFieldShouldReturn"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "walkthroughPageControl"]
+- !private ["PSo16UIStateRestoring", "Realm"]
+- ["PSo16UIStateRestoring", "TeacherDataRealm"]
 - ["PSo16UIStateRestoring", "back"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
@@ -473,6 +557,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo16UIStateRestoring", "newTeacher"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "schoolTextField"]
 - ["PSo16UIStateRestoring", "setPageController"]
@@ -491,6 +576,8 @@ depends-member:
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
+- !private ["PSo19UITextFieldDelegate", "Realm"]
+- ["PSo19UITextFieldDelegate", "TeacherDataRealm"]
 - !private ["PSo19UITextFieldDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo19UITextFieldDelegate", "gradeTextField"]
 - !private ["PSo19UITextFieldDelegate", "myTextField"]
@@ -498,6 +585,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "navigationController"]
 - ["PSo19UITextFieldDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo19UITextFieldDelegate", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo19UITextFieldDelegate", "newTeacher"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - !private ["PSo19UITextFieldDelegate", "schoolTextField"]
 - !private ["PSo19UITextFieldDelegate", "subjectTextField"]
@@ -515,6 +603,8 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "Realm"]
+- ["PSo18UITraitEnvironment", "TeacherDataRealm"]
 - ["PSo18UITraitEnvironment", "back"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -526,6 +616,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo18UITraitEnvironment", "newTeacher"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "schoolTextField"]
@@ -547,6 +638,8 @@ depends-member:
 - !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Realm"]
+- ["CSo16UIViewController", "TeacherDataRealm"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIPageControl"]
@@ -561,6 +654,7 @@ depends-member:
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
+- ["CSo16UIViewController", "newTeacher"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "schoolTextField"]
 - ["CSo16UIViewController", "setPageController"]
@@ -577,6 +671,8 @@ depends-member:
 - ["CSo16UIViewController", "walkthroughPageControl"]
 - ["CSo16UIViewController", ""]
 - ["C6EdEval22WalkThruViewController", "Bool"]
+- !private ["C6EdEval22WalkThruViewController", "Realm"]
+- ["C6EdEval22WalkThruViewController", "TeacherDataRealm"]
 - ["C6EdEval22WalkThruViewController", "UIBarButtonItem"]
 - ["C6EdEval22WalkThruViewController", "UIButton"]
 - ["C6EdEval22WalkThruViewController", "UIPageControl"]
@@ -592,6 +688,7 @@ depends-member:
 - ["C6EdEval22WalkThruViewController", "navigationController"]
 - ["C6EdEval22WalkThruViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["C6EdEval22WalkThruViewController", "navigationControllerSupportedInterfaceOrientations"]
+- ["C6EdEval22WalkThruViewController", "newTeacher"]
 - !private ["C6EdEval22WalkThruViewController", "print"]
 - ["C6EdEval22WalkThruViewController", "schoolTextField"]
 - ["C6EdEval22WalkThruViewController", "setPageController"]
@@ -620,6 +717,10 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- "C10RealmSwift6Object"
+- "CSo13RLMObjectBase"
+- !private "C10RealmSwift5Realm"
+- "C6EdEval16TeacherDataRealm"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -656,4 +757,42 @@ depends-external:
 - "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
 - "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "e9d4bc16c7a6b2bd618ce55453386891"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Modules/DataEntryToolbar.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Headers/DataEntryToolbar-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Headers/DataEntryToolbar-umbrella.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Modules/module.modulemap"
+interface-hash: "c15ba80d8a97629e81e7d350d5e29806"

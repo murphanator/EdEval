@@ -10,17 +10,17 @@ provides-member:
 - ["P6Eureka29HeaderFooterViewRepresentable", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "RowOf"
-- "String"
-- "Equatable"
-- "FormViewController"
-- "CGFloat"
-- "HeaderFooterViewRepresentable"
-- "UIView"
-- "RowControllerType"
-- "Section"
 - "TypedRowControllerType"
+- "Section"
 - "HeaderFooterType"
+- "Equatable"
+- "UIView"
+- "HeaderFooterViewRepresentable"
+- "String"
+- "CGFloat"
+- "RowControllerType"
+- "RowOf"
+- "FormViewController"
 depends-member:
 - ["P6Eureka29HeaderFooterViewRepresentable", "CGFloat"]
 - ["P6Eureka29HeaderFooterViewRepresentable", "FormViewController"]

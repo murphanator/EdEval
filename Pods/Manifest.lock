@@ -1,0 +1,20 @@
+PODS:
+  - DataEntryToolbar (0.2.3)
+  - Realm (0.103.1):
+    - Realm/Headers (= 0.103.1)
+  - Realm/Headers (0.103.1)
+  - RealmSwift (0.103.1):
+    - Realm (= 0.103.1)
+
+DEPENDENCIES:
+  - DataEntryToolbar
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  DataEntryToolbar: 0cf657b74c2a2079ec3fc371b677e33d11d620be
+  Realm: 9ed57109332e95bdc48a7caedff80b70c51d5ef4
+  RealmSwift: 56629adb4acd2dc33eb2c8199fe856585dfd3ba3
+
+PODFILE CHECKSUM: 4725613f89d13d1bffe462b9514d09bd9f201163
+
+COCOAPODS: 1.0.0

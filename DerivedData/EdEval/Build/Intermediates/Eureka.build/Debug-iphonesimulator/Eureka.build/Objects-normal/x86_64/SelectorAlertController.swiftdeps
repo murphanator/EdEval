@@ -7,18 +7,18 @@ provides-member:
 - ["C6Eureka23SelectorAlertController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIAlertAction"
 - "NSLocalizedString"
-- "UIViewController"
-- "NSCoder"
-- "TypedRowControllerType"
-- "SelectorAlertController"
-- "RowOf"
+- !private "UIAlertAction"
 - "String"
-- "Equatable"
+- "TypedRowControllerType"
 - "NSBundle"
+- "UIViewController"
+- "Equatable"
 - "UIAlertController"
+- "RowOf"
 - "StringLiteralType"
+- "SelectorAlertController"
+- "NSCoder"
 depends-member:
 - ["Ps9AnyObject", "NSLocalizedString"]
 - ["Ps9AnyObject", "RowValue"]

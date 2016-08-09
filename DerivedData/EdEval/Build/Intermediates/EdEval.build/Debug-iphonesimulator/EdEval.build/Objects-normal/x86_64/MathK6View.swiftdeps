@@ -14,35 +14,41 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- "RowType"
+- "Equatable"
 - "SelectableRowType"
-- "FormViewController"
-- "ImageCheckCell"
-- "Row"
-- "CellType"
+- !private "==="
+- "RowType"
+- !private "Array"
+- !private "<<<"
 - "Cell"
+- "FormViewController"
+- !private "Section"
 - !private "StringLiteralType"
+- "UnicodeScalarType"
+- "MathK6View"
 - !private "+++"
 - !private "SwitchRow"
-- "String"
-- !private "print"
-- !private "+++="
-- "UITableViewCellStyle"
-- "UIImage"
-- "ImageCheckRow"
-- "MathK6View"
-- "Equatable"
-- !private "Section"
-- !private "SelectableSection"
-- !private "Array"
-- !private "SegmentedRow"
-- !private "<<<"
+- !private "TextRow"
 - !private "!="
-- "BooleanLiteralType"
+- "ImageCheckRow"
+- "UITableViewCellStyle"
+- !private "print"
 - "BaseRow"
-- !private "==="
+- "CellType"
 - "Any"
+- "String"
+- "UIImage"
+- "Row"
+- !private "SliderRow"
+- !private "+++="
+- !private "SegmentedRow"
+- "BooleanLiteralType"
+- "ImageCheckCell"
+- !private "SelectableSection"
 depends-member:
+- !private ["P10RealmSwift11AddableType", "Distance"]
+- !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
+- !private ["P10RealmSwift11AddableType", "_DisabledRangeIndex"]
 - ["Ps9AnyObject", "Cell"]
 - !private ["Ps9AnyObject", "Generator"]
 - !private ["Ps9AnyObject", "ImageCheckRow"]
@@ -51,8 +57,10 @@ depends-member:
 - !private ["Ps9AnyObject", "SegmentedRow"]
 - !private ["Ps9AnyObject", "SelectableRow"]
 - !private ["Ps9AnyObject", "SelectableSection"]
+- !private ["Ps9AnyObject", "SliderRow"]
 - !private ["Ps9AnyObject", "SubSequence"]
 - !private ["Ps9AnyObject", "SwitchRow"]
+- !private ["Ps9AnyObject", "TextRow"]
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "Value"]
 - !private ["Ps9AnyObject", "_Element"]
@@ -69,7 +77,10 @@ depends-member:
 - !private ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "last"]
+- !private ["Ps9AnyObject", "maximumValue"]
+- !private ["Ps9AnyObject", "minimumValue"]
 - !private ["Ps9AnyObject", "options"]
+- !private ["Ps9AnyObject", "placeholder"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reload"]
 - !private ["Ps9AnyObject", "row"]
@@ -141,7 +152,10 @@ depends-member:
 - !private ["C6Eureka7BaseRow", "deselect"]
 - !private ["C6Eureka7BaseRow", "displayValueFor"]
 - ["C6Eureka7BaseRow", "init"]
+- !private ["C6Eureka7BaseRow", "maximumValue"]
+- !private ["C6Eureka7BaseRow", "minimumValue"]
 - !private ["C6Eureka7BaseRow", "options"]
+- !private ["C6Eureka7BaseRow", "placeholder"]
 - !private ["C6Eureka7BaseRow", "reload"]
 - !private ["C6Eureka7BaseRow", "section"]
 - !private ["C6Eureka7BaseRow", "select"]
@@ -155,7 +169,10 @@ depends-member:
 - !private ["P6Eureka11BaseRowType", "deselect"]
 - !private ["P6Eureka11BaseRowType", "displayValueFor"]
 - ["P6Eureka11BaseRowType", "init"]
+- !private ["P6Eureka11BaseRowType", "maximumValue"]
+- !private ["P6Eureka11BaseRowType", "minimumValue"]
 - !private ["P6Eureka11BaseRowType", "options"]
+- !private ["P6Eureka11BaseRowType", "placeholder"]
 - !private ["P6Eureka11BaseRowType", "reload"]
 - !private ["P6Eureka11BaseRowType", "section"]
 - !private ["P6Eureka11BaseRowType", "select"]
@@ -179,7 +196,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "Section"]
 - !private ["Ps11CVarArgType", "SegmentedRow"]
 - !private ["Ps11CVarArgType", "SelectableSection"]
+- !private ["Ps11CVarArgType", "SliderRow"]
 - !private ["Ps11CVarArgType", "SwitchRow"]
+- !private ["Ps11CVarArgType", "TextRow"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - ["Ps11CVarArgType", "Value"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
@@ -248,8 +267,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Section"]
 - !private ["Ps28CustomDebugStringConvertible", "SegmentedRow"]
 - !private ["Ps28CustomDebugStringConvertible", "SelectableSection"]
+- !private ["Ps28CustomDebugStringConvertible", "SliderRow"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "SwitchRow"]
+- !private ["Ps28CustomDebugStringConvertible", "TextRow"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
@@ -280,8 +301,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Section"]
 - !private ["Ps23CustomStringConvertible", "SegmentedRow"]
 - !private ["Ps23CustomStringConvertible", "SelectableSection"]
+- !private ["Ps23CustomStringConvertible", "SliderRow"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "SwitchRow"]
+- !private ["Ps23CustomStringConvertible", "TextRow"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -312,7 +335,10 @@ depends-member:
 - !private ["P6Eureka11Disableable", "deselect"]
 - !private ["P6Eureka11Disableable", "displayValueFor"]
 - ["P6Eureka11Disableable", "init"]
+- !private ["P6Eureka11Disableable", "maximumValue"]
+- !private ["P6Eureka11Disableable", "minimumValue"]
 - !private ["P6Eureka11Disableable", "options"]
+- !private ["P6Eureka11Disableable", "placeholder"]
 - !private ["P6Eureka11Disableable", "reload"]
 - !private ["P6Eureka11Disableable", "section"]
 - !private ["P6Eureka11Disableable", "select"]
@@ -332,8 +358,10 @@ depends-member:
 - !private ["Ps9Equatable", "SegmentedRow"]
 - !private ["Ps9Equatable", "SelectableRow"]
 - !private ["Ps9Equatable", "SelectableSection"]
+- !private ["Ps9Equatable", "SliderRow"]
 - !private ["Ps9Equatable", "SubSequence"]
 - !private ["Ps9Equatable", "SwitchRow"]
+- !private ["Ps9Equatable", "TextRow"]
 - !private ["Ps9Equatable", "UIImage"]
 - ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
@@ -351,7 +379,10 @@ depends-member:
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "maximumValue"]
+- !private ["Ps9Equatable", "minimumValue"]
 - !private ["Ps9Equatable", "options"]
+- !private ["Ps9Equatable", "placeholder"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reload"]
 - !private ["Ps9Equatable", "row"]
@@ -370,6 +401,16 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["C6Eureka8FieldRow", "Cell"]
+- !private ["C6Eureka8FieldRow", "Value"]
+- !private ["C6Eureka8FieldRow", "init"]
+- !private ["C6Eureka8FieldRow", "placeholder"]
+- !private ["C6Eureka8FieldRow", "title"]
+- !private ["P6Eureka19FieldRowConformance", "Cell"]
+- !private ["P6Eureka19FieldRowConformance", "Value"]
+- !private ["P6Eureka19FieldRowConformance", "init"]
+- !private ["P6Eureka19FieldRowConformance", "placeholder"]
+- !private ["P6Eureka19FieldRowConformance", "title"]
 - !private ["Sf", "deinit"]
 - !private ["C6Eureka4Form", "Generator"]
 - !private ["C6Eureka4Form", "Index"]
@@ -382,7 +423,9 @@ depends-member:
 - !private ["P6Eureka12FormDelegate", "Section"]
 - !private ["P6Eureka12FormDelegate", "SegmentedRow"]
 - !private ["P6Eureka12FormDelegate", "SelectableSection"]
+- !private ["P6Eureka12FormDelegate", "SliderRow"]
 - !private ["P6Eureka12FormDelegate", "SwitchRow"]
+- !private ["P6Eureka12FormDelegate", "TextRow"]
 - !private ["P6Eureka12FormDelegate", "UIImage"]
 - !private ["P6Eureka12FormDelegate", "form"]
 - ["P6Eureka12FormDelegate", "init"]
@@ -396,8 +439,10 @@ depends-member:
 - !private ["C6Eureka18FormViewController", "Section"]
 - !private ["C6Eureka18FormViewController", "SegmentedRow"]
 - !private ["C6Eureka18FormViewController", "SelectableSection"]
+- !private ["C6Eureka18FormViewController", "SliderRow"]
 - !private ["C6Eureka18FormViewController", "String"]
 - !private ["C6Eureka18FormViewController", "SwitchRow"]
+- !private ["C6Eureka18FormViewController", "TextRow"]
 - !private ["C6Eureka18FormViewController", "UIImage"]
 - !private ["C6Eureka18FormViewController", "form"]
 - ["C6Eureka18FormViewController", "init"]
@@ -409,7 +454,9 @@ depends-member:
 - !private ["P6Eureka26FormViewControllerProtocol", "Section"]
 - !private ["P6Eureka26FormViewControllerProtocol", "SegmentedRow"]
 - !private ["P6Eureka26FormViewControllerProtocol", "SelectableSection"]
+- !private ["P6Eureka26FormViewControllerProtocol", "SliderRow"]
 - !private ["P6Eureka26FormViewControllerProtocol", "SwitchRow"]
+- !private ["P6Eureka26FormViewControllerProtocol", "TextRow"]
 - !private ["P6Eureka26FormViewControllerProtocol", "UIImage"]
 - !private ["P6Eureka26FormViewControllerProtocol", "form"]
 - ["P6Eureka26FormViewControllerProtocol", "init"]
@@ -417,6 +464,11 @@ depends-member:
 - ["P6Eureka26FormViewControllerProtocol", "rowValueHasBeenChanged"]
 - ["P6Eureka26FormViewControllerProtocol", "viewDidLoad"]
 - ["P6Eureka26FormViewControllerProtocol", ""]
+- !private ["P6Eureka20FormatterConformance", "Cell"]
+- !private ["P6Eureka20FormatterConformance", "Value"]
+- !private ["P6Eureka20FormatterConformance", "init"]
+- !private ["P6Eureka20FormatterConformance", "placeholder"]
+- !private ["P6Eureka20FormatterConformance", "title"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
@@ -428,7 +480,9 @@ depends-member:
 - !private ["Ps8Hashable", "Section"]
 - !private ["Ps8Hashable", "SegmentedRow"]
 - !private ["Ps8Hashable", "SelectableSection"]
+- !private ["Ps8Hashable", "SliderRow"]
 - !private ["Ps8Hashable", "SwitchRow"]
+- !private ["Ps8Hashable", "TextRow"]
 - !private ["Ps8Hashable", "UIImage"]
 - ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
@@ -462,7 +516,10 @@ depends-member:
 - !private ["P6Eureka7Hidable", "deselect"]
 - !private ["P6Eureka7Hidable", "displayValueFor"]
 - ["P6Eureka7Hidable", "init"]
+- !private ["P6Eureka7Hidable", "maximumValue"]
+- !private ["P6Eureka7Hidable", "minimumValue"]
 - !private ["P6Eureka7Hidable", "options"]
+- !private ["P6Eureka7Hidable", "placeholder"]
 - !private ["P6Eureka7Hidable", "reload"]
 - !private ["P6Eureka7Hidable", "section"]
 - !private ["P6Eureka7Hidable", "select"]
@@ -534,14 +591,21 @@ depends-member:
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["P6Eureka21KeyboardReturnHandler", "Cell"]
+- !private ["P6Eureka21KeyboardReturnHandler", "Value"]
+- !private ["P6Eureka21KeyboardReturnHandler", "init"]
+- !private ["P6Eureka21KeyboardReturnHandler", "placeholder"]
+- !private ["P6Eureka21KeyboardReturnHandler", "title"]
 - ["C6EdEval10MathK6View", "Any"]
 - ["C6EdEval10MathK6View", "BaseRow"]
 - !private ["C6EdEval10MathK6View", "ImageCheckRow"]
 - !private ["C6EdEval10MathK6View", "Section"]
 - !private ["C6EdEval10MathK6View", "SegmentedRow"]
 - !private ["C6EdEval10MathK6View", "SelectableSection"]
+- !private ["C6EdEval10MathK6View", "SliderRow"]
 - !private ["C6EdEval10MathK6View", "String"]
 - !private ["C6EdEval10MathK6View", "SwitchRow"]
+- !private ["C6EdEval10MathK6View", "TextRow"]
 - !private ["C6EdEval10MathK6View", "UIImage"]
 - ["C6EdEval10MathK6View", "deinit"]
 - !private ["C6EdEval10MathK6View", "form"]
@@ -549,6 +613,9 @@ depends-member:
 - !private ["C6EdEval10MathK6View", "print"]
 - ["C6EdEval10MathK6View", "rowValueHasBeenChanged"]
 - ["C6EdEval10MathK6View", "viewDidLoad"]
+- !private ["P10RealmSwift10MinMaxType", "Distance"]
+- !private ["P10RealmSwift10MinMaxType", "IntegerLiteralType"]
+- !private ["P10RealmSwift10MinMaxType", "_DisabledRangeIndex"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
@@ -591,7 +658,9 @@ depends-member:
 - !private ["PSo8NSCoding", "Section"]
 - !private ["PSo8NSCoding", "SegmentedRow"]
 - !private ["PSo8NSCoding", "SelectableSection"]
+- !private ["PSo8NSCoding", "SliderRow"]
 - !private ["PSo8NSCoding", "SwitchRow"]
+- !private ["PSo8NSCoding", "TextRow"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "Value"]
 - !private ["PSo8NSCoding", "accessoryType"]
@@ -616,7 +685,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "Section"]
 - !private ["PSo26NSExtensionRequestHandling", "SegmentedRow"]
 - !private ["PSo26NSExtensionRequestHandling", "SelectableSection"]
+- !private ["PSo26NSExtensionRequestHandling", "SliderRow"]
 - !private ["PSo26NSExtensionRequestHandling", "SwitchRow"]
+- !private ["PSo26NSExtensionRequestHandling", "TextRow"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "form"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -632,8 +703,10 @@ depends-member:
 - !private ["CSo8NSObject", "Section"]
 - !private ["CSo8NSObject", "SegmentedRow"]
 - !private ["CSo8NSObject", "SelectableSection"]
+- !private ["CSo8NSObject", "SliderRow"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "SwitchRow"]
+- !private ["CSo8NSObject", "TextRow"]
 - ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UITableViewCellStyle"]
 - ["CSo8NSObject", "Value"]
@@ -657,7 +730,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Section"]
 - !private ["PSo16NSObjectProtocol", "SegmentedRow"]
 - !private ["PSo16NSObjectProtocol", "SelectableSection"]
+- !private ["PSo16NSObjectProtocol", "SliderRow"]
 - !private ["PSo16NSObjectProtocol", "SwitchRow"]
+- !private ["PSo16NSObjectProtocol", "TextRow"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "Value"]
 - !private ["PSo16NSObjectProtocol", "accessoryType"]
@@ -705,6 +780,10 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "selectedRows"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "None"]
+- !private ["P10RealmSwift17RealmOptionalType", "Distance"]
+- !private ["P10RealmSwift17RealmOptionalType", "IntegerLiteralType"]
+- !private ["P10RealmSwift17RealmOptionalType", "_DisabledRangeIndex"]
+- !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
 - ["C6Eureka3Row", "Cell"]
 - ["C6Eureka3Row", "String"]
 - ["C6Eureka3Row", "T"]
@@ -713,7 +792,10 @@ depends-member:
 - !private ["C6Eureka3Row", "cellSetup"]
 - !private ["C6Eureka3Row", "displayValueFor"]
 - ["C6Eureka3Row", "init"]
+- !private ["C6Eureka3Row", "maximumValue"]
+- !private ["C6Eureka3Row", "minimumValue"]
 - !private ["C6Eureka3Row", "options"]
+- !private ["C6Eureka3Row", "placeholder"]
 - ["C6Eureka3Row", "selectableValue"]
 - !private ["C6Eureka3Row", "title"]
 - !private ["C6Eureka3Row", "value"]
@@ -727,7 +809,10 @@ depends-member:
 - !private ["C6Eureka5RowOf", "deselect"]
 - !private ["C6Eureka5RowOf", "displayValueFor"]
 - ["C6Eureka5RowOf", "init"]
+- !private ["C6Eureka5RowOf", "maximumValue"]
+- !private ["C6Eureka5RowOf", "minimumValue"]
 - !private ["C6Eureka5RowOf", "options"]
+- !private ["C6Eureka5RowOf", "placeholder"]
 - !private ["C6Eureka5RowOf", "reload"]
 - !private ["C6Eureka5RowOf", "select"]
 - ["C6Eureka5RowOf", "selectableValue"]
@@ -739,7 +824,10 @@ depends-member:
 - !private ["P6Eureka7RowType", "cellSetup"]
 - !private ["P6Eureka7RowType", "displayValueFor"]
 - ["P6Eureka7RowType", "init"]
+- !private ["P6Eureka7RowType", "maximumValue"]
+- !private ["P6Eureka7RowType", "minimumValue"]
 - !private ["P6Eureka7RowType", "options"]
+- !private ["P6Eureka7RowType", "placeholder"]
 - ["P6Eureka7RowType", "selectableValue"]
 - !private ["P6Eureka7RowType", "title"]
 - !private ["P6Eureka7RowType", "value"]
@@ -814,6 +902,14 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["C6Eureka10SliderCell", "Value"]
+- !private ["C6Eureka9SliderRow", "Cell"]
+- !private ["C6Eureka9SliderRow", "Value"]
+- !private ["C6Eureka9SliderRow", "init"]
+- !private ["C6Eureka9SliderRow", "maximumValue"]
+- !private ["C6Eureka9SliderRow", "minimumValue"]
+- !private ["C6Eureka9SliderRow", "title"]
+- !private ["C6Eureka9SliderRow", "value"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
@@ -840,7 +936,10 @@ depends-member:
 - !private ["P6Eureka8Taggable", "deselect"]
 - !private ["P6Eureka8Taggable", "displayValueFor"]
 - ["P6Eureka8Taggable", "init"]
+- !private ["P6Eureka8Taggable", "maximumValue"]
+- !private ["P6Eureka8Taggable", "minimumValue"]
 - !private ["P6Eureka8Taggable", "options"]
+- !private ["P6Eureka8Taggable", "placeholder"]
 - !private ["P6Eureka8Taggable", "reload"]
 - !private ["P6Eureka8Taggable", "section"]
 - !private ["P6Eureka8Taggable", "select"]
@@ -850,6 +949,13 @@ depends-member:
 - !private ["P6Eureka8Taggable", "title"]
 - !private ["P6Eureka8Taggable", "value"]
 - ["P6Eureka8Taggable", ""]
+- !private ["C6Eureka8TextCell", "Value"]
+- !private ["P6Eureka13TextFieldCell", "Value"]
+- !private ["C6Eureka7TextRow", "Cell"]
+- !private ["C6Eureka7TextRow", "Value"]
+- !private ["C6Eureka7TextRow", "init"]
+- !private ["C6Eureka7TextRow", "placeholder"]
+- !private ["C6Eureka7TextRow", "title"]
 - !private ["P6Eureka13TypedCellType", "UIImage"]
 - ["P6Eureka13TypedCellType", "Value"]
 - !private ["P6Eureka13TypedCellType", "accessoryType"]
@@ -870,7 +976,10 @@ depends-member:
 - !private ["P6Eureka12TypedRowType", "cellSetup"]
 - !private ["P6Eureka12TypedRowType", "displayValueFor"]
 - ["P6Eureka12TypedRowType", "init"]
+- !private ["P6Eureka12TypedRowType", "maximumValue"]
+- !private ["P6Eureka12TypedRowType", "minimumValue"]
 - !private ["P6Eureka12TypedRowType", "options"]
+- !private ["P6Eureka12TypedRowType", "placeholder"]
 - ["P6Eureka12TypedRowType", "selectableValue"]
 - !private ["P6Eureka12TypedRowType", "title"]
 - !private ["P6Eureka12TypedRowType", "value"]
@@ -909,7 +1018,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "Section"]
 - !private ["PSo21UIAppearanceContainer", "SegmentedRow"]
 - !private ["PSo21UIAppearanceContainer", "SelectableSection"]
+- !private ["PSo21UIAppearanceContainer", "SliderRow"]
 - !private ["PSo21UIAppearanceContainer", "SwitchRow"]
+- !private ["PSo21UIAppearanceContainer", "TextRow"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "Value"]
 - !private ["PSo21UIAppearanceContainer", "accessoryType"]
@@ -933,7 +1044,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "Section"]
 - !private ["PSo18UIContentContainer", "SegmentedRow"]
 - !private ["PSo18UIContentContainer", "SelectableSection"]
+- !private ["PSo18UIContentContainer", "SliderRow"]
 - !private ["PSo18UIContentContainer", "SwitchRow"]
+- !private ["PSo18UIContentContainer", "TextRow"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "form"]
 - ["PSo18UIContentContainer", "init"]
@@ -975,7 +1088,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "Section"]
 - !private ["PSo18UIFocusEnvironment", "SegmentedRow"]
 - !private ["PSo18UIFocusEnvironment", "SelectableSection"]
+- !private ["PSo18UIFocusEnvironment", "SliderRow"]
 - !private ["PSo18UIFocusEnvironment", "SwitchRow"]
+- !private ["PSo18UIFocusEnvironment", "TextRow"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "Value"]
 - !private ["PSo18UIFocusEnvironment", "accessoryType"]
@@ -1017,8 +1132,10 @@ depends-member:
 - !private ["CSo11UIResponder", "Section"]
 - !private ["CSo11UIResponder", "SegmentedRow"]
 - !private ["CSo11UIResponder", "SelectableSection"]
+- !private ["CSo11UIResponder", "SliderRow"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "SwitchRow"]
+- !private ["CSo11UIResponder", "TextRow"]
 - ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UITableViewCellStyle"]
 - ["CSo11UIResponder", "Value"]
@@ -1042,7 +1159,9 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "Section"]
 - !private ["PSo20UIScrollViewDelegate", "SegmentedRow"]
 - !private ["PSo20UIScrollViewDelegate", "SelectableSection"]
+- !private ["PSo20UIScrollViewDelegate", "SliderRow"]
 - !private ["PSo20UIScrollViewDelegate", "SwitchRow"]
+- !private ["PSo20UIScrollViewDelegate", "TextRow"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "form"]
 - ["PSo20UIScrollViewDelegate", "init"]
@@ -1054,7 +1173,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "Section"]
 - !private ["PSo16UIStateRestoring", "SegmentedRow"]
 - !private ["PSo16UIStateRestoring", "SelectableSection"]
+- !private ["PSo16UIStateRestoring", "SliderRow"]
 - !private ["PSo16UIStateRestoring", "SwitchRow"]
+- !private ["PSo16UIStateRestoring", "TextRow"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "form"]
 - ["PSo16UIStateRestoring", "init"]
@@ -1082,7 +1203,9 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "Section"]
 - !private ["PSo21UITableViewDataSource", "SegmentedRow"]
 - !private ["PSo21UITableViewDataSource", "SelectableSection"]
+- !private ["PSo21UITableViewDataSource", "SliderRow"]
 - !private ["PSo21UITableViewDataSource", "SwitchRow"]
+- !private ["PSo21UITableViewDataSource", "TextRow"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "form"]
 - ["PSo21UITableViewDataSource", "init"]
@@ -1094,7 +1217,9 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "Section"]
 - !private ["PSo19UITableViewDelegate", "SegmentedRow"]
 - !private ["PSo19UITableViewDelegate", "SelectableSection"]
+- !private ["PSo19UITableViewDelegate", "SliderRow"]
 - !private ["PSo19UITableViewDelegate", "SwitchRow"]
+- !private ["PSo19UITableViewDelegate", "TextRow"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "form"]
 - ["PSo19UITableViewDelegate", "init"]
@@ -1102,11 +1227,14 @@ depends-member:
 - ["PSo19UITableViewDelegate", "rowValueHasBeenChanged"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
+- !private ["PSo19UITextFieldDelegate", "Value"]
 - !private ["PSo18UITraitEnvironment", "ImageCheckRow"]
 - !private ["PSo18UITraitEnvironment", "Section"]
 - !private ["PSo18UITraitEnvironment", "SegmentedRow"]
 - !private ["PSo18UITraitEnvironment", "SelectableSection"]
+- !private ["PSo18UITraitEnvironment", "SliderRow"]
 - !private ["PSo18UITraitEnvironment", "SwitchRow"]
+- !private ["PSo18UITraitEnvironment", "TextRow"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "Value"]
 - !private ["PSo18UITraitEnvironment", "accessoryType"]
@@ -1148,8 +1276,10 @@ depends-member:
 - !private ["CSo16UIViewController", "Section"]
 - !private ["CSo16UIViewController", "SegmentedRow"]
 - !private ["CSo16UIViewController", "SelectableSection"]
+- !private ["CSo16UIViewController", "SliderRow"]
 - !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "SwitchRow"]
+- !private ["CSo16UIViewController", "TextRow"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "form"]
 - ["CSo16UIViewController", "init"]
@@ -1183,6 +1313,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "map"]
+- !private ["C6Eureka10_FieldCell", "Value"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -1241,7 +1372,13 @@ depends-member:
 - !private ["C6Eureka10_SwitchRow", "init"]
 - !private ["C6Eureka10_SwitchRow", "title"]
 - !private ["C6Eureka10_SwitchRow", "value"]
+- !private ["C6Eureka8_TextRow", "Cell"]
+- !private ["C6Eureka8_TextRow", "Value"]
+- !private ["C6Eureka8_TextRow", "init"]
+- !private ["C6Eureka8_TextRow", "placeholder"]
+- !private ["C6Eureka8_TextRow", "title"]
 depends-nominal:
+- !private "P10RealmSwift11AddableType"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
@@ -1267,11 +1404,14 @@ depends-nominal:
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "C6Eureka8FieldRow"
+- !private "P6Eureka19FieldRowConformance"
 - !private "Sf"
 - !private "C6Eureka4Form"
 - "P6Eureka12FormDelegate"
 - "C6Eureka18FormViewController"
 - "P6Eureka26FormViewControllerProtocol"
+- !private "P6Eureka20FormatterConformance"
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
@@ -1289,7 +1429,9 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P6Eureka21KeyboardReturnHandler"
 - "C6EdEval10MathK6View"
+- !private "P10RealmSwift10MinMaxType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -1311,6 +1453,7 @@ depends-nominal:
 - !private "Vs5Range"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
+- !private "P10RealmSwift17RealmOptionalType"
 - "C6Eureka3Row"
 - "C6Eureka5RowOf"
 - "P6Eureka7RowType"
@@ -1326,6 +1469,8 @@ depends-nominal:
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
+- !private "C6Eureka10SliderCell"
+- !private "C6Eureka9SliderRow"
 - !private "Ps10Streamable"
 - !private "Ps10Strideable"
 - !private "SS"
@@ -1334,6 +1479,9 @@ depends-nominal:
 - !private "C6Eureka10SwitchCell"
 - !private "C6Eureka9SwitchRow"
 - "P6Eureka8Taggable"
+- !private "C6Eureka8TextCell"
+- !private "P6Eureka13TextFieldCell"
+- !private "C6Eureka7TextRow"
 - "P6Eureka13TypedCellType"
 - "P6Eureka12TypedRowType"
 - "PSo29UIAccessibilityIdentification"
@@ -1353,6 +1501,7 @@ depends-nominal:
 - !private "OSC28UITableViewCellAccessoryType"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
+- !private "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
@@ -1371,6 +1520,7 @@ depends-nominal:
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
+- !private "C6Eureka10_FieldCell"
 - !private "Ps24_ImageLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
@@ -1381,6 +1531,7 @@ depends-nominal:
 - "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 - !private "C6Eureka10_SwitchRow"
+- !private "C6Eureka8_TextRow"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -1396,4 +1547,42 @@ depends-external:
 - "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Headers/Eureka.h"
 - "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Eureka.framework/Modules/module.modulemap"
 - "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Modules/DataEntryToolbar.swiftmodule/x86_64.swiftmodule"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Headers/DataEntryToolbar-Swift.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Headers/DataEntryToolbar-umbrella.h"
+- "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Products/Debug-iphonesimulator/DataEntryToolbar/DataEntryToolbar.framework/Modules/module.modulemap"
 interface-hash: "a433b851de8d869e667f60aa6f480602"

@@ -786,7 +786,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EdEval/GlobalVariables.swift"
@@ -799,14 +799,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "EdEval.GlobalVariables1.init (numberOfCheckboxes : Swift.Int, textboxTitleArray : Swift.Array&lt;Swift.String&gt;) -&gt; EdEval.GlobalVariables1"
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/GlobalVariables.swift"
-                  timestampString = "484162148.518983"
+                  timestampString = "484239084.262263"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -814,14 +814,14 @@
                   offsetFromSymbolStart = "27">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "EdEval.GlobalVariables1.numberOfCheckboxes.getter : Swift.Int"
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/GlobalVariables.swift"
-                  timestampString = "484162148.519171"
+                  timestampString = "484239084.262451"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -829,14 +829,14 @@
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "EdEval.GlobalVariables1.numberOfCheckboxes.setter : Swift.Int"
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/GlobalVariables.swift"
-                  timestampString = "484162148.519384"
+                  timestampString = "484239084.262595"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -849,7 +849,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EdEval/CheckboxControl.swift"
@@ -1109,7 +1109,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "484162148.524158"
+                  timestampString = "492406271.724521"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1124,7 +1124,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "484162148.524371"
+                  timestampString = "492406271.724728"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1139,7 +1139,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "484162148.524524"
+                  timestampString = "492406271.724883"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1154,7 +1154,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "484162148.524676"
+                  timestampString = "492406271.725061"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1677,7 +1677,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReportsTableControllers.swift"
@@ -1757,7 +1757,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReportsTableControllers.swift"
@@ -2013,7 +2013,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReportsTableControllers.swift"
@@ -2029,7 +2029,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReportsTableControllers.swift"

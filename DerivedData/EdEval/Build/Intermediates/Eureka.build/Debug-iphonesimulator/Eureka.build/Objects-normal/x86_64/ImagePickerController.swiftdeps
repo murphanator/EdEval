@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6Eureka21ImagePickerController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "completionCallback"
-- "imagePickerController"
 - "imagePickerControllerDidCancel"
+- "imagePickerController"
+- "completionCallback"
+- "viewDidLoad"
 depends-top-level:
-- "UIImagePickerController"
-- "UINavigationControllerDelegate"
-- "RowOf"
-- "String"
-- "UIImagePickerControllerDelegate"
-- !private "UIImagePickerControllerOriginalImage"
-- "AnyObject"
-- !private "UIImagePickerControllerReferenceURL"
 - "ImagePickerController"
-- "UIImage"
+- !private "UIImagePickerControllerReferenceURL"
 - !private "ImageRow"
+- "UINavigationControllerDelegate"
+- "UIImagePickerController"
+- "UIImagePickerControllerDelegate"
+- "RowOf"
+- "UIImage"
+- "String"
+- "TypedRowControllerType"
+- "AnyObject"
+- !private "UIImagePickerControllerOriginalImage"
 - !private "NSURL"
 - "UIViewController"
-- "TypedRowControllerType"
 depends-member:
 - ["Ps9AnyObject", "RowValue"]
 - !private ["Ps9AnyObject", "UIImagePickerControllerOriginalImage"]

@@ -11,18 +11,18 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "PushRow"
-- "SelectorRow"
-- "CellType"
-- !private "BooleanLiteralType"
-- "BaseCell"
-- "_PushRow"
-- "TypedCellType"
 - "PushSelectorCell"
+- "_PushRow"
+- !private "BooleanLiteralType"
+- "TypedCellType"
 - "SelectorViewController"
 - "String"
+- "BaseCell"
 - "RowType"
-- "Equatable"
 - !private "ControllerProvider"
+- "Equatable"
+- "CellType"
+- "SelectorRow"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - !private ["Ps9AnyObject", "ControllerProvider"]

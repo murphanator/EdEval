@@ -10,24 +10,24 @@ provides-member:
 - ["C6Eureka20ButtonRowWithPresent", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CGFloat"
-- "ButtonRowWithPresent"
-- !private "UIColor"
+- "FormViewController"
 - "UIStoryboardSegue"
-- "UIViewController"
-- "ButtonCellOf"
+- "TypedRowControllerType"
+- "Equatable"
+- "String"
+- "_ButtonRowWithPresent"
 - "RowType"
-- !private "||"
 - !private "!"
-- "PresentationMode"
+- "ButtonRowWithPresent"
+- !private "CGFloat"
+- "ButtonCellOf"
 - "Row"
 - "PresenterRowType"
-- "String"
+- "PresentationMode"
 - !private "!="
-- "FormViewController"
-- "TypedRowControllerType"
-- "_ButtonRowWithPresent"
-- "Equatable"
+- !private "||"
+- "UIViewController"
+- !private "UIColor"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - ["Ps9AnyObject", "ProviderType"]

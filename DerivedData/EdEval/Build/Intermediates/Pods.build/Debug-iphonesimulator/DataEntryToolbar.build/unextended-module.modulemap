@@ -1,0 +1,10 @@
+framework module DataEntryToolbar {
+  umbrella header "DataEntryToolbar-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DataEntryToolbar.__Swift {
+    exclude header "DataEntryToolbar-Swift.h"
+}

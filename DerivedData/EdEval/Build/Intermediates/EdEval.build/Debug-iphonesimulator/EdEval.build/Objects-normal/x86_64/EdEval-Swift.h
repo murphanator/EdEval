@@ -97,6 +97,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import Eureka;
 @import ObjectiveC;
 @import Foundation;
+@import RealmSwift;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -117,9 +118,85 @@ SWIFT_CLASS("_TtC6EdEval11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CheckboxControl;
-@class NSBundle;
+@class UILabel;
+@class UITextField;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC6EdEval18BYOCustomLabelCell")
+@interface BYOCustomLabelCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISegmentedControl;
+
+SWIFT_CLASS("_TtC6EdEval19BYOCustomSegConCell")
+@interface BYOCustomSegConCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedControl;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6EdEval22BYOCustomTextFieldCell")
+@interface BYOCustomTextFieldCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (void)awakeFromNib;
+- (void)prepareForReuse;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIBarButtonItem;
+@class UIDatePicker;
+@class UITableView;
+@class NSIndexPath;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC6EdEval31BuildYourOwnTableViewController")
+@interface BuildYourOwnTableViewController : UITableViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified sliderButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified choiceBoxButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified commentBoxButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified categoryButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified textButton;
+- (IBAction)save:(UIBarButtonItem * _Nonnull)sender;
+
+/// Called when a user taps the trash icon, deleting the current info and clearing all textFields.
+- (IBAction)trash;
+
+/// Fires when a user changes the optionA segmented control, saving the current state in optionAValue.
+- (IBAction)optionAChanged:(UISegmentedControl * _Nonnull)sender;
+
+/// Fires when a user changes the optionB segmented control, saving the current state in optionBValue.
+- (IBAction)optionBChanged:(UISegmentedControl * _Nonnull)sender;
+- (void)viewDidLoad;
+
+/// A method to empty out the textFields when a new item is saved or cancelled.
+- (void)clearTextFieldData;
+
+/// A method to update the textField in the tableView when the datePicker value changes.
+- (void)updateDate:(UIDatePicker * _Nonnull)sender;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UITableViewCellEditingStyle)tableView:(UITableView * _Nonnull)tableView editingStyleForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CheckboxControl;
 
 SWIFT_CLASS("_TtC6EdEval32CheckBoxControllerViewController")
 @interface CheckBoxControllerViewController : UIViewController
@@ -131,9 +208,6 @@ SWIFT_CLASS("_TtC6EdEval32CheckBoxControllerViewController")
 @end
 
 @class QuestionTableViewCell;
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC6EdEval35CheckBoxQuestionTableViewController")
 @interface CheckBoxQuestionTableViewController : UITableViewController
@@ -155,7 +229,6 @@ SWIFT_CLASS("_TtC6EdEval35CheckBoxQuestionTableViewController")
 @end
 
 @class UIButton;
-@class UITextField;
 
 SWIFT_CLASS("_TtC6EdEval15CheckboxControl")
 @interface CheckboxControl : UIView
@@ -191,7 +264,6 @@ SWIFT_CLASS("_TtC6EdEval16CheckboxControl2")
 @end
 
 @class UIStoryboardSegue;
-@class UILabel;
 @class UISlider;
 
 SWIFT_CLASS("_TtC6EdEval28CheckboxSliderViewController")
@@ -325,7 +397,6 @@ SWIFT_CLASS("_TtC6EdEval13ReadingK6View")
 @end
 
 @class SCheckBox;
-@class UIBarButtonItem;
 @class UIScrollView;
 
 SWIFT_CLASS("_TtC6EdEval23Readingk6ViewController")
@@ -453,6 +524,22 @@ SWIFT_CLASS("_TtC6EdEval9SCheckBox")
 - (void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
 @end
 
+@class RLMRealm;
+@class RLMObjectSchema;
+@class RLMSchema;
+
+SWIFT_CLASS("_TtC6EdEval16TeacherDataRealm")
+@interface TeacherDataRealm : RealmSwiftObject
+@property (nonatomic, copy) NSString * _Nonnull teacherName;
+@property (nonatomic, copy) NSString * _Nonnull schoolName;
+@property (nonatomic, copy) NSString * _Nonnull subjectName;
+@property (nonatomic, copy) NSString * _Nonnull gradeLevel;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIPageControl;
 
 SWIFT_CLASS("_TtC6EdEval22WalkThruViewController")
@@ -463,6 +550,7 @@ SWIFT_CLASS("_TtC6EdEval22WalkThruViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified gradeTextField;
 @property (nonatomic, weak) IBOutlet UIPageControl * _Null_unspecified walkthroughPageControl;
 @property (nonatomic, copy) NSString * _Nonnull myTextField;
+@property (nonatomic, strong) TeacherDataRealm * _Nonnull newTeacher;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;

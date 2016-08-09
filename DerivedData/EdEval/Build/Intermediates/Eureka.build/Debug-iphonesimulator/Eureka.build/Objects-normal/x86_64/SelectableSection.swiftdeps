@@ -16,24 +16,24 @@ provides-member:
 - ["P6Eureka21SelectableSectionType", "prepareSelectableRows"]
 provides-dynamic-lookup:
 depends-top-level:
-- "IndexingGenerator"
-- "String"
 - !private "&&"
-- !private "=="
-- "SelectableSection"
-- "BaseRow"
-- "NSIndexSet"
-- !private "!"
-- "Section"
 - "CollectionType"
-- "SelectableSectionType"
-- "SelectionType"
-- "SelectableRowType"
-- !private "!="
-- "Void"
-- "BooleanLiteralType"
 - "Bool"
+- "Void"
+- !private "!"
+- "NSIndexSet"
+- "SelectionType"
+- "String"
+- !private "=="
+- "SelectableSectionType"
+- "SelectableRowType"
+- "SelectableSection"
+- "IndexingGenerator"
+- !private "!="
+- "BaseRow"
 - !private "||"
+- "Section"
+- "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - ["Ps9AnyObject", "Generator"]
