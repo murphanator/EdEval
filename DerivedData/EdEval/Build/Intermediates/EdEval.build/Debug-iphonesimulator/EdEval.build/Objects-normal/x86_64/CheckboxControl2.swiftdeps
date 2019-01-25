@@ -6,42 +6,42 @@ provides-nominal:
 provides-member:
 - ["C6EdEval16CheckboxControl2", ""]
 provides-dynamic-lookup:
-- "checkTxtField"
-- "layoutSubviews"
-- "checkboxTapped"
-- "buttonNumberTapped"
 - "commonInit"
-- "spacing"
 - "PassValues"
+- "spacing"
+- "checkboxTapped"
 - "checkButtons"
 - "arrayOfCheckboxTitles"
 - "checkboxTotal"
+- "checkTxtField"
 - "updateButtonSelectionStates"
+- "layoutSubviews"
+- "buttonNumberTapped"
 depends-top-level:
-- !private "Array"
-- !private "CGFloat"
-- !private "+="
-- "UIControl"
 - "UnicodeScalarType"
-- "UIButton"
-- "CheckboxControl2"
-- !private "BooleanLiteralType"
-- !private "/"
-- "CGRect"
-- "Int"
-- !private "-"
-- !private "+"
-- "NSCoder"
-- !private "UIImage"
-- !private "UITextBorderStyle"
-- "StringLiteralType"
-- !private "UIColor"
-- "String"
-- !private "print"
-- !private "=="
-- !private "*"
-- !private "..<"
 - "UITextField"
+- "UIControl"
+- !private "print"
+- "UIButton"
+- !private "*"
+- !private "UIColor"
+- !private "UITextBorderStyle"
+- "String"
+- "NSCoder"
+- !private "+="
+- !private "BooleanLiteralType"
+- "Int"
+- "CheckboxControl2"
+- !private "-"
+- !private "CGFloat"
+- !private "..<"
+- !private "=="
+- "StringLiteralType"
+- !private "/"
+- !private "Array"
+- !private "+"
+- !private "UIImage"
+- "CGRect"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -709,11 +709,15 @@ depends-member:
 - !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
 - !private ["P10RealmSwift17RealmOptionalType", "init"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
+- ["Ps12SequenceType", "Distance"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "IntegerLiteralType"]
+- !private ["Ps12SequenceType", "Stride"]
 - ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Buffer"]
+- !private ["Ps12SequenceType", "_DisabledRangeIndex"]
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "enumerate"]
 - !private ["Ps12SequenceType", "indexOf"]

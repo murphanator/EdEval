@@ -13,26 +13,26 @@ provides-member:
 - ["C6Eureka9PickerRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "RowType"
-- "Array"
-- "StringLiteralType"
 - "CellType"
 - "Cell"
-- "Equatable"
-- "PickerRow"
-- "UIPickerView"
-- "Dictionary"
-- !private "??"
-- "UIPickerViewDelegate"
-- "_PickerRow"
-- "UIPickerViewDataSource"
+- "Array"
 - "Int"
+- "String"
+- "RowType"
+- "UIPickerViewDataSource"
 - "BooleanLiteralType"
 - !private "NSLayoutConstraint"
+- "UIPickerViewDelegate"
+- "PickerRow"
+- "UIPickerView"
 - "PickerCell"
+- "Equatable"
 - "UITableViewCellStyle"
 - "Row"
+- "_PickerRow"
+- !private "??"
+- "Dictionary"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - !private ["Ps9AnyObject", "NSLayoutConstraint"]

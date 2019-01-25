@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C6EdEval25MathK6TableViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSectionsInTableView"
-- "didReceiveMemoryWarning"
-- "tableView"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
+- "tableView"
 depends-top-level:
-- "UITableView"
-- !private "URLRow"
-- "FormViewController"
-- !private "StringLiteralType"
-- !private "NSDate"
-- !private "+++"
-- "MathK6TableViewController"
-- !private "SwitchRow"
 - !private "print"
-- !private "CheckRow"
-- !private "SliderRow"
-- "BooleanLiteralType"
-- !private "DateRow"
-- !private "Section"
-- !private "LabelRow"
-- !private "<<<"
-- "UINavigationControllerDelegate"
 - "Int"
+- "UINavigationControllerDelegate"
+- !private "StringLiteralType"
+- !private "SwitchRow"
+- !private "+++"
+- !private "DateRow"
+- "UITableView"
+- !private "CheckRow"
+- !private "LabelRow"
+- !private "URLRow"
+- !private "Section"
+- "FormViewController"
+- !private "<<<"
+- "BooleanLiteralType"
+- "MathK6TableViewController"
+- !private "NSDate"
+- !private "SliderRow"
 depends-member:
 - !private ["P10RealmSwift11AddableType", "Distance"]
 - !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -629,10 +629,13 @@ depends-member:
 - !private ["P6Eureka15SectionDelegate", "SubSequence"]
 - !private ["P6Eureka15SectionDelegate", "_Element"]
 - !private ["P6Eureka15SectionDelegate", "init"]
+- !private ["Ps12SequenceType", "Distance"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "IntegerLiteralType"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_DisabledRangeIndex"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "init"]
 - !private ["Ps17SignedIntegerType", "Distance"]

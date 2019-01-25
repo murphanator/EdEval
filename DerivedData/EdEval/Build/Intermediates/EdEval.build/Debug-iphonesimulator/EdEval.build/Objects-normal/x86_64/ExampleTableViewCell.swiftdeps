@@ -7,13 +7,13 @@ provides-member:
 - ["C6EdEval20ExampleTableViewCell", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
-- "checkMark"
 - "setSelected"
+- "checkMark"
 depends-top-level:
-- "ExampleTableViewCell"
-- "UITableViewDelegate"
 - "Bool"
+- "ExampleTableViewCell"
 - "UITableViewCell"
+- "UITableViewDelegate"
 - "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]

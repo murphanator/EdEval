@@ -349,6 +349,25 @@ SWIFT_CLASS("_TtC6EdEval26ExampleTableViewController")
 @end
 
 
+SWIFT_CLASS("_TtC6EdEval30MakeYourOwnForm2ViewController")
+@interface MakeYourOwnForm2ViewController : FormViewController
+@property (nonatomic) NSInteger indexOfSection;
+- (void)viewDidLoad;
+- (IBAction)insertSection;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6EdEval23MakeYourOwnSelectionBar")
+@interface MakeYourOwnSelectionBar : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6EdEval25MathK6TableViewController")
 @interface MathK6TableViewController : FormViewController <UINavigationControllerDelegate>
 - (void)viewDidLoad;
@@ -366,6 +385,20 @@ SWIFT_CLASS("_TtC6EdEval10MathK6View")
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6EdEval16NewTableViewCell")
+@interface NewTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified AddSlider;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified AddChoiceBox;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified AddCommentBox;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified AddCategory;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified AddText;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

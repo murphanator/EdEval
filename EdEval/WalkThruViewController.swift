@@ -50,13 +50,13 @@ class WalkThruViewController: UIViewController, UITextFieldDelegate, UINavigatio
     }
     
     //MARK: UITextFieldDelegate
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //Hide the Keyboard. Resign first responder status
         textField.resignFirstResponder()
         return true
         
     }
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         //save the textField info
          //mealNameLabel.text = textField.text
         //String; myTextField
@@ -74,12 +74,12 @@ class WalkThruViewController: UIViewController, UITextFieldDelegate, UINavigatio
     
     //MARK: Navigation
     
-    @IBAction func back(sender: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     //MARK: Actions
     
-    @IBAction func startWalkThroughButton(sender: UIButton) {
+    @IBAction func startWalkThroughButton(_ sender: UIButton) {
         //user clicked start button...do something with the data entered...like display on next window
         print(nameTextField.text!)          // ! tells compiler value can't be nil so not an optional value..or something like that...Unwraps an optional value.
         print(schoolTextField.text)
@@ -97,7 +97,7 @@ class WalkThruViewController: UIViewController, UITextFieldDelegate, UINavigatio
             realm.add(newTeacher)   //Add to Database
         }
     }
-    @IBAction func setPageController(sender: UIPageControl) {
+    @IBAction func setPageController(_ sender: UIPageControl) {
         
     }
 

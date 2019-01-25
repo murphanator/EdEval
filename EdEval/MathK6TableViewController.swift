@@ -19,10 +19,10 @@ class MathK6TableViewController: FormViewController, UINavigationControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         print("MathK6 ... Made it in")
-        URLRow.defaultCellUpdate = {cell,row in cell.textField.textColor = .blueColor()}
-        LabelRow.defaultCellUpdate = {cell, row in cell.detailTextLabel?.textColor = .orangeColor()}
-        CheckRow.defaultCellUpdate = {cell, row in cell.tintColor = .orangeColor()}
-        DateRow.defaultRowInitializer = {row in row.minimumDate = NSDate()}
+        URLRow.defaultCellUpdate = {cell,row in cell.textField.textColor = .blue}
+        LabelRow.defaultCellUpdate = {cell, row in cell.detailTextLabel?.textColor = .orange}
+        CheckRow.defaultCellUpdate = {cell, row in cell.tintColor = .orange}
+        DateRow.defaultRowInitializer = {row in row.minimumDate = Date()}
         
         form =
             Section()
@@ -35,7 +35,7 @@ class MathK6TableViewController: FormViewController, UINavigationControllerDeleg
                 row.reload()
             }
             <<< DateRow() {
-                $0.value = NSDate()
+                $0.value = Date()
                 $0.title = "DateRow"
             }
         
@@ -73,13 +73,13 @@ class MathK6TableViewController: FormViewController, UINavigationControllerDeleg
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         print("number of Sections in tableview ...MADE IT IN")
         return 0
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         print("tableview ...MADE IT IN")
         return 0

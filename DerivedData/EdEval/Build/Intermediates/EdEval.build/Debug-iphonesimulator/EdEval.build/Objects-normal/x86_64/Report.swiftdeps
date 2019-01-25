@@ -8,18 +8,18 @@ provides-member:
 - ["C6EdEval6Report", ""]
 - ["VC6EdEval6Report11PropertyKey", ""]
 provides-dynamic-lookup:
-- "DocumentsDirectory"
-- "reportName"
-- "ArchiveURL"
 - "encodeWithCoder"
+- "reportName"
+- "DocumentsDirectory"
+- "ArchiveURL"
 depends-top-level:
-- "NSFileManager"
-- "StringLiteralType"
-- "NSCoder"
-- "Report"
-- "NSCoding"
-- "String"
 - "NSObject"
+- "NSCoding"
+- "Report"
+- "StringLiteralType"
+- "String"
+- "NSFileManager"
+- "NSCoder"
 depends-member:
 - ["P10RealmSwift11AddableType", "Distance"]
 - ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -247,9 +247,11 @@ depends-member:
 - ["C6EdEval6Report", "encodeWithCoder"]
 - ["C6EdEval6Report", "init"]
 - ["C6EdEval6Report", "reportName"]
+- ["Ps12SequenceType", "Distance"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "IntegerLiteralType"]
 - ["Ps12SequenceType", "SubSequence"]
 - ["Ps12SequenceType", "_Element"]
 - ["Ps12SequenceType", "first"]

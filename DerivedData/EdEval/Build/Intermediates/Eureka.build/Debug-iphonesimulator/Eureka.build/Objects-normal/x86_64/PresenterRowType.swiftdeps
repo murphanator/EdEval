@@ -8,12 +8,12 @@ provides-member:
 - ["P6Eureka16PresenterRowType", "onPresent"]
 provides-dynamic-lookup:
 depends-top-level:
-- "PresentationMode"
-- "UIViewController"
-- "PresenterRowType"
 - "TypedRowType"
-- "FormViewController"
+- "PresentationMode"
+- "PresenterRowType"
 - "TypedRowControllerType"
+- "UIViewController"
+- "FormViewController"
 depends-member:
 - !private ["Ps9AnyObject", "Cell"]
 - ["Ps9AnyObject", "FormViewController"]

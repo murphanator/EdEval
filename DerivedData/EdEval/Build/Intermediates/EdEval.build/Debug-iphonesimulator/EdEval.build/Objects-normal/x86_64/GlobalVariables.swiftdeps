@@ -13,10 +13,10 @@ depends-top-level:
 - "String"
 - "IntegerLiteralType"
 - "globalVariablesInstance"
-- "StringLiteralType"
 - "Int"
-- "checky"
+- "StringLiteralType"
 - "GlobalVariables1"
+- "checky"
 - "textboxy"
 - "FloatLiteralType"
 depends-member:

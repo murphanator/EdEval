@@ -6,39 +6,39 @@ provides-nominal:
 provides-member:
 - ["C6EdEval15CheckboxControl", ""]
 provides-dynamic-lookup:
-- "updateButtonSelectionStates"
-- "checkButtons"
-- "layoutSubviews"
 - "checkTxtField"
-- "spacing"
-- "arrayOfCheckboxTitles"
+- "updateButtonSelectionStates"
+- "layoutSubviews"
 - "buttonNumberTapped"
-- "checkboxTotal"
+- "spacing"
 - "checkboxTapped"
+- "checkButtons"
+- "arrayOfCheckboxTitles"
+- "checkboxTotal"
 depends-top-level:
-- "UITextField"
-- !private "-"
-- !private "CGRect"
-- "UIView"
-- !private "+"
-- "UIButton"
-- "StringLiteralType"
-- !private "Array"
-- !private "..<"
-- !private "CGFloat"
-- !private "=="
-- !private "/"
 - "CheckboxControl"
-- !private "UIImage"
-- !private "BooleanLiteralType"
 - "Int"
+- "UIButton"
+- !private "..<"
 - "NSCoder"
-- !private "UITextBorderStyle"
+- !private "CGFloat"
+- !private "-"
+- !private "=="
+- "UIView"
+- "StringLiteralType"
+- !private "/"
+- !private "+"
+- !private "CGRect"
+- !private "Array"
+- !private "UIImage"
 - !private "print"
-- !private "*"
 - !private "UIColor"
-- !private "+="
+- !private "*"
 - "String"
+- !private "BooleanLiteralType"
+- !private "+="
+- !private "UITextBorderStyle"
+- "UITextField"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -686,11 +686,15 @@ depends-member:
 - !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
 - !private ["P10RealmSwift17RealmOptionalType", "init"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
+- ["Ps12SequenceType", "Distance"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "IntegerLiteralType"]
+- !private ["Ps12SequenceType", "Stride"]
 - ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Buffer"]
+- !private ["Ps12SequenceType", "_DisabledRangeIndex"]
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "enumerate"]
 - !private ["Ps12SequenceType", "indexOf"]

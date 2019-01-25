@@ -24,10 +24,10 @@ class ExampleTableViewCell: UITableViewCell, UITableViewDelegate{
 
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
        //***checkMark?.highlighted = selected
-        checkMark?.highlighted = selected
+        checkMark?.isHighlighted = selected
         //checkMark.setImage(exampleCheckedImage, forState: .Normal)
 
         // Configure the view for the selected state

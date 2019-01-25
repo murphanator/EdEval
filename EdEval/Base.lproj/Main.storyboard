@@ -463,7 +463,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="NEW"/>
                                     <connections>
-                                        <segue destination="b52-ku-jcD" kind="show" id="cXg-Fv-pSe"/>
+                                        <segue destination="ljh-is-rZ9" kind="show" id="X8X-em-zPK"/>
                                     </connections>
                                 </button>
                             </barButtonItem>
@@ -1112,7 +1112,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CY-Bs-3AU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5127" y="2272"/>
+            <point key="canvasLocation" x="5117" y="2562"/>
         </scene>
         <!--Checkbox Slider View Controller-->
         <scene sceneID="2mb-Xh-EpD">
@@ -1173,7 +1173,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZDK-IM-9XV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3286" y="307"/>
+            <point key="canvasLocation" x="2645" y="297"/>
+        </scene>
+        <!--Make Your Own Form2 View Controller-->
+        <scene sceneID="sRK-Q9-uxX">
+            <objects>
+                <viewController id="ljh-is-rZ9" customClass="MakeYourOwnForm2ViewController" customModule="EdEval" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HJp-qQ-2mA"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ou-Gg-ib7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P79-mp-dxj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDg-a7-Bwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4725" y="376"/>
         </scene>
         <!--Build Your Own Table View Controller-->
         <scene sceneID="NR5-9U-YZn">
@@ -1184,7 +1202,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Ere-PO-33e" userLabel="Navigation Bar for Design new walkthrough">
-                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem id="e90-ja-p6L">
@@ -1205,7 +1223,7 @@
                         </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" id="1ov-Ed-rPA" customClass="BYOCustomTextFieldCell" customModule="EdEval" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ov-Ed-rPA" id="rqd-If-AcZ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -1223,7 +1241,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="cmm-nx-CQr" customClass="BYOCustomLabelCell" customModule="EdEval" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="180" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cmm-nx-CQr" id="SKO-k1-fCk">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -1248,7 +1266,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionsCell" id="ate-lc-4v3" customClass="BYOCustomSegConCell" customModule="EdEval" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="224" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="160" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ate-lc-4v3" id="TWA-O2-RaD">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -1275,7 +1293,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="aD5-JC-pxD">
-                                <rect key="frame" x="0.0" y="268" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="204" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aD5-JC-pxD" id="d3S-pw-zTC">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -1284,19 +1302,71 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gt3-J2-nfY">
                                             <rect key="frame" x="274" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddNewItemCell" id="PaQ-IH-XOd">
-                                <rect key="frame" x="0.0" y="312" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="248" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PaQ-IH-XOd" id="MTB-gf-X9R">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewTableViewCell" id="p7r-v3-Zwa" customClass="NewTableViewCell" customModule="EdEval" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="292" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p7r-v3-Zwa" id="YhW-e2-ESC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1I-vi-XQF">
+                                            <rect key="frame" x="11" y="5" width="40" height="30"/>
+                                            <state key="normal" title="Slider"/>
+                                            <connections>
+                                                <action selector="SliderClicked:" destination="b52-ku-jcD" eventType="touchUpInside" id="zex-qX-o7M"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtW-eU-Y1G">
+                                            <rect key="frame" x="59" y="5" width="93" height="30"/>
+                                            <state key="normal" title="ChoiceBox"/>
+                                            <connections>
+                                                <action selector="ChoiceBoxClicked:" destination="b52-ku-jcD" eventType="touchUpInside" id="iXN-xL-ZAC"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q14-eP-fJw">
+                                            <rect key="frame" x="160" y="5" width="110" height="30"/>
+                                            <state key="normal" title="CommentBox"/>
+                                            <connections>
+                                                <action selector="CommentBoxClicked:" destination="b52-ku-jcD" eventType="touchUpInside" id="X2W-Ec-aet"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-63-Flm">
+                                            <rect key="frame" x="278" y="5" width="76" height="30"/>
+                                            <state key="normal" title="Category"/>
+                                            <connections>
+                                                <action selector="CategoryClicked:" destination="b52-ku-jcD" eventType="touchUpInside" id="5gd-lF-4JN"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WW1-OD-qwl">
+                                            <rect key="frame" x="362" y="5" width="41" height="30"/>
+                                            <state key="normal" title="Text"/>
+                                            <connections>
+                                                <action selector="TextClicked:" destination="b52-ku-jcD" eventType="touchUpInside" id="YW1-K2-JQs"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="AddCategory" destination="xyK-63-Flm" id="GL0-s0-PO7"/>
+                                    <outlet property="AddChoiceBox" destination="qtW-eU-Y1G" id="Vme-ti-ue9"/>
+                                    <outlet property="AddCommentBox" destination="Q14-eP-fJw" id="zPm-p1-K07"/>
+                                    <outlet property="AddSlider" destination="x1I-vi-XQF" id="VJN-ah-xfu"/>
+                                    <outlet property="AddText" destination="WW1-OD-qwl" id="pws-dN-qsh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1390,7 +1460,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tj6-E1-0Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="2272"/>
+            <point key="canvasLocation" x="4266" y="2562"/>
         </scene>
     </scenes>
     <resources>

@@ -1,4 +1,4 @@
-//
+ //
 //  CheckboxView.swift
 //  EdEval
 //
@@ -63,7 +63,7 @@ import UIKit
             view.frame = bounds
             
             // Make the view stretch with containing view
-            view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+            view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
             // Adding custom subview on top of our view (over any custom drawing > see note below)
  
            //#$% addSubview(view)
@@ -80,25 +80,25 @@ import UIKit
                 let button = UIButton()
                 let txtField = UITextField()
                 
-                button.setImage(unCheckedImage, forState: .Normal)
-                button.setImage(checkedImage, forState: .Selected)
-                button.setImage(checkedImage, forState: [.Highlighted, .Selected])
+                button.setImage(unCheckedImage, for: UIControlState())
+                button.setImage(checkedImage, for: .selected)
+                button.setImage(checkedImage, for: [.highlighted, .selected])
                 
                 button.adjustsImageWhenHighlighted = false
                 
-                button.addTarget(self, action: "checkboxTapped:", forControlEvents: .TouchDown)
+                button.addTarget(self, action: #selector(CheckboxView.checkboxTapped(_:)), for: .touchDown)
                 checkButtons += [button]
                 
                 addSubview(button)
                 
                 //textfield sub view
                 if (arrayOfCheckboxTitles[i] == ""){
-                    txtField.backgroundColor = UIColor.yellowColor()
+                    txtField.backgroundColor = UIColor.yellow
                 }
                 else{
-                    txtField.backgroundColor = UIColor.clearColor()
+                    txtField.backgroundColor = UIColor.clear
                 }
-                txtField.textColor = UIColor.blackColor()
+                txtField.textColor = UIColor.black
                 txtField.adjustsFontSizeToFitWidth = true
                 if (arrayOfCheckboxTitles[i] == ""){
                     txtField.text = "click to edit text"
@@ -107,10 +107,10 @@ import UIKit
                     txtField.text = arrayOfCheckboxTitles[i]
                 }
                 if (arrayOfCheckboxTitles[i] == ""){
-                    txtField.borderStyle = UITextBorderStyle.Bezel
+                    txtField.borderStyle = UITextBorderStyle.bezel
                 }
                 else{
-                    txtField.borderStyle = UITextBorderStyle.None
+                    txtField.borderStyle = UITextBorderStyle.none
                 }
                 
                 checkTxtField += [txtField]
@@ -118,11 +118,11 @@ import UIKit
                 addSubview(txtField)
             }
             
-            let bundle = NSBundle(forClass: self.dynamicType)
+            let bundle = Bundle(for: type(of: self))
             let nib = UINib(nibName: "CheckboxView", bundle: bundle)
             
             // Assumes UIView is top level and only object in CustomView.xib file
-            let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+            let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
             return view
         }
     
@@ -133,7 +133,7 @@ import UIKit
         }
                //MARK: Initialization
         
-        func PassValues(checkboxTotal:Int, arrayOfCheckboxTitles:[String]){
+        func PassValues(_ checkboxTotal:Int, arrayOfCheckboxTitles:[String]){
             self.checkboxTotal = checkboxTotal
             self.arrayOfCheckboxTitles = arrayOfCheckboxTitles
             print("checkbox totals=  ",checkboxTotal)
@@ -164,12 +164,12 @@ import UIKit
             var txtFieldFrame = CGRect(x: buttonSize + spacing, y: buttonSize, width: txtFieldSize, height: buttonSize)
             
             // Offset each button's origin by the length of the button plus some spacing.
-            for (index, button) in checkButtons.enumerate() {
+            for (index, button) in checkButtons.enumerated() {
                 buttonFrame.origin.y = CGFloat(index * (buttonSize + spacing))
                 button.frame = buttonFrame
                 
             }
-            for (index, txtField) in checkTxtField.enumerate() {
+            for (index, txtField) in checkTxtField.enumerated() {
                 txtFieldFrame.origin.y = CGFloat(index * (buttonSize + spacing))
                 txtField.frame = txtFieldFrame
                 
@@ -178,22 +178,22 @@ import UIKit
         }
         
         //MARK: Button Action
-        func checkboxTapped(button: UIButton) {
-            buttonNumberTapped = checkButtons.indexOf(button)! + 1
+        func checkboxTapped(_ button: UIButton) {
+            buttonNumberTapped = checkButtons.index(of: button)! + 1
             
-            if checkButtons[buttonNumberTapped-1].selected == true {
-                checkButtons[buttonNumberTapped-1].selected = false
+            if checkButtons[buttonNumberTapped-1].isSelected == true {
+                checkButtons[buttonNumberTapped-1].isSelected = false
             }
             else{
-                checkButtons[buttonNumberTapped-1].selected = true
+                checkButtons[buttonNumberTapped-1].isSelected = true
             }
             
             updateButtonSelectionStates()
         }
         
         func updateButtonSelectionStates() {
-            for (index, button) in checkButtons.enumerate() {
-                button.selected = checkButtons[index].selected
+            for (index, button) in checkButtons.enumerated() {
+                button.isSelected = checkButtons[index].isSelected
             }
             //need to update the text field and put in array
             /*for (index,txtField) in checkTxtField.enumerate() {

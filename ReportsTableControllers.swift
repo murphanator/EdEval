@@ -27,7 +27,7 @@ class ReportsTableControllers: UITableViewController {
         self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     func loadDefaultReports() {
@@ -44,18 +44,18 @@ class ReportsTableControllers: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return reportTableData.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "ReportsTableViewCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ReportsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ReportsTableViewCell
         
         //Get the appropiate report for the data source layout
         let report = reportTableData[indexPath.row]
@@ -75,32 +75,32 @@ class ReportsTableControllers: UITableViewController {
     */
     
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
     
 
     // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to toIndexPath: IndexPath) {
 
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Code to be run on tableViewCell touch
        //4.30 let cellIndex = indexPath.row
         let cellIndex = indexPath.row
         print("cellIndex= ", cellIndex)
         
         if cellIndex == 0 {
-            self.performSegueWithIdentifier("reportSegue", sender: self)
+            self.performSegue(withIdentifier: "reportSegue", sender: self)
         }
         else if cellIndex == 1 {
-            self.performSegueWithIdentifier("mathK6Segue", sender: self)
+            self.performSegue(withIdentifier: "mathK6Segue", sender: self)
         }
     }
     
@@ -117,13 +117,13 @@ class ReportsTableControllers: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if (segue.identifier == "reportSegue"){
             //let nav = segue.destinationViewController as? UINavigationController
             //let reportVC = nav!.topViewController as! Readingk6ViewController
-            let reportVC = segue.destinationViewController as? Readingk6ViewController
+            let reportVC = segue.destination as? Readingk6ViewController
             //let row = (sender as! NSIndexPath).row
             print("reportVC = ", reportVC)
             //print("row = ", row)
@@ -132,7 +132,7 @@ class ReportsTableControllers: UITableViewController {
         else if (segue.identifier == "mathK6Segue"){
             //let nav2 = (segue.destinationViewController as! UINavigationController).topViewController as! MathK6View
             //let row2 = (sender as! NSIndexPath).row
-            let mathK6VC = segue.destinationViewController as? MathK6View
+            let mathK6VC = segue.destination as? MathK6View
             print("mathK6VC = ", mathK6VC)
             //print("row = ", row2)
         }

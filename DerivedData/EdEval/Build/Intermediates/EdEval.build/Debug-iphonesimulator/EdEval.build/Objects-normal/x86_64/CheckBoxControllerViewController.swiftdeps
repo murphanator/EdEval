@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "CheckBoxOutlet"
 depends-top-level:
-- "CheckBoxControllerViewController"
 - "UIViewController"
+- "CheckBoxControllerViewController"
 - "CheckboxControl"
 depends-member:
 - ["Ps9AnyObject", "CheckBoxOutlet"]

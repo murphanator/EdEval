@@ -8,61 +8,61 @@ provides-member:
 - ["C6EdEval31BuildYourOwnTableViewController", ""]
 - ["OC6EdEval31BuildYourOwnTableViewController13TableSections", ""]
 provides-dynamic-lookup:
-- "categoryButton"
-- "trash"
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "choiceBoxButton"
-- "didReceiveMemoryWarning"
-- "optionBChanged"
+- "commentBoxButton"
 - "updateDate"
-- "saveButton"
-- "numberOfSectionsInTableView"
-- "textFieldShouldReturn"
+- "didReceiveMemoryWarning"
+- "optionAChanged"
+- "viewDidLoad"
 - "textButton"
 - "clearTextFieldData"
-- "commentBoxButton"
-- "optionAChanged"
+- "saveButton"
+- "categoryButton"
+- "numberOfSectionsInTableView"
 - "sliderButton"
 - "save"
+- "trash"
+- "choiceBoxButton"
+- "textFieldShouldReturn"
+- "optionBChanged"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "Array"
-- "UITableViewCellEditingStyle"
-- "CGFloat"
-- "NSIndexPath"
-- "UISegmentedControl"
-- "UITableViewCell"
-- !private "BYOCustomTextFieldCell"
-- !private "&&"
-- "UITextField"
-- "UITableViewController"
-- "Int"
-- !private "BYOCustomSegConCell"
-- !private "CGRectMake"
-- "Bool"
-- !private "UIScreen"
 - "String"
-- "StringLiteralType"
-- "Dictionary"
-- !private "BYOCustomLabelCell"
-- "UITextFieldDelegate"
+- "UITableViewCellEditingStyle"
+- "UITableViewController"
+- !private ">="
+- "UITableView"
 - "UIDatePicker"
 - "DataEntryToolbar"
-- "UITableView"
-- !private ">="
-- !private "NSDateFormatter"
-- "BuildYourOwnTableViewController"
-- !private "CGPoint"
+- "Int"
 - "UIBarButtonItem"
-- "=="
+- !private "BooleanLiteralType"
+- "UISegmentedControl"
+- "Bool"
+- !private "&&"
+- !private "CGRectMake"
+- !private "BYOCustomTextFieldCell"
+- "Array"
+- "UITableViewCell"
+- "UITextFieldDelegate"
 - !private "~="
+- "BuildYourOwnTableViewController"
+- "=="
+- "UITextField"
+- !private "NSDateFormatter"
+- "StringLiteralType"
+- "NSIndexPath"
+- !private "BYOCustomLabelCell"
+- !private "CGPoint"
+- !private "BYOCustomSegConCell"
+- "Dictionary"
+- "CGFloat"
+- !private "UIScreen"
 depends-member:
 - ["P10RealmSwift11AddableType", "Distance"]
 - ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -1170,15 +1170,18 @@ depends-member:
 - ["P10RealmSwift17RealmOptionalType", "IntegerLiteralType"]
 - !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
 - !private ["P10RealmSwift17RealmOptionalType", "hashValue"]
+- ["Ps12SequenceType", "Distance"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "IntegerLiteralType"]
 - ["Ps12SequenceType", "Key"]
 - ["Ps12SequenceType", "SubSequence"]
 - ["Ps12SequenceType", "Value"]
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "hashValue"]
 - ["Ps12SequenceType", "init"]
 - !private ["Ps12SequenceType", "removeAll"]
 - !private ["Ps12SequenceType", "removeAtIndex"]

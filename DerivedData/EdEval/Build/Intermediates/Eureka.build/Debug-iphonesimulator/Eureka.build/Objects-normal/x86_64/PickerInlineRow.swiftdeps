@@ -14,12 +14,13 @@ depends-top-level:
 - "PickerRow"
 - "_PickerInlineRow"
 - "PickerInlineRow"
-- "LabelCellOf"
 - "String"
-- "Row"
+- !private "!"
 - "RowType"
 - "InlineRowType"
-- !private "!"
+- "Row"
+- "LabelCellOf"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - ["Ps9AnyObject", "InlineRow"]
@@ -40,18 +41,8 @@ depends-member:
 - !private ["Ps9AnyObject", "tintColor"]
 - ["Ps9AnyObject", "toggleInlineRow"]
 - ["Ps9AnyObject", ""]
-- ["Sa", "Generator"]
-- ["Sa", "Index"]
-- ["Sa", "SubSequence"]
-- ["Sa", "_Element"]
+- ["Sa", "deinit"]
 - ["Sa", "init"]
-- ["Ps23ArrayLiteralConvertible", "Generator"]
-- ["Ps23ArrayLiteralConvertible", "Index"]
-- ["Ps23ArrayLiteralConvertible", "SubSequence"]
-- ["Ps23ArrayLiteralConvertible", "_Element"]
-- ["Ps23ArrayLiteralConvertible", "init"]
-- ["Vs10ArraySlice", "Generator"]
-- ["Vs10ArraySlice", "Index"]
 - ["C6Eureka8BaseCell", "Value"]
 - !private ["C6Eureka8BaseCell", "detailTextLabel"]
 - !private ["C6Eureka8BaseCell", "tintColor"]
@@ -105,48 +96,35 @@ depends-member:
 - ["P6Eureka11BaseRowType", "setupInlineRow"]
 - ["P6Eureka11BaseRowType", "toggleInlineRow"]
 - ["P6Eureka11BaseRowType", ""]
-- ["Ps22BidirectionalIndexType", "Distance"]
-- ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
-- ["Ps21BitwiseOperationsType", "Distance"]
-- ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- ["Ps23BidirectionalCollection", "init"]
+- ["Ps22BidirectionalIndexable", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- ["Ps11CVarArgType", "Distance"]
-- ["Ps11CVarArgType", "IntegerLiteralType"]
-- ["Ps11CVarArgType", "Value"]
-- !private ["Ps11CVarArgType", "detailTextLabel"]
-- !private ["Ps11CVarArgType", "textColor"]
-- !private ["Ps11CVarArgType", "tintColor"]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "Value"]
+- !private ["PSo15CALayerDelegate", "detailTextLabel"]
+- !private ["PSo15CALayerDelegate", "textColor"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "detailTextLabel"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "textColor"]
+- !private ["Ps7CVarArg", "tintColor"]
 - ["C6Eureka4Cell", "Value"]
 - !private ["C6Eureka4Cell", "detailTextLabel"]
 - !private ["C6Eureka4Cell", "tintColor"]
 - ["P6Eureka8CellType", "Value"]
 - !private ["P6Eureka8CellType", "detailTextLabel"]
 - !private ["P6Eureka8CellType", "tintColor"]
-- ["Ps14CollectionType", "Generator"]
-- ["Ps14CollectionType", "Index"]
-- ["Ps14CollectionType", "SubSequence"]
-- ["Ps14CollectionType", "_Element"]
-- ["Ps14CollectionType", "init"]
-- ["Ps10Comparable", "Distance"]
-- ["Ps10Comparable", "IntegerLiteralType"]
-- ["Ps28CustomDebugStringConvertible", "Generator"]
-- ["Ps28CustomDebugStringConvertible", "Index"]
-- ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps10Collection", "init"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
-- ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "detailTextLabel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
-- ["Ps23CustomStringConvertible", "Distance"]
-- ["Ps23CustomStringConvertible", "Generator"]
-- ["Ps23CustomStringConvertible", "Index"]
-- ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "Value"]
-- ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "detailTextLabel"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -169,9 +147,7 @@ depends-member:
 - ["P6Eureka11Disableable", "toggleInlineRow"]
 - ["P6Eureka11Disableable", ""]
 - ["Ps9Equatable", "Cell"]
-- ["Ps9Equatable", "Distance"]
 - ["Ps9Equatable", "InlineRow"]
-- ["Ps9Equatable", "IntegerLiteralType"]
 - ["Ps9Equatable", "T"]
 - ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -190,11 +166,8 @@ depends-member:
 - !private ["Ps9Equatable", "tintColor"]
 - ["Ps9Equatable", "toggleInlineRow"]
 - ["Ps9Equatable", ""]
-- ["Ps16ForwardIndexType", "Distance"]
-- ["Ps16ForwardIndexType", "IntegerLiteralType"]
-- ["Ps13GeneratorType", "Element"]
-- ["Ps8Hashable", "Distance"]
-- ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "detailTextLabel"]
@@ -216,12 +189,8 @@ depends-member:
 - ["P6Eureka7Hidable", "setupInlineRow"]
 - ["P6Eureka7Hidable", "toggleInlineRow"]
 - ["P6Eureka7Hidable", ""]
-- ["Ps9Indexable", "Generator"]
-- ["Ps9Indexable", "Index"]
-- ["Ps9Indexable", "SubSequence"]
-- ["Ps9Indexable", "_Element"]
 - ["Ps9Indexable", "init"]
-- ["Vs17IndexingGenerator", "Element"]
+- ["Ps13IndexableBase", "init"]
 - ["P6Eureka13InlineRowType", "Cell"]
 - ["P6Eureka13InlineRowType", "InlineRow"]
 - ["P6Eureka13InlineRowType", "Value"]
@@ -236,37 +205,13 @@ depends-member:
 - ["P6Eureka13InlineRowType", "setupInlineRow"]
 - ["P6Eureka13InlineRowType", "toggleInlineRow"]
 - ["P6Eureka13InlineRowType", ""]
-- ["P6Eureka18InputTypeInitiable", "Distance"]
-- ["P6Eureka18InputTypeInitiable", "IntegerLiteralType"]
-- ["Si", "Distance"]
-- ["Si", "IntegerLiteralType"]
-- ["Ps21IntegerArithmeticType", "Distance"]
-- ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
-- ["Ps25IntegerLiteralConvertible", "Distance"]
-- ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
-- ["Ps11IntegerType", "Distance"]
-- ["Ps11IntegerType", "IntegerLiteralType"]
 - ["C6Eureka11LabelCellOf", "Value"]
 - ["C6Eureka11LabelCellOf", "deinit"]
 - !private ["C6Eureka11LabelCellOf", "detailTextLabel"]
 - !private ["C6Eureka11LabelCellOf", "tintColor"]
-- ["Ps14MirrorPathType", "Distance"]
-- ["Ps14MirrorPathType", "IntegerLiteralType"]
-- ["Ps21MutableCollectionType", "Generator"]
-- ["Ps21MutableCollectionType", "Index"]
-- ["Ps21MutableCollectionType", "SubSequence"]
-- ["Ps21MutableCollectionType", "_Element"]
-- ["Ps21MutableCollectionType", "init"]
-- ["Ps16MutableIndexable", "Generator"]
-- ["Ps16MutableIndexable", "Index"]
-- ["Ps16MutableIndexable", "SubSequence"]
-- ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps17MutableCollection", "init"]
 - ["Ps16MutableIndexable", "init"]
-- ["Ps16MutableSliceable", "Generator"]
-- ["Ps16MutableSliceable", "Index"]
-- ["Ps16MutableSliceable", "SubSequence"]
-- ["Ps16MutableSliceable", "_Element"]
-- ["Ps16MutableSliceable", "init"]
 - ["PSo8NSCoding", "Value"]
 - !private ["PSo8NSCoding", "detailTextLabel"]
 - !private ["PSo8NSCoding", "textColor"]
@@ -279,6 +224,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "detailTextLabel"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
+- ["Sq", "deinit"]
 - ["C6Eureka10PickerCell", "Value"]
 - ["C6Eureka10PickerCell", "deinit"]
 - ["C6Eureka15PickerInlineRow", "Cell"]
@@ -302,13 +248,10 @@ depends-member:
 - ["C6Eureka9PickerRow", "deinit"]
 - !private ["C6Eureka9PickerRow", "displayValueFor"]
 - !private ["C6Eureka9PickerRow", "options"]
-- ["Ps21RandomAccessIndexType", "Distance"]
-- ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
-- ["Ps30RangeReplaceableCollectionType", "Generator"]
-- ["Ps30RangeReplaceableCollectionType", "Index"]
-- ["Ps30RangeReplaceableCollectionType", "SubSequence"]
-- ["Ps30RangeReplaceableCollectionType", "_Element"]
-- ["Ps30RangeReplaceableCollectionType", "init"]
+- ["Ps22RandomAccessCollection", "init"]
+- ["Ps21RandomAccessIndexable", "init"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- ["Ps25RangeReplaceableIndexable", "init"]
 - ["C6Eureka3Row", "Cell"]
 - ["C6Eureka3Row", "InlineRow"]
 - ["C6Eureka3Row", "PickerRow"]
@@ -317,6 +260,7 @@ depends-member:
 - ["C6Eureka3Row", "Value"]
 - ["C6Eureka3Row", "collapseInlineRow"]
 - ["C6Eureka3Row", "customDidSelect"]
+- ["C6Eureka3Row", "deinit"]
 - !private ["C6Eureka3Row", "displayValueFor"]
 - ["C6Eureka3Row", "expandInlineRow"]
 - ["C6Eureka3Row", "init"]
@@ -358,18 +302,7 @@ depends-member:
 - ["P6Eureka7RowType", "setupInlineRow"]
 - ["P6Eureka7RowType", "toggleInlineRow"]
 - ["P6Eureka7RowType", ""]
-- ["Ps12SequenceType", "Element"]
-- ["Ps12SequenceType", "Generator"]
-- ["Ps12SequenceType", "Index"]
-- ["Ps12SequenceType", "SubSequence"]
-- ["Ps12SequenceType", "_Element"]
-- ["Ps12SequenceType", "init"]
-- ["Ps17SignedIntegerType", "Distance"]
-- ["Ps17SignedIntegerType", "IntegerLiteralType"]
-- ["Ps16SignedNumberType", "Distance"]
-- ["Ps16SignedNumberType", "IntegerLiteralType"]
-- ["Ps10Strideable", "Distance"]
-- ["Ps10Strideable", "IntegerLiteralType"]
+- ["Ps8Sequence", "init"]
 - ["P6Eureka8Taggable", "Cell"]
 - ["P6Eureka8Taggable", "InlineRow"]
 - ["P6Eureka8Taggable", "T"]
@@ -417,6 +350,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "detailTextLabel"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
 - ["PSo17UICoordinateSpace", "Value"]
 - !private ["PSo17UICoordinateSpace", "detailTextLabel"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
@@ -429,9 +363,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "detailTextLabel"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
+- ["PSo11UIFocusItem", "Value"]
+- !private ["PSo11UIFocusItem", "detailTextLabel"]
+- !private ["PSo11UIFocusItem", "textColor"]
+- !private ["PSo11UIFocusItem", "tintColor"]
 - ["PSo27UIGestureRecognizerDelegate", "Value"]
 - !private ["PSo27UIGestureRecognizerDelegate", "detailTextLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "tintColor"]
+- !private ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "textColor"]
 - ["PSo22UIPickerViewDataSource", "Value"]
 - ["PSo20UIPickerViewDelegate", "Value"]
@@ -439,6 +378,10 @@ depends-member:
 - !private ["CSo11UIResponder", "detailTextLabel"]
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "tintColor"]
+- ["PSo30UIResponderStandardEditActions", "Value"]
+- !private ["PSo30UIResponderStandardEditActions", "detailTextLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "textColor"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
 - ["CSo15UITableViewCell", "Value"]
 - !private ["CSo15UITableViewCell", "detailTextLabel"]
 - !private ["CSo15UITableViewCell", "tintColor"]
@@ -450,31 +393,18 @@ depends-member:
 - !private ["CSo6UIView", "detailTextLabel"]
 - !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "tintColor"]
-- ["Ps10_ArrayType", "Generator"]
-- ["Ps10_ArrayType", "Index"]
-- ["Ps10_ArrayType", "SubSequence"]
-- ["Ps10_ArrayType", "_Element"]
-- ["Ps10_ArrayType", "init"]
-- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
-- ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- ["Ps24_DestructorSafeContainer", "Generator"]
-- ["Ps24_DestructorSafeContainer", "Index"]
-- ["Ps24_DestructorSafeContainer", "SubSequence"]
-- ["Ps24_DestructorSafeContainer", "_Element"]
+- ["Ps14_ArrayProtocol", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "Value"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "detailTextLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
 - ["Ps24_DestructorSafeContainer", "init"]
-- ["Ps14_Incrementable", "Distance"]
-- ["Ps14_Incrementable", "IntegerLiteralType"]
-- ["Ps22_IntegerArithmeticType", "Distance"]
-- ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
-- ["Ps12_IntegerType", "Distance"]
-- ["Ps12_IntegerType", "IntegerLiteralType"]
-- ["Ps21_ObjectiveCBridgeable", "Distance"]
-- ["Ps21_ObjectiveCBridgeable", "Generator"]
-- ["Ps21_ObjectiveCBridgeable", "Index"]
-- ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "Value"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "detailTextLabel"]
+- !private ["Ps9_Hashable", "textColor"]
+- !private ["Ps9_Hashable", "tintColor"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - ["C6Eureka16_PickerInlineRow", "Cell"]
@@ -500,118 +430,94 @@ depends-member:
 - ["C6Eureka10_PickerRow", "Value"]
 - !private ["C6Eureka10_PickerRow", "displayValueFor"]
 - !private ["C6Eureka10_PickerRow", "options"]
-- ["Ps22_RandomAccessAmbiguity", "Distance"]
-- ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- ["Ps12_Reflectable", "Distance"]
-- ["Ps12_Reflectable", "Generator"]
-- ["Ps12_Reflectable", "Index"]
-- ["Ps12_Reflectable", "IntegerLiteralType"]
-- ["Ps12_Reflectable", "SubSequence"]
-- ["Ps12_Reflectable", "Value"]
-- ["Ps12_Reflectable", "_Element"]
-- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "detailTextLabel"]
-- ["Ps12_Reflectable", "init"]
-- !private ["Ps12_Reflectable", "textColor"]
-- !private ["Ps12_Reflectable", "tintColor"]
-- ["Ps18_SignedIntegerType", "Distance"]
-- ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
-- "Ps23ArrayLiteralConvertible"
-- "Vs10ArraySlice"
 - "C6Eureka8BaseCell"
 - "P6Eureka12BaseCellType"
 - "P6Eureka17BaseInlineRowType"
 - "C6Eureka7BaseRow"
 - "P6Eureka11BaseRowType"
-- "Ps22BidirectionalIndexType"
-- "Ps21BitwiseOperationsType"
-- !private "Sb"
-- !private "Ps25BooleanLiteralConvertible"
-- !private "Ps11BooleanType"
-- "Ps11CVarArgType"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
 - "C6Eureka4Cell"
 - "P6Eureka8CellType"
-- "Ps14CollectionType"
-- "Ps10Comparable"
+- "Ps10Collection"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "P6Eureka11Disableable"
 - "Ps9Equatable"
-- "Ps16ForwardIndexType"
-- "Ps13GeneratorType"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps8Hashable"
 - "P6Eureka7Hidable"
 - "Ps9Indexable"
-- "Vs17IndexingGenerator"
+- "Ps13IndexableBase"
 - "P6Eureka13InlineRowType"
-- "P6Eureka18InputTypeInitiable"
-- "Si"
-- "Ps21IntegerArithmeticType"
-- "Ps25IntegerLiteralConvertible"
-- "Ps11IntegerType"
 - "C6Eureka11LabelCellOf"
-- "Ps14MirrorPathType"
-- "Ps21MutableCollectionType"
+- !private "Ps25LosslessStringConvertible"
+- "Ps17MutableCollection"
 - "Ps16MutableIndexable"
-- "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- "Sq"
 - "C6Eureka10PickerCell"
 - "C6Eureka15PickerInlineRow"
 - "C6Eureka9PickerRow"
-- "Ps21RandomAccessIndexType"
-- "Ps30RangeReplaceableCollectionType"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
 - "C6Eureka3Row"
 - "C6Eureka5RowOf"
 - "P6Eureka7RowType"
-- "Ps12SequenceType"
-- "Ps17SignedIntegerType"
-- "Ps16SignedNumberType"
-- "Ps10Strideable"
+- "Ps8Sequence"
 - "P6Eureka8Taggable"
 - "P6Eureka13TypedCellType"
 - "P6Eureka12TypedRowType"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UILabel"
 - "PSo22UIPickerViewDataSource"
 - "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- "Ps10_ArrayType"
-- !private "Ps33_BuiltinBooleanLiteralConvertible"
-- "Ps33_BuiltinIntegerLiteralConvertible"
+- "Ps14_ArrayProtocol"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps24_DestructorSafeContainer"
-- "Ps14_Incrementable"
-- "Ps22_IntegerArithmeticType"
-- "Ps12_IntegerType"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
 - "C6Eureka16_PickerInlineRow"
 - "C6Eureka10_PickerRow"
-- "Ps22_RandomAccessAmbiguity"
-- "Ps12_Reflectable"
-- "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/capitalhigh/Desktop/Eureka-master/Source/Eureka.h"
 - "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/unextended-module.modulemap"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "4f2601b5fa160f74f09d45a5ada28dbe"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "5368bfbd8ea135fbf10312c30f8678a1"

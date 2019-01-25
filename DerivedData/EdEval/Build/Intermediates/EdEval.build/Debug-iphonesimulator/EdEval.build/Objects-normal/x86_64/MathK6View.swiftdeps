@@ -14,37 +14,37 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- "Equatable"
-- "SelectableRowType"
-- !private "==="
-- "RowType"
-- !private "Array"
-- !private "<<<"
-- "Cell"
-- "FormViewController"
-- !private "Section"
-- !private "StringLiteralType"
-- "UnicodeScalarType"
-- "MathK6View"
-- !private "+++"
-- !private "SwitchRow"
-- !private "TextRow"
-- !private "!="
-- "ImageCheckRow"
-- "UITableViewCellStyle"
-- !private "print"
-- "BaseRow"
-- "CellType"
-- "Any"
-- "String"
 - "UIImage"
+- !private "Array"
+- !private "==="
+- "String"
+- !private "print"
+- "SelectableRowType"
+- !private "Section"
+- "RowType"
+- "Any"
+- "Cell"
+- "BaseRow"
+- "ImageCheckRow"
+- !private "<<<"
+- "CellType"
 - "Row"
-- !private "SliderRow"
 - !private "+++="
 - !private "SegmentedRow"
-- "BooleanLiteralType"
 - "ImageCheckCell"
+- !private "StringLiteralType"
 - !private "SelectableSection"
+- !private "SliderRow"
+- "UITableViewCellStyle"
+- "MathK6View"
+- "FormViewController"
+- "Equatable"
+- "BooleanLiteralType"
+- !private "+++"
+- !private "!="
+- !private "SwitchRow"
+- "UnicodeScalarType"
+- !private "TextRow"
 depends-member:
 - !private ["P10RealmSwift11AddableType", "Distance"]
 - !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -880,11 +880,14 @@ depends-member:
 - !private ["P6Eureka21SelectableSectionType", "selectedRow"]
 - !private ["P6Eureka21SelectableSectionType", "selectedRows"]
 - !private ["O6Eureka13SelectionType", "MultipleSelection"]
+- !private ["Ps12SequenceType", "Distance"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "IntegerLiteralType"]
 - !private ["Ps12SequenceType", "SelectableRow"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_DisabledRangeIndex"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "init"]
 - !private ["Ps12SequenceType", "last"]

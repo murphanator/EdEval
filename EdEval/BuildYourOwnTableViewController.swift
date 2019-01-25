@@ -13,7 +13,7 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     
     /// An enum for sections in the tableView.
     enum TableSections: Int {
-        case BasicInfo = 0, LabelAndDate, MoreOptions, Items, AddNewItem
+        case basicInfo = 0, labelAndDate, moreOptions, items, addNewItem
     }
     
 
@@ -34,10 +34,10 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     // MARK: - Private class properties
     // -----------------------------------------
     
-    private var items: [String?] = Array()
-    private var optionAValue: String = ""
-    private var optionBValue: String = ""
-    private var textFieldData: [NSIndexPath: String] = [:]
+    fileprivate var items: [String?] = Array()
+    fileprivate var optionAValue: String = ""
+    fileprivate var optionBValue: String = ""
+    fileprivate var textFieldData: [IndexPath: String] = [:]
     
 /*    - (void) viewWillAppear:(BOOL)animated
     {
@@ -51,8 +51,8 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
 */
     
     /// A lazy loaded DataEntryToolbar object to be used as inputAccessoryView for text fields and pickers.
-    private lazy var dataEntryToolbar: DataEntryToolbar? = {
-        if let dataEntryToolbar = DataEntryToolbar(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 44), table:self.tableView) as DataEntryToolbar? {
+    fileprivate lazy var dataEntryToolbar: DataEntryToolbar? = {
+        if let dataEntryToolbar = DataEntryToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44), table:self.tableView) as DataEntryToolbar? {
             
             // implement closures
             dataEntryToolbar.didTapPreviousButtonFromTextField = { (lastActiveTextField) in
@@ -81,10 +81,10 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     }()
     
     /// A lazy loaded UIDatePicker.
-    private lazy var datePicker: UIDatePicker? = {
+    fileprivate lazy var datePicker: UIDatePicker? = {
         if let datePicker = UIDatePicker() as UIDatePicker? {
-            datePicker.addTarget(self, action: #selector(BuildYourOwnTableViewController.updateDate(_:)), forControlEvents: .ValueChanged)
-            datePicker.datePickerMode = .Date
+            datePicker.addTarget(self, action: #selector(BuildYourOwnTableViewController.updateDate(_:)), for: .valueChanged)
+            datePicker.datePickerMode = .date
             return datePicker
         } else {
             return nil
@@ -98,7 +98,7 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     /// Called when a user taps the save button, adding the new thing being entered to wherever. Also clears textFields so another thing can be added.
     
     //***//orgiginal:     @IBAction func save() {
-    @IBAction func save(sender: UIBarButtonItem) {
+    @IBAction func save(_ sender: UIBarButtonItem) {
     
         // TODO: save data from text fields
         
@@ -115,13 +115,13 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     }
     
     /// Fires when a user changes the optionA segmented control, saving the current state in `optionAValue`.
-    @IBAction func optionAChanged(sender: UISegmentedControl) {
-        self.optionAValue = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)!
+    @IBAction func optionAChanged(_ sender: UISegmentedControl) {
+        self.optionAValue = sender.titleForSegment(at: sender.selectedSegmentIndex)!
     }
     
     /// Fires when a user changes the optionB segmented control, saving the current state in `optionBValue`.
-    @IBAction func optionBChanged(sender: UISegmentedControl) {
-        self.optionBValue = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)!
+    @IBAction func optionBChanged(_ sender: UISegmentedControl) {
+        self.optionBValue = sender.titleForSegment(at: sender.selectedSegmentIndex)!
     }
     
     
@@ -165,7 +165,7 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
      
      :returns: An int containing the current number of items.
      */
-    private func addNewItem() -> Int {
+    fileprivate func addNewItem() -> Int {
         
         // add ingredient to items array
         self.items.append("")
@@ -175,10 +175,10 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     }
     
     /// A method to delete an item that was added by the user, also deletes that row from the table.
-    private func deleteItem(indexPath: NSIndexPath) {
+    fileprivate func deleteItem(_ indexPath: IndexPath) {
         
         // remove item from arrays
-        self.items.removeAtIndex(indexPath.row)
+        self.items.remove(at: indexPath.row)
         self.textFieldData[indexPath] = nil
     }
     
@@ -186,17 +186,17 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     func clearTextFieldData() {
         
         // disable save button
-        self.saveButton.enabled = false
+        self.saveButton.isEnabled = false
         
         // delete textField data
-        self.textFieldData.removeAll(keepCapacity: true)
+        self.textFieldData.removeAll(keepingCapacity: true)
         
         // empty items array
-        self.items.removeAll(keepCapacity: false)
+        self.items.removeAll(keepingCapacity: false)
         
         // reload the table & scroll to top
         self.tableView.reloadData()
-        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: true)
+        self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
     }
     
     // -----------------------------------------
@@ -204,13 +204,13 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     // -----------------------------------------
     
     /// A method to update the textField in the tableView when the datePicker value changes.
-    func updateDate(sender: UIDatePicker) {
-        let indexPath = NSIndexPath(forRow: 1, inSection: TableSections.LabelAndDate.rawValue)
-        if let cell = self.tableView.cellForRowAtIndexPath(indexPath) as? BYOCustomLabelCell {
+    func updateDate(_ sender: UIDatePicker) {
+        let indexPath = IndexPath(row: 1, section: TableSections.labelAndDate.rawValue)
+        if let cell = self.tableView.cellForRow(at: indexPath) as? BYOCustomLabelCell {
             if let textField = cell.textField {
-                let dateFormatter = NSDateFormatter()
-                dateFormatter.dateStyle = .ShortStyle
-                textField.text = dateFormatter.stringFromDate(sender.date)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateStyle = .short
+                textField.text = dateFormatter.string(from: sender.date)
             }
         }
     }
@@ -226,18 +226,18 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 5
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch (section) {
-        case TableSections.BasicInfo.rawValue:    return 3
-        case TableSections.LabelAndDate.rawValue: return 2
-        case TableSections.MoreOptions.rawValue:  return 3
-        case TableSections.Items.rawValue:        return self.items.count
-        case TableSections.AddNewItem.rawValue:   return 1
+        case TableSections.basicInfo.rawValue:    return 3
+        case TableSections.labelAndDate.rawValue: return 2
+        case TableSections.moreOptions.rawValue:  return 3
+        case TableSections.items.rawValue:        return self.items.count
+        case TableSections.addNewItem.rawValue:   return 1
         default: return 0
         }
     }
@@ -252,39 +252,39 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
         return cell
     }
     */
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch (indexPath.section) {
             
         // first section -- basic info
-        case TableSections.BasicInfo.rawValue:
+        case TableSections.basicInfo.rawValue:
             switch (indexPath.row) {
             case 0:
-                let nameCell = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
+                let nameCell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! BYOCustomTextFieldCell
                 nameCell.textField.inputAccessoryView = self.dataEntryToolbar
                 self.dataEntryToolbar?.tableTextFields[indexPath] = nameCell.textField
                 nameCell.textField.text = self.textFieldData[indexPath]
                 return nameCell
             case 1:
-                let categoryCell = tableView.dequeueReusableCellWithIdentifier("CategoryCell", forIndexPath: indexPath) as! BYOCustomLabelCell
+                let categoryCell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! BYOCustomLabelCell
                 categoryCell.textField.inputAccessoryView = self.dataEntryToolbar
                 self.dataEntryToolbar?.tableTextFields[indexPath] = categoryCell.textField
                 categoryCell.textField.text = self.textFieldData[indexPath]
                 return categoryCell
             default:
-                let optionsCell = tableView.dequeueReusableCellWithIdentifier("OptionsCell", forIndexPath: indexPath) as! BYOCustomSegConCell
+                let optionsCell = tableView.dequeueReusableCell(withIdentifier: "OptionsCell", for: indexPath) as! BYOCustomSegConCell
                 let segmentedControl = optionsCell.segmentedControl
-                self.optionAValue = segmentedControl.titleForSegmentAtIndex(segmentedControl.selectedSegmentIndex)!
+                self.optionAValue = (segmentedControl?.titleForSegment(at: (segmentedControl?.selectedSegmentIndex)!)!)!
                 return optionsCell
             }
             
         // second secion -- labels, dates
-        case TableSections.LabelAndDate.rawValue:
+        case TableSections.labelAndDate.rawValue:
             switch (indexPath.row) {
             case 0:
                // let labelCell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath) as! BYOCustomLabelCell
                 
-                let labelCell = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
+                let labelCell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! BYOCustomTextFieldCell
                 
                 labelCell.textField.inputAccessoryView = self.dataEntryToolbar
                 self.dataEntryToolbar?.tableTextFields[indexPath] = labelCell.textField
@@ -293,24 +293,24 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
             default:
                 //let dateCell = tableView.dequeueReusableCellWithIdentifier("DateCell", forIndexPath: indexPath) as! BYOCustomLabelCell
                 
-                let dateCell = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
+                let dateCell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! BYOCustomTextFieldCell
                 dateCell.textField.inputView = self.datePicker
                 dateCell.textField.inputAccessoryView = self.dataEntryToolbar
                 self.dataEntryToolbar?.tableTextFields[indexPath] = dateCell.textField
                 
-                let dateFormatter = NSDateFormatter()
-                dateFormatter.dateStyle = .ShortStyle
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateStyle = .short
                 dateCell.textField.text = self.textFieldData[indexPath]
                 return dateCell
             }
         
         // third section -- more options
-        case TableSections.MoreOptions.rawValue:
+        case TableSections.moreOptions.rawValue:
             switch (indexPath.row) {
             case 0:
                 //let labelCell2 = tableView.dequeueReusableCellWithIdentifier("LabelCell2", forIndexPath: indexPath) as! BYOCustomLabelCell
 
-                let labelCell2 = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
+                let labelCell2 = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! BYOCustomTextFieldCell
                 labelCell2.textField.inputAccessoryView = self.dataEntryToolbar
                 self.dataEntryToolbar?.tableTextFields[indexPath] = labelCell2.textField
                 labelCell2.textField.text = self.textFieldData[indexPath]
@@ -318,7 +318,7 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
             case 1:
                 //let anotherCell = tableView.dequeueReusableCellWithIdentifier("AnotherCell", forIndexPath: indexPath) as! BYOCustomLabelCell
                 
-                let anotherCell = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
+                let anotherCell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! BYOCustomTextFieldCell
                 anotherCell.textField.inputAccessoryView = self.dataEntryToolbar
                 self.dataEntryToolbar?.tableTextFields[indexPath] = anotherCell.textField
                 anotherCell.textField.text = self.textFieldData[indexPath]
@@ -326,18 +326,18 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
             default:
                 //let moreOptionsCell = tableView.dequeueReusableCellWithIdentifier("MoreOptionsCell", forIndexPath: indexPath) as! BYOCustomSegConCell
                 
-                let moreOptionsCell = tableView.dequeueReusableCellWithIdentifier("OptionsCell", forIndexPath: indexPath) as! BYOCustomSegConCell
+                let moreOptionsCell = tableView.dequeueReusableCell(withIdentifier: "OptionsCell", for: indexPath) as! BYOCustomSegConCell
                 let segmentedControl = moreOptionsCell.segmentedControl
-                self.optionBValue = segmentedControl.titleForSegmentAtIndex(segmentedControl.selectedSegmentIndex)!
+                self.optionBValue = (segmentedControl?.titleForSegment(at: (segmentedControl?.selectedSegmentIndex)!)!)!
                 return moreOptionsCell
             }
             
         
         // fourth section -- newly added items
-        case TableSections.Items.rawValue:
+        case TableSections.items.rawValue:
             //let itemCell = tableView.dequeueReusableCellWithIdentifier("InsertedItemCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
             
-            let itemCell = tableView.dequeueReusableCellWithIdentifier("NameCell", forIndexPath: indexPath) as! BYOCustomTextFieldCell
+            let itemCell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! BYOCustomTextFieldCell
             itemCell.textField.inputAccessoryView = self.dataEntryToolbar
             self.dataEntryToolbar?.tableTextFields[indexPath] = itemCell.textField
             itemCell.textField.delegate = self
@@ -346,44 +346,44 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
             
         // fifth section -- trigger to add new items
         default:
-            let addItemCell = tableView.dequeueReusableCellWithIdentifier("AddNewItemCell", forIndexPath: indexPath) as UITableViewCell
+            let addItemCell = tableView.dequeueReusableCell(withIdentifier: "AddNewItemCell", for: indexPath) as UITableViewCell
             return addItemCell
         }
  
     }
     
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // can edit sections from items on down
-        return indexPath.section >= TableSections.Items.rawValue
+        return indexPath.section >= TableSections.items.rawValue
     }
     
-    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         switch (indexPath.section) {
-        case TableSections.Items.rawValue:
-            return .Delete
-        case TableSections.AddNewItem.rawValue:
-            return .Insert
+        case TableSections.items.rawValue:
+            return .delete
+        case TableSections.addNewItem.rawValue:
+            return .insert
         default:
-            return .None
+            return .none
         }
     }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
-        if editingStyle == .Delete {
+        if editingStyle == .delete {
             
             // remove from data source
-            if indexPath.section == TableSections.Items.rawValue {
+            if indexPath.section == TableSections.items.rawValue {
                 self.deleteItem(indexPath)
             }
             
             // remove row from table
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.deleteRows(at: [indexPath], with: .fade)
             
-        } else if editingStyle == .Insert {
+        } else if editingStyle == .insert {
             
             // Insert new item into the array and add a new row to the table view
-            if (indexPath.section == TableSections.AddNewItem.rawValue) {
+            if (indexPath.section == TableSections.addNewItem.rawValue) {
                 self.addNewItem()
             }
         }
@@ -393,28 +393,28 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
     // MARK: - UITableView Delegate Methods
     // -----------------------------------------
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if (section == TableSections.Items.rawValue && self.items.count == 0) {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if (section == TableSections.items.rawValue && self.items.count == 0) {
             return 1
         } else {
             return 33
         }
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
     }
     
     // -----------------------------------------
     // MARK: - UITextFieldDelegate methods
     // -----------------------------------------
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         // check if this textField contains a new item to add and add to corresponding array
-        if let pointInTable: CGPoint = textField.superview?.convertPoint(textField.frame.origin, toView: self.tableView) {
-            if let indexPath: NSIndexPath = self.tableView.indexPathForRowAtPoint(pointInTable) {
+        if let pointInTable: CGPoint = textField.superview?.convert(textField.frame.origin, to: self.tableView) {
+            if let indexPath: IndexPath = self.tableView.indexPathForRow(at: pointInTable) {
                 self.textFieldData[indexPath] = textField.text
             }
         }
@@ -432,9 +432,9 @@ class BuildYourOwnTableViewController: UITableViewController, UITextFieldDelegat
             }
             
             if incompleteData {
-                self.saveButton.enabled = false
+                self.saveButton.isEnabled = false
             } else {
-                self.saveButton.enabled = true
+                self.saveButton.isEnabled = true
             }
         }
         

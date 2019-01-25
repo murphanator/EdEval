@@ -955,39 +955,7 @@
             startingLineNumber = "60"
             endingLineNumber = "60"
             landmarkName = "xibSetup()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckboxView.swift"
-            timestampString = "477805282.225756"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "loadViewFromNib()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckboxView.swift"
-            timestampString = "477806442.536411"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "init(coder:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1003,7 +971,7 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "init(frame:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1019,23 +987,7 @@
             startingLineNumber = "47"
             endingLineNumber = "47"
             landmarkName = "init(frame:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckboxView.swift"
-            timestampString = "477806442.536411"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "init(coder:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1051,39 +1003,7 @@
             startingLineNumber = "63"
             endingLineNumber = "63"
             landmarkName = "xibSetup()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckboxView.swift"
-            timestampString = "477806393.827398"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "loadViewFromNib()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckboxView.swift"
-            timestampString = "477806395.439339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "loadViewFromNib()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1109,7 +1029,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "492406271.724521"
+                  timestampString = "495682610.18857"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1124,7 +1044,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "492406271.724728"
+                  timestampString = "495682610.188727"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1139,7 +1059,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "492406271.724883"
+                  timestampString = "495682610.188878"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -1154,7 +1074,7 @@
                   moduleName = "EdEval"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/capitalhigh/Desktop/EducatorEval/EdEval/EdEval/CheckboxControl2.swift"
-                  timestampString = "492406271.725061"
+                  timestampString = "495682610.189023"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"

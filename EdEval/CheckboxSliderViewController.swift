@@ -14,7 +14,7 @@ class CheckboxSliderViewController: UIViewController {
     @IBOutlet weak var labelForSlider: UILabel!
     @IBOutlet weak var SliderForCheckbox: UISlider!
     
-    @IBAction func sliderValueChanged(sender: AnyObject) {
+    @IBAction func sliderValueChanged(_ sender: AnyObject) {
         currentValue = Int(SliderForCheckbox.value);
         labelForSlider.text = "\(currentValue)"
        // labelForSlider.text = currentValue as? String
@@ -32,7 +32,7 @@ class CheckboxSliderViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "sliderSegue") {
            
             

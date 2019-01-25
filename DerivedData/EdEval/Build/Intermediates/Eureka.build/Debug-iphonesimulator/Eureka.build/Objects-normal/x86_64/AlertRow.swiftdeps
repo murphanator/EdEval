@@ -10,23 +10,23 @@ provides-member:
 - ["C6Eureka8AlertRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "_AlertRow"
-- !private "!"
-- "CellType"
-- "OptionsRow"
-- "SelectorAlertController"
 - "PresentationMode"
-- "AlertSelectorCell"
-- "TypedCellType"
 - "PresenterRowType"
-- "BaseCell"
 - "Equatable"
 - "FormViewController"
+- "SelectorAlertController"
+- "TypedCellType"
 - "AlertRow"
 - "BooleanLiteralType"
+- "BaseCell"
+- "_AlertRow"
 - !private "ControllerProvider"
 - "RowType"
+- "OptionsRow"
+- "CellType"
+- !private "!"
 - "String"
+- "AlertSelectorCell"
 depends-member:
 - ["C6Eureka8AlertRow", "Cell"]
 - ["C6Eureka8AlertRow", "String"]

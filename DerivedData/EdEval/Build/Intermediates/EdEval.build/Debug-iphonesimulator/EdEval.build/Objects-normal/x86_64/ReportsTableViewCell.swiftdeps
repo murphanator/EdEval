@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "setSelected"
 depends-top-level:
-- "UITableViewCell"
 - "ReportsTableViewCell"
+- "UITableViewCell"
 - "Bool"
 - "UILabel"
 depends-member:

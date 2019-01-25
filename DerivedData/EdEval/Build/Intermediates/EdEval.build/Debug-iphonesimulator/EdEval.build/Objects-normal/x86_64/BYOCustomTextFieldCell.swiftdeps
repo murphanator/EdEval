@@ -12,8 +12,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "BYOCustomTextFieldCell"
 - "UITableViewCell"
-- !private "StringLiteralType"
 - "UITextField"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]

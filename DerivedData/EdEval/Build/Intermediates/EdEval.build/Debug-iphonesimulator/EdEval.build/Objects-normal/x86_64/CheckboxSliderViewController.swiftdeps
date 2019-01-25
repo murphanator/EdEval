@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C6EdEval28CheckboxSliderViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "labelForSlider"
-- "sliderValueChanged"
-- "viewDidLoad"
 - "currentValue"
-- "SliderForCheckbox"
 - "prepareForSegue"
+- "sliderValueChanged"
+- "SliderForCheckbox"
+- "labelForSlider"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIStoryboardSegue"
-- !private "GlobalVariables1"
-- !private "Array"
-- "AnyObject"
-- !private "Int"
 - "UIViewController"
 - "UISlider"
-- !private "StringLiteralType"
+- "AnyObject"
 - !private "globalVariablesInstance"
-- !private "=="
-- "UILabel"
 - "CheckboxSliderViewController"
+- "UILabel"
+- !private "GlobalVariables1"
+- !private "=="
+- !private "Array"
+- !private "Int"
+- "UIStoryboardSegue"
+- !private "StringLiteralType"
 depends-member:
 - !private ["P10RealmSwift11AddableType", "init"]
 - !private ["Ps9AnyObject", "GlobalVariables1"]
@@ -245,6 +245,7 @@ depends-member:
 - !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
 - !private ["P10RealmSwift17RealmOptionalType", "init"]
 - !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "init"]
 - !private ["Ps17SignedIntegerType", "init"]
 - !private ["Ps16SignedNumberType", "init"]
 - !private ["Ps10Streamable", "init"]

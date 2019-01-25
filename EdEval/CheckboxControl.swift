@@ -61,25 +61,25 @@ class CheckboxControl: UIView{
             let button = UIButton()
             let txtField = UITextField()
             
-            button.setImage(unCheckedImage, forState: .Normal)
-            button.setImage(checkedImage, forState: .Selected)
-            button.setImage(checkedImage, forState: [.Highlighted, .Selected])
+            button.setImage(unCheckedImage, for: UIControlState())
+            button.setImage(checkedImage, for: .selected)
+            button.setImage(checkedImage, for: [.highlighted, .selected])
             
             button.adjustsImageWhenHighlighted = false
             
-            button.addTarget(self, action: "checkboxTapped:", forControlEvents: .TouchDown)
+            button.addTarget(self, action: #selector(CheckboxControl.checkboxTapped(_:)), for: .touchDown)
             checkButtons += [button]
             
             addSubview(button)
             
             //textfield sub view
             if (arrayOfCheckboxTitles[i] == ""){
-                txtField.backgroundColor = UIColor.yellowColor()
+                txtField.backgroundColor = UIColor.yellow
             }
             else{
-                txtField.backgroundColor = UIColor.clearColor()
+                txtField.backgroundColor = UIColor.clear
             }
-            txtField.textColor = UIColor.blackColor()
+            txtField.textColor = UIColor.black
             txtField.adjustsFontSizeToFitWidth = true
             if (arrayOfCheckboxTitles[i] == ""){
                txtField.text = "click to edit text"
@@ -88,10 +88,10 @@ class CheckboxControl: UIView{
                 txtField.text = arrayOfCheckboxTitles[i]
             }
             if (arrayOfCheckboxTitles[i] == ""){
-                txtField.borderStyle = UITextBorderStyle.Bezel
+                txtField.borderStyle = UITextBorderStyle.bezel
             }
             else{
-                txtField.borderStyle = UITextBorderStyle.None
+                txtField.borderStyle = UITextBorderStyle.none
             }
            
             checkTxtField += [txtField]
@@ -114,12 +114,12 @@ class CheckboxControl: UIView{
         var txtFieldFrame = CGRect(x: buttonSize + spacing, y: buttonSize, width: txtFieldSize, height: buttonSize)
         
         // Offset each button's origin by the length of the button plus some spacing.
-        for (index, button) in checkButtons.enumerate() {
+        for (index, button) in checkButtons.enumerated() {
             buttonFrame.origin.y = CGFloat(index * (buttonSize + spacing))
             button.frame = buttonFrame
             
         }
-        for (index, txtField) in checkTxtField.enumerate() {
+        for (index, txtField) in checkTxtField.enumerated() {
             txtFieldFrame.origin.y = CGFloat(index * (buttonSize + spacing))
             txtField.frame = txtFieldFrame
 
@@ -128,22 +128,22 @@ class CheckboxControl: UIView{
     }
     
     //MARK: Button Action
-    func checkboxTapped(button: UIButton) {
-        buttonNumberTapped = checkButtons.indexOf(button)! + 1
+    func checkboxTapped(_ button: UIButton) {
+        buttonNumberTapped = checkButtons.index(of: button)! + 1
         
-        if checkButtons[buttonNumberTapped-1].selected == true {
-            checkButtons[buttonNumberTapped-1].selected = false
+        if checkButtons[buttonNumberTapped-1].isSelected == true {
+            checkButtons[buttonNumberTapped-1].isSelected = false
         }
         else{
-            checkButtons[buttonNumberTapped-1].selected = true
+            checkButtons[buttonNumberTapped-1].isSelected = true
         }
        
         updateButtonSelectionStates()
     }
     
     func updateButtonSelectionStates() {
-        for (index, button) in checkButtons.enumerate() {
-            button.selected = checkButtons[index].selected
+        for (index, button) in checkButtons.enumerated() {
+            button.isSelected = checkButtons[index].isSelected
         }
         //need to update the text field and put in array
         /*for (index,txtField) in checkTxtField.enumerate() {

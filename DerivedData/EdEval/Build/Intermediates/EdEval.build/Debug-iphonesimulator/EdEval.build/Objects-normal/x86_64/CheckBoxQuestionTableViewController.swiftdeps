@@ -7,31 +7,31 @@ provides-member:
 - ["C6EdEval35CheckBoxQuestionTableViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tblView"
-- "CellIdentifier"
 - "numberOfSectionsInTableView"
 - "questions"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "CellIdentifier"
+- "tblView"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "NSIndexPath"
-- "UITableView"
-- "UITableViewCellEditingStyle"
-- "Bool"
-- !private "BooleanLiteralType"
 - "UITableViewCell"
 - "CheckBoxQuestionTableViewController"
-- !private "=="
-- "StringLiteralType"
-- !private "Array"
-- "QuestionTableViewCell"
 - "Int"
+- "QuestionTableViewCell"
+- "Bool"
+- !private "BooleanLiteralType"
+- "UITableView"
+- "NSIndexPath"
+- !private "=="
+- "UITableViewCellEditingStyle"
 - "UITableViewController"
+- !private "Array"
+- "StringLiteralType"
 depends-member:
 - ["P10RealmSwift11AddableType", "Distance"]
 - ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -302,9 +302,11 @@ depends-member:
 - ["P10RealmSwift17RealmOptionalType", "Distance"]
 - ["P10RealmSwift17RealmOptionalType", "IntegerLiteralType"]
 - !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
+- ["Ps12SequenceType", "Distance"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "IntegerLiteralType"]
 - ["Ps12SequenceType", "SubSequence"]
 - ["Ps12SequenceType", "_Element"]
 - ["Ps12SequenceType", "init"]

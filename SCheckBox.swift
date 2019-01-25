@@ -19,12 +19,12 @@ class SCheckBox: UIControl {
     */
 
     let textLabel = UILabel()
-    private let DefaultSideLength = CGFloat(20.0)
-    private var colors = [UInt: UIColor]()
-    private var backgroundColors = [UInt: UIColor]()
+    fileprivate let DefaultSideLength = CGFloat(20.0)
+    fileprivate var colors = [UInt: UIColor]()
+    fileprivate var backgroundColors = [UInt: UIColor]()
     var checkboxSideLength = CGFloat(0.0)
     
-    var checkboxColor:UIColor = UIColor.blackColor() {
+    var checkboxColor:UIColor = UIColor.black {
         didSet {
             self.textLabel.textColor = self.checkboxColor
             self.setNeedsDisplay()
@@ -34,7 +34,7 @@ class SCheckBox: UIControl {
     var checked:Bool = false {
         didSet {
             self.setNeedsDisplay()
-            self.sendActionsForControlEvents(UIControlEvents.ValueChanged)
+            self.sendActions(for: UIControlEvents.valueChanged)
         }
     }
     
@@ -49,26 +49,26 @@ class SCheckBox: UIControl {
         commonInit()
     }
     
-    private func commonInit() {
-        self.textLabel.frame = CGRectZero
+    fileprivate func commonInit() {
+        self.textLabel.frame = CGRect.zero
         self.checkboxSideLength = DefaultSideLength
-        self.checkboxColor = UIColor.blackColor()
-        self.backgroundColor = UIColor.clearColor()
-        self.textLabel.backgroundColor = UIColor.clearColor()
+        self.checkboxColor = UIColor.black
+        self.backgroundColor = UIColor.clear
+        self.textLabel.backgroundColor = UIColor.clear
         
         self.addSubview(self.textLabel)
         
-        self.addObserver(self, forKeyPath: "enabled", options: NSKeyValueObservingOptions.New, context: nil)
-        self.addObserver(self, forKeyPath: "selected", options: NSKeyValueObservingOptions.New, context: nil)
-        self.addObserver(self, forKeyPath: "highlighted", options: NSKeyValueObservingOptions.New, context: nil)
+        self.addObserver(self, forKeyPath: "enabled", options: NSKeyValueObservingOptions.new, context: nil)
+        self.addObserver(self, forKeyPath: "selected", options: NSKeyValueObservingOptions.new, context: nil)
+        self.addObserver(self, forKeyPath: "highlighted", options: NSKeyValueObservingOptions.new, context: nil)
     }
     
-    func color(color:UIColor, forState state:UIControlState) {
+    func color(_ color:UIColor, forState state:UIControlState) {
         self.colors[state.rawValue] = color
         self.changeColorForState(self.state)
     }
     
-    func backgroundColor(color:UIColor, forState state:UIControlState) {
+    func backgroundColor(_ color:UIColor, forState state:UIControlState) {
         
         self.backgroundColors[state.rawValue] = color
         self.changeBackgroundColorForState(self.state)
@@ -81,17 +81,17 @@ class SCheckBox: UIControl {
     }
     
     
-    override func observeValueForKeyPath(keyPath: String!, ofObject object: AnyObject!, change: [String : AnyObject]!, context: UnsafeMutablePointer<Void>) {
+    override func observeValue(forKeyPath keyPath: String!, of object: Any!, change: [NSKeyValueChangeKey : Any]!, context: UnsafeMutableRawPointer?) {
         switch keyPath {
         case "enabled", "selected", "highlighted":
             self.changeColorForState(self.state)
             
         default:
-            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
     }
     
-    private func changeColorForState(state: UIControlState) {
+    fileprivate func changeColorForState(_ state: UIControlState) {
         
         if let color = self.colors[state.rawValue] {
             self.checkboxColor = color
@@ -99,38 +99,38 @@ class SCheckBox: UIControl {
         }
     }
     
-    private func changeBackgroundColorForState(state: UIControlState) {
+    fileprivate func changeBackgroundColorForState(_ state: UIControlState) {
         
         if let color = self.backgroundColors[state.rawValue] {
             self.backgroundColor = color
         }
     }
     
-    override func drawRect(rect: CGRect) {
-        let frame = CGRectIntegral(CGRectMake(0, (rect.size.height - self.checkboxSideLength) / 2.0, self.checkboxSideLength, self.checkboxSideLength))
+    override func draw(_ rect: CGRect) {
+        let frame = CGRect(x: 0, y: (rect.size.height - self.checkboxSideLength) / 2.0, width: self.checkboxSideLength, height: self.checkboxSideLength).integral
         
         if self.checked {
             let bezierPath = UIBezierPath()
             
-            bezierPath.moveToPoint(CGPointMake(CGRectGetMinX(frame) + 0.75000 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.21875 * CGRectGetHeight(frame)))
-            bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.40000 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.52500 * CGRectGetHeight(frame)))
-            bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.28125 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.37500 * CGRectGetHeight(frame)))
-            bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.17500 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.47500 * CGRectGetHeight(frame)))
-            bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.40000 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.75000 * CGRectGetHeight(frame)))
-            bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.81250 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.28125 * CGRectGetHeight(frame)))
-            bezierPath.addLineToPoint(CGPointMake(CGRectGetMinX(frame) + 0.75000 * CGRectGetWidth(frame), CGRectGetMinY(frame) + 0.21875 * CGRectGetHeight(frame)))
-            bezierPath.closePath()
+            bezierPath.move(to: CGPoint(x: frame.minX + 0.75000 * frame.width, y: frame.minY + 0.21875 * frame.height))
+            bezierPath.addLine(to: CGPoint(x: frame.minX + 0.40000 * frame.width, y: frame.minY + 0.52500 * frame.height))
+            bezierPath.addLine(to: CGPoint(x: frame.minX + 0.28125 * frame.width, y: frame.minY + 0.37500 * frame.height))
+            bezierPath.addLine(to: CGPoint(x: frame.minX + 0.17500 * frame.width, y: frame.minY + 0.47500 * frame.height))
+            bezierPath.addLine(to: CGPoint(x: frame.minX + 0.40000 * frame.width, y: frame.minY + 0.75000 * frame.height))
+            bezierPath.addLine(to: CGPoint(x: frame.minX + 0.81250 * frame.width, y: frame.minY + 0.28125 * frame.height))
+            bezierPath.addLine(to: CGPoint(x: frame.minX + 0.75000 * frame.width, y: frame.minY + 0.21875 * frame.height))
+            bezierPath.close()
             
            // self.checkboxColor.setFill()
             
             //Change the Little checkmark to Red
-            UIColor.redColor().setFill()
+            UIColor.red.setFill()
             self.checkboxColor.setStroke()
             
             bezierPath.fill()
         }
         
-        let roundedRectanglePath = UIBezierPath(roundedRect: CGRectMake(CGRectGetMinX(frame) + floor(CGRectGetWidth(frame) * 0.05000 + 0.5), CGRectGetMinY(frame) + floor(CGRectGetHeight(frame) * 0.05000 + 0.5), floor(CGRectGetWidth(frame) * 0.95000 + 0.5) - floor(CGRectGetWidth(frame) * 0.05000 + 0.5), floor(CGRectGetHeight(frame) * 0.95000 + 0.5) - floor(CGRectGetHeight(frame) * 0.05000 + 0.5)), cornerRadius: 0.0)
+        let roundedRectanglePath = UIBezierPath(roundedRect: CGRect(x: frame.minX + floor(frame.width * 0.05000 + 0.5), y: frame.minY + floor(frame.height * 0.05000 + 0.5), width: floor(frame.width * 0.95000 + 0.5) - floor(frame.width * 0.05000 + 0.5), height: floor(frame.height * 0.95000 + 0.5) - floor(frame.height * 0.05000 + 0.5)), cornerRadius: 0.0)
         
         roundedRectanglePath.lineWidth = 2 * self.checkboxSideLength / DefaultSideLength
         self.checkboxColor.setStroke()
@@ -141,20 +141,20 @@ class SCheckBox: UIControl {
         super.layoutSubviews()
         
         let textLabelOriginX = self.checkboxSideLength + 5.0
-        _ = CGSizeMake(CGRectGetWidth(self.bounds) - textLabelOriginX, CGRectGetHeight(self.bounds))
+        _ = CGSize(width: self.bounds.width - textLabelOriginX, height: self.bounds.height)
         
         print(self.textLabel.text)
       
         let myNSString: NSString = NSString(string: self.textLabel.text!)
         
-        let textLabelSize:CGSize =  myNSString.sizeWithAttributes([NSFontAttributeName: self.textLabel.font])
-        self.textLabel.frame = CGRectIntegral(CGRectMake(textLabelOriginX, (CGRectGetHeight(self.bounds) - textLabelSize.height) / 2.0, textLabelSize.width, textLabelSize.height))
+        let textLabelSize:CGSize =  myNSString.size(attributes: [NSFontAttributeName: self.textLabel.font])
+        self.textLabel.frame = CGRect(x: textLabelOriginX, y: (self.bounds.height - textLabelSize.height) / 2.0, width: textLabelSize.width, height: textLabelSize.height).integral
         
     }
     
-    override func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
-        let location = touch!.locationInView(self)
-        if CGRectContainsPoint(self.bounds, location) {
+    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+        let location = touch!.location(in: self)
+        if self.bounds.contains(location) {
             self.checked = !self.checked
         }
     }

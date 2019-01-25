@@ -10,19 +10,19 @@ provides-member:
 - ["C6Eureka12ListCheckRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ListCheckCell"
-- "ListCheckRow"
-- !private "!="
-- "Row"
-- !private "UIColor"
-- "Equatable"
 - "SelectableRowType"
-- !private "CGFloat"
-- "UITableViewCellStyle"
-- "CellType"
-- "Cell"
-- "RowType"
+- "ListCheckCell"
 - "String"
+- "Equatable"
+- "RowType"
+- "UITableViewCellStyle"
+- "Row"
+- !private "CGFloat"
+- !private "UIColor"
+- "Cell"
+- "CellType"
+- !private "!="
+- "ListCheckRow"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - !private ["Ps9AnyObject", "UIColor"]

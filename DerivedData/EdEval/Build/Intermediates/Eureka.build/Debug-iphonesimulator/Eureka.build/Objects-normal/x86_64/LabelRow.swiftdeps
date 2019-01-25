@@ -14,18 +14,18 @@ provides-member:
 - ["C6Eureka8LabelRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "LabelRow"
-- "Equatable"
-- "CellType"
-- "UITableViewCellStyle"
-- "Cell"
-- "Row"
-- "String"
 - "_LabelRow"
-- "LabelCellOf"
-- !private "BaseRow"
+- "UITableViewCellStyle"
 - "LabelCell"
+- "Equatable"
+- "String"
+- "LabelCellOf"
 - "RowType"
+- "Row"
+- "Cell"
+- "LabelRow"
+- "CellType"
+- !private "BaseRow"
 depends-member:
 - !private ["Ps9AnyObject", "BaseRow"]
 - ["Ps9AnyObject", "Cell"]

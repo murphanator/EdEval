@@ -36,7 +36,7 @@ class ExampleCheckBox: UIImage {
     }
     
     
-    func exampleButtonClicked(sender:UIButton){
+    func exampleButtonClicked(_ sender:UIButton){
         print("%%%%%% buttonClicked %%%%%  ",sender,"#######",self)
         if(sender == self){
             if exampleIsChecked == true{

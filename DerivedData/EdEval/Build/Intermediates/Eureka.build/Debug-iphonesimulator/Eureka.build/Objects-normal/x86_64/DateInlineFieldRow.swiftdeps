@@ -9,22 +9,22 @@ provides-member:
 - ["C6Eureka14DateInlineCell", ""]
 - ["C6Eureka19_DateInlineFieldRow", ""]
 provides-dynamic-lookup:
+- "update"
 - "setup"
 - "didSelect"
-- "update"
 depends-top-level:
-- !private "BaseRow"
-- "String"
 - "DateInlineCell"
-- "NSDateFormatter"
-- "DatePickerRowProtocol"
-- "UITableViewCellStyle"
-- "Row"
+- "Cell"
+- "_DateInlineFieldRow"
 - "Int"
 - "CellType"
-- "Cell"
 - "NSDate"
-- "_DateInlineFieldRow"
+- "Row"
+- "NSDateFormatter"
+- !private "BaseRow"
+- "DatePickerRowProtocol"
+- "UITableViewCellStyle"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "BaseRow"]
 - !private ["Ps9AnyObject", "Value"]

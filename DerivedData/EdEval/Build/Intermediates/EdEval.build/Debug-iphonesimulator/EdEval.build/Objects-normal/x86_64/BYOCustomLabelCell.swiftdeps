@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C6EdEval18BYOCustomLabelCell", ""]
 provides-dynamic-lookup:
-- "label"
 - "textField"
+- "label"
 depends-top-level:
-- "BYOCustomLabelCell"
+- "UILabel"
 - "UITableViewCell"
 - "UITextField"
-- "UILabel"
+- "BYOCustomLabelCell"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "label"]

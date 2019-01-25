@@ -14,8 +14,8 @@ class Report: NSObject, NSCoding {
     
     // MARK: Archiving Paths
     
-    static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("reports")
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("reports")
     
     // MARK: Types
     struct PropertyKey {
@@ -34,12 +34,12 @@ class Report: NSObject, NSCoding {
     }
     
     // MARK: NSCoding
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(reportName, forKey: PropertyKey.reportNameKey)
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(reportName, forKey: PropertyKey.reportNameKey)
 
     }
     required convenience init?(coder aDecoder: NSCoder) {
-        let reportName = aDecoder.decodeObjectForKey(PropertyKey.reportNameKey) as! String
+        let reportName = aDecoder.decodeObject(forKey: PropertyKey.reportNameKey) as! String
         
         // Must call designated initializer.
         self.init(reportName: reportName)

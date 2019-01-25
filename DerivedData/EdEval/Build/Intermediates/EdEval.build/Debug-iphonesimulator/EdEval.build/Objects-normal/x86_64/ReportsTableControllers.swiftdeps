@@ -7,9 +7,7 @@ provides-member:
 - ["C6EdEval23ReportsTableControllers", ""]
 provides-dynamic-lookup:
 - "reportTableData"
-- "didReceiveMemoryWarning"
 - "loadDefaultReports"
-- "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
@@ -17,26 +15,28 @@ provides-dynamic-lookup:
 - "tableView"
 - "numberOfSectionsInTableView"
 - "prepareForSegue"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "UITableViewCellEditingStyle"
-- !private "=="
-- "UIStoryboardSegue"
-- !private "Readingk6ViewController"
-- !private "ReportsTableViewCell"
 - "Int"
-- "NSIndexPath"
-- !private "StringLiteralType"
-- !private "+="
-- "UITableView"
-- !private "Array"
-- "ReportsTableControllers"
-- "AnyObject"
-- "Report"
-- "UITableViewController"
-- !private "BooleanLiteralType"
 - !private "print"
+- "Report"
 - "UITableViewCell"
+- !private "ReportsTableViewCell"
+- "UITableViewController"
 - !private "MathK6View"
+- "UITableViewCellEditingStyle"
+- "ReportsTableControllers"
+- !private "Readingk6ViewController"
+- !private "BooleanLiteralType"
+- "NSIndexPath"
+- "UIStoryboardSegue"
+- "UITableView"
+- !private "=="
+- !private "Array"
+- !private "+="
+- !private "StringLiteralType"
+- "AnyObject"
 depends-member:
 - ["P10RealmSwift11AddableType", "Distance"]
 - ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -457,9 +457,11 @@ depends-member:
 - ["C6EdEval23ReportsTableControllers", "tableView"]
 - ["C6EdEval23ReportsTableControllers", "viewDidLoad"]
 - !private ["C6EdEval20ReportsTableViewCell", "reportLabel"]
+- ["Ps12SequenceType", "Distance"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "IntegerLiteralType"]
 - ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Buffer"]
 - ["Ps12SequenceType", "_Element"]

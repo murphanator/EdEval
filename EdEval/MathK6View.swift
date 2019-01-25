@@ -13,7 +13,6 @@ import Foundation
 import MapKit
 
 
-
 class MathK6View: FormViewController {
     
     override func viewDidLoad() {
@@ -22,7 +21,7 @@ class MathK6View: FormViewController {
         Section("Components of Math")
             let mathComponents = ["Addition", "Subtraction", "Multiplication", "Divide"]
         form +++=
-            SelectableSection<ImageCheckRow<String>, String>("Check all that apply:", selectionType: .MultipleSelection)
+            SelectableSection<ImageCheckRow<String>, String>("Check all that apply:", selectionType: .multipleSelection)
         for option in mathComponents {
             form.last! <<< ImageCheckRow<String>(option){ lrow in
                 lrow.title = option
@@ -102,7 +101,7 @@ class MathK6View: FormViewController {
             Section("Guided Practice")
         let guidedPracticeComponents = ["I Do", "We Do", "You Do"]
         form +++
-            SelectableSection<ImageCheckRow<String>, String>("Check all that apply:", selectionType: .MultipleSelection)
+            SelectableSection<ImageCheckRow<String>, String>("Check all that apply:", selectionType: .multipleSelection)
         for option in guidedPracticeComponents {
             form.last! <<< ImageCheckRow<String>(option){ lrow in
                 lrow.title = option
@@ -117,7 +116,7 @@ class MathK6View: FormViewController {
             Section("Responses")
         let responsesComponents = ["Individual", "Partner", "Small Group", "Whole Group"]
         form +++
-            SelectableSection<ImageCheckRow<String>, String>("Responses. Check all that apply:", selectionType: .MultipleSelection)
+            SelectableSection<ImageCheckRow<String>, String>("Responses. Check all that apply:", selectionType: .multipleSelection)
         for option in responsesComponents {
             form.last! <<< ImageCheckRow<String>(option){ lrow in
                 //lrow.title = option
@@ -137,7 +136,7 @@ class MathK6View: FormViewController {
             }
     
     }
-    override func rowValueHasBeenChanged(row: BaseRow, oldValue: Any?, newValue: Any?) {
+    override func rowValueHasBeenChanged(_ row: BaseRow, oldValue: Any?, newValue: Any?) {
         if row.section === form[0] {
             print("Single Selection:\((row.section as! SelectableSection<ImageCheckRow<String>, String>).selectedRow()?.baseValue)")
         }
@@ -154,31 +153,31 @@ public final class ImageCheckRow<T: Equatable>: Row<T, ImageCheckCell<T>>, Selec
     }
 }
 
-public class ImageCheckCell<T: Equatable> : Cell<T>, CellType {
+open class ImageCheckCell<T: Equatable> : Cell<T>, CellType {
     
     required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
-    lazy public var trueImage: UIImage = {
+    lazy open var trueImage: UIImage = {
         return UIImage(named: "selected")!
     }()
     
-    lazy public var falseImage: UIImage = {
+    lazy open var falseImage: UIImage = {
         return UIImage(named: "unselected")!
     }()
     
-    public override func update() {
+    open override func update() {
         super.update()
-        accessoryType = .None
+        accessoryType = .none
         imageView?.image = row.value != nil ? trueImage : falseImage
     }
     
-    public override func setup() {
+    open override func setup() {
         super.setup()
     }
     
-    public override func didSelect() {
+    open override func didSelect() {
         row.reload()
         row.select()
         row.deselect()

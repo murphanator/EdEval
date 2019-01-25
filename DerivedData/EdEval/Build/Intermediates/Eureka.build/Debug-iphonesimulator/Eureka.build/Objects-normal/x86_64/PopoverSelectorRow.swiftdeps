@@ -10,23 +10,24 @@ provides-member:
 - ["C6Eureka18PopoverSelectorRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "ControllerProvider"
-- !private "Void"
-- "Equatable"
-- "SelectorRow"
-- "String"
-- "RowType"
-- "BooleanLiteralType"
-- "CellType"
-- "_PopoverSelectorRow"
-- "StringLiteralType"
-- "PushSelectorCell"
 - !private "fatalError"
-- "BaseCell"
-- "TypedCellType"
-- "SelectorViewController"
+- "SelectorRow"
 - "PopoverSelectorRow"
 - !private "??"
+- "SelectorViewController"
+- "BooleanLiteralType"
+- !private "ControllerProvider"
+- "Equatable"
+- "StringLiteralType"
+- "AssignmentPrecedence"
+- "PushSelectorCell"
+- !private "Void"
+- "BaseCell"
+- "String"
+- "_PopoverSelectorRow"
+- "CellType"
+- "RowType"
+- "TypedCellType"
 depends-member:
 - ["Ps9AnyObject", "Cell"]
 - !private ["Ps9AnyObject", "ControllerProvider"]
@@ -35,10 +36,10 @@ depends-member:
 - ["Ps9AnyObject", "Value"]
 - !private ["Ps9AnyObject", "baseCell"]
 - !private ["Ps9AnyObject", "cell"]
-- !private ["Ps9AnyObject", "convertRect"]
+- !private ["Ps9AnyObject", "convert"]
 - !private ["Ps9AnyObject", "deselect"]
 - ["Ps9AnyObject", "didSelect"]
-- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- !private ["Ps9AnyObject", "dismiss"]
 - !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "formViewController"]
 - !private ["Ps9AnyObject", "frame"]
@@ -92,40 +93,48 @@ depends-member:
 - !private ["P6Eureka11BaseRowType", "presentationMode"]
 - !private ["P6Eureka11BaseRowType", "reload"]
 - ["P6Eureka11BaseRowType", ""]
-- !private ["Ps11CVarArgType", "RowValue"]
-- ["Ps11CVarArgType", "Value"]
-- !private ["Ps11CVarArgType", "convertRect"]
-- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
-- !private ["Ps11CVarArgType", "formViewController"]
-- !private ["Ps11CVarArgType", "frame"]
-- !private ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "popoverPresentationController"]
-- !private ["Ps11CVarArgType", "sourceRect"]
-- !private ["Ps11CVarArgType", "sourceView"]
-- !private ["Ps11CVarArgType", "tableView"]
+- !private ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "Value"]
+- !private ["PSo15CALayerDelegate", "convert"]
+- !private ["PSo15CALayerDelegate", "formViewController"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- !private ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "RowValue"]
+- ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "convert"]
+- !private ["Ps7CVarArg", "dismiss"]
+- !private ["Ps7CVarArg", "formViewController"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "popoverPresentationController"]
+- !private ["Ps7CVarArg", "sourceRect"]
+- !private ["Ps7CVarArg", "sourceView"]
+- !private ["Ps7CVarArg", "tableView"]
 - ["C6Eureka4Cell", "Value"]
 - ["P6Eureka8CellType", "Value"]
 - !private ["P6Eureka8CellType", "contentView"]
 - !private ["P6Eureka8CellType", "detailTextLabel"]
 - !private ["P6Eureka8CellType", "textLabel"]
-- !private ["O6Eureka18ControllerProvider", "Callback"]
-- !private ["Ps28CustomDebugStringConvertible", "Popover"]
+- !private ["O6Eureka18ControllerProvider", "callback"]
+- ["O6Eureka18ControllerProvider", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "RowValue"]
-- !private ["Ps28CustomDebugStringConvertible", "Some"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
-- !private ["Ps28CustomDebugStringConvertible", "convertRect"]
-- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
+- !private ["Ps28CustomDebugStringConvertible", "convert"]
+- !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - !private ["Ps28CustomDebugStringConvertible", "formViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "popover"]
 - !private ["Ps28CustomDebugStringConvertible", "popoverPresentationController"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceRect"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceView"]
 - !private ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "popover"]
 - !private ["Ps23CustomStringConvertible", "RowValue"]
 - ["Ps23CustomStringConvertible", "Value"]
-- !private ["Ps23CustomStringConvertible", "convertRect"]
-- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
+- !private ["Ps23CustomStringConvertible", "convert"]
+- !private ["Ps23CustomStringConvertible", "dismiss"]
 - !private ["Ps23CustomStringConvertible", "formViewController"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "init"]
@@ -154,10 +163,10 @@ depends-member:
 - ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "baseCell"]
 - !private ["Ps9Equatable", "cell"]
-- !private ["Ps9Equatable", "convertRect"]
+- !private ["Ps9Equatable", "convert"]
 - !private ["Ps9Equatable", "deselect"]
 - ["Ps9Equatable", "didSelect"]
-- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
+- !private ["Ps9Equatable", "dismiss"]
 - !private ["Ps9Equatable", "fatalError"]
 - !private ["Ps9Equatable", "formViewController"]
 - !private ["Ps9Equatable", "frame"]
@@ -170,6 +179,10 @@ depends-member:
 - !private ["Ps9Equatable", "sourceView"]
 - !private ["Ps9Equatable", "tableView"]
 - ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "popover"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["P6Eureka12FormDelegate", "RowValue"]
 - !private ["P6Eureka12FormDelegate", "init"]
 - !private ["P6Eureka12FormDelegate", "popoverPresentationController"]
@@ -184,8 +197,8 @@ depends-member:
 - !private ["P6Eureka26FormViewControllerProtocol", "tableView"]
 - !private ["Ps8Hashable", "RowValue"]
 - ["Ps8Hashable", "Value"]
-- !private ["Ps8Hashable", "convertRect"]
-- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
+- !private ["Ps8Hashable", "convert"]
+- !private ["Ps8Hashable", "dismiss"]
 - !private ["Ps8Hashable", "formViewController"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "init"]
@@ -207,6 +220,7 @@ depends-member:
 - !private ["P6Eureka7Hidable", "presentationMode"]
 - !private ["P6Eureka7Hidable", "reload"]
 - ["P6Eureka7Hidable", ""]
+- !private ["SQ", "deinit"]
 - !private ["C6Eureka13ListCheckCell", "Value"]
 - !private ["C6Eureka13ListCheckCell", "deinit"]
 - !private ["C6Eureka12ListCheckRow", "Cell"]
@@ -214,24 +228,24 @@ depends-member:
 - !private ["C6Eureka12ListCheckRow", "deinit"]
 - !private ["PSo8NSCoding", "RowValue"]
 - ["PSo8NSCoding", "Value"]
-- !private ["PSo8NSCoding", "convertRect"]
-- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- !private ["PSo8NSCoding", "convert"]
+- !private ["PSo8NSCoding", "dismiss"]
 - !private ["PSo8NSCoding", "formViewController"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "popoverPresentationController"]
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "RowValue"]
-- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- !private ["PSo26NSExtensionRequestHandling", "dismiss"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "popoverPresentationController"]
 - !private ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["CSo8NSObject", "RowValue"]
 - ["CSo8NSObject", "Value"]
 - !private ["CSo8NSObject", "contentView"]
-- !private ["CSo8NSObject", "convertRect"]
+- !private ["CSo8NSObject", "convert"]
 - !private ["CSo8NSObject", "detailTextLabel"]
-- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- !private ["CSo8NSObject", "dismiss"]
 - !private ["CSo8NSObject", "formViewController"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "popoverPresentationController"]
@@ -241,8 +255,8 @@ depends-member:
 - !private ["CSo8NSObject", "textLabel"]
 - !private ["PSo16NSObjectProtocol", "RowValue"]
 - ["PSo16NSObjectProtocol", "Value"]
-- !private ["PSo16NSObjectProtocol", "convertRect"]
-- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "convert"]
+- !private ["PSo16NSObjectProtocol", "dismiss"]
 - !private ["PSo16NSObjectProtocol", "formViewController"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -250,10 +264,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sourceRect"]
 - !private ["PSo16NSObjectProtocol", "sourceView"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
-- !private ["Ps21NilLiteralConvertible", "Popover"]
-- !private ["Ps21NilLiteralConvertible", "Some"]
-- !private ["Sq", "Popover"]
-- !private ["Sq", "Some"]
+- !private ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- !private ["Sq", "popover"]
 - ["C6Eureka10OptionsRow", "Cell"]
 - !private ["C6Eureka10OptionsRow", "ControllerProvider"]
 - !private ["C6Eureka10OptionsRow", "SelectorViewController"]
@@ -275,7 +288,7 @@ depends-member:
 - ["C6Eureka18PopoverSelectorRow", "Value"]
 - ["C6Eureka18PopoverSelectorRow", "deinit"]
 - ["C6Eureka18PopoverSelectorRow", "init"]
-- !private ["O6Eureka16PresentationMode", "Popover"]
+- !private ["O6Eureka16PresentationMode", "popover"]
 - ["P6Eureka16PresenterRowType", "Cell"]
 - !private ["P6Eureka16PresenterRowType", "ControllerProvider"]
 - !private ["P6Eureka16PresenterRowType", "SelectorViewController"]
@@ -342,7 +355,7 @@ depends-member:
 - !private ["C6Eureka11SelectorRow", "Void"]
 - !private ["C6Eureka11SelectorRow", "baseCell"]
 - !private ["C6Eureka11SelectorRow", "cell"]
-- !private ["C6Eureka11SelectorRow", "deinit"]
+- ["C6Eureka11SelectorRow", "deinit"]
 - !private ["C6Eureka11SelectorRow", "deselect"]
 - ["C6Eureka11SelectorRow", "didSelect"]
 - !private ["C6Eureka11SelectorRow", "fatalError"]
@@ -356,6 +369,7 @@ depends-member:
 - !private ["C6Eureka22SelectorViewController", "init"]
 - !private ["C6Eureka22SelectorViewController", "popoverPresentationController"]
 - !private ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
 - ["P6Eureka8Taggable", "Cell"]
 - !private ["P6Eureka8Taggable", "ControllerProvider"]
 - !private ["P6Eureka8Taggable", "SelectorViewController"]
@@ -392,17 +406,17 @@ depends-member:
 - !private ["P6Eureka12TypedRowType", "reload"]
 - ["P6Eureka12TypedRowType", ""]
 - ["PSo29UIAccessibilityIdentification", "Value"]
-- !private ["PSo29UIAccessibilityIdentification", "convertRect"]
+- !private ["PSo29UIAccessibilityIdentification", "convert"]
 - !private ["PSo29UIAccessibilityIdentification", "formViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - ["PSo12UIAppearance", "Value"]
-- !private ["PSo12UIAppearance", "convertRect"]
+- !private ["PSo12UIAppearance", "convert"]
 - !private ["PSo12UIAppearance", "formViewController"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo21UIAppearanceContainer", "RowValue"]
 - ["PSo21UIAppearanceContainer", "Value"]
-- !private ["PSo21UIAppearanceContainer", "convertRect"]
-- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- !private ["PSo21UIAppearanceContainer", "convert"]
+- !private ["PSo21UIAppearanceContainer", "dismiss"]
 - !private ["PSo21UIAppearanceContainer", "formViewController"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "init"]
@@ -411,24 +425,25 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "sourceView"]
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "RowValue"]
-- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- !private ["PSo18UIContentContainer", "dismiss"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "popoverPresentationController"]
 - !private ["PSo18UIContentContainer", "sourceRect"]
 - !private ["PSo18UIContentContainer", "sourceView"]
 - !private ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "frame"]
 - ["PSo17UICoordinateSpace", "Value"]
-- !private ["PSo17UICoordinateSpace", "convertRect"]
+- !private ["PSo17UICoordinateSpace", "convert"]
 - !private ["PSo17UICoordinateSpace", "formViewController"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - ["PSo13UIDynamicItem", "Value"]
-- !private ["PSo13UIDynamicItem", "convertRect"]
+- !private ["PSo13UIDynamicItem", "convert"]
 - !private ["PSo13UIDynamicItem", "formViewController"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo18UIFocusEnvironment", "RowValue"]
 - ["PSo18UIFocusEnvironment", "Value"]
-- !private ["PSo18UIFocusEnvironment", "convertRect"]
-- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
+- !private ["PSo18UIFocusEnvironment", "convert"]
+- !private ["PSo18UIFocusEnvironment", "dismiss"]
 - !private ["PSo18UIFocusEnvironment", "formViewController"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "init"]
@@ -436,9 +451,15 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "sourceRect"]
 - !private ["PSo18UIFocusEnvironment", "sourceView"]
 - !private ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo11UIFocusItem", "Value"]
+- !private ["PSo11UIFocusItem", "convert"]
+- !private ["PSo11UIFocusItem", "formViewController"]
+- !private ["PSo11UIFocusItem", "frame"]
 - ["PSo27UIGestureRecognizerDelegate", "Value"]
 - !private ["PSo27UIGestureRecognizerDelegate", "formViewController"]
+- !private ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "frame"]
+- !private ["CSo31UIPopoverPresentationController", "deinit"]
 - !private ["CSo31UIPopoverPresentationController", "sourceRect"]
 - !private ["CSo31UIPopoverPresentationController", "sourceView"]
 - !private ["CSo24UIPresentationController", "sourceRect"]
@@ -446,25 +467,35 @@ depends-member:
 - !private ["CSo11UIResponder", "RowValue"]
 - ["CSo11UIResponder", "Value"]
 - !private ["CSo11UIResponder", "contentView"]
-- !private ["CSo11UIResponder", "convertRect"]
+- !private ["CSo11UIResponder", "convert"]
 - !private ["CSo11UIResponder", "detailTextLabel"]
-- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- !private ["CSo11UIResponder", "dismiss"]
 - !private ["CSo11UIResponder", "formViewController"]
 - !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "popoverPresentationController"]
 - !private ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "textLabel"]
-- !private ["CSo12UIScrollView", "convertRect"]
+- !private ["PSo30UIResponderStandardEditActions", "RowValue"]
+- ["PSo30UIResponderStandardEditActions", "Value"]
+- !private ["PSo30UIResponderStandardEditActions", "convert"]
+- !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- !private ["PSo30UIResponderStandardEditActions", "formViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "popoverPresentationController"]
+- !private ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["CSo12UIScrollView", "convert"]
 - !private ["PSo20UIScrollViewDelegate", "RowValue"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "popoverPresentationController"]
 - !private ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo16UIStateRestoring", "RowValue"]
-- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- !private ["PSo16UIStateRestoring", "dismiss"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "popoverPresentationController"]
 - !private ["PSo16UIStateRestoring", "tableView"]
-- !private ["CSo11UITableView", "convertRect"]
+- !private ["CSo11UITableView", "convert"]
+- !private ["CSo11UITableView", "deinit"]
 - ["CSo15UITableViewCell", "Value"]
 - !private ["CSo15UITableViewCell", "contentView"]
 - !private ["CSo15UITableViewCell", "detailTextLabel"]
@@ -480,8 +511,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo18UITraitEnvironment", "RowValue"]
 - ["PSo18UITraitEnvironment", "Value"]
-- !private ["PSo18UITraitEnvironment", "convertRect"]
-- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- !private ["PSo18UITraitEnvironment", "convert"]
+- !private ["PSo18UITraitEnvironment", "dismiss"]
 - !private ["PSo18UITraitEnvironment", "formViewController"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -491,15 +522,37 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - ["CSo6UIView", "Value"]
 - !private ["CSo6UIView", "contentView"]
-- !private ["CSo6UIView", "convertRect"]
+- !private ["CSo6UIView", "convert"]
+- !private ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "detailTextLabel"]
 - !private ["CSo6UIView", "formViewController"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "textLabel"]
 - !private ["CSo16UIViewController", "RowValue"]
-- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- !private ["CSo16UIViewController", "deinit"]
+- !private ["CSo16UIViewController", "dismiss"]
 - !private ["CSo16UIViewController", "popoverPresentationController"]
 - !private ["CSo16UIViewController", "tableView"]
+- !private ["Su", "deinit"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "Value"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "convert"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "formViewController"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "RowValue"]
+- ["Ps9_Hashable", "Value"]
+- !private ["Ps9_Hashable", "convert"]
+- !private ["Ps9_Hashable", "dismiss"]
+- !private ["Ps9_Hashable", "formViewController"]
+- !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "popoverPresentationController"]
+- !private ["Ps9_Hashable", "sourceRect"]
+- !private ["Ps9_Hashable", "sourceView"]
+- !private ["Ps9_Hashable", "tableView"]
+- !private ["Ps21_ObjectiveCBridgeable", "popover"]
 - ["C6Eureka19_PopoverSelectorRow", "Cell"]
 - !private ["C6Eureka19_PopoverSelectorRow", "ControllerProvider"]
 - !private ["C6Eureka19_PopoverSelectorRow", "SelectorViewController"]
@@ -518,12 +571,6 @@ depends-member:
 - !private ["C6Eureka19_PopoverSelectorRow", "presentationMode"]
 - !private ["C6Eureka19_PopoverSelectorRow", "reload"]
 - ["C6Eureka19_PopoverSelectorRow", ""]
-- !private ["Ps12_Reflectable", "Popover"]
-- !private ["Ps12_Reflectable", "Some"]
-- ["Ps12_Reflectable", "Value"]
-- !private ["Ps12_Reflectable", "convertRect"]
-- !private ["Ps12_Reflectable", "formViewController"]
-- !private ["Ps12_Reflectable", "frame"]
 - !private ["C6Eureka23_SelectorViewController", "RowValue"]
 - !private ["C6Eureka23_SelectorViewController", "init"]
 - !private ["C6Eureka23_SelectorViewController", "popoverPresentationController"]
@@ -533,27 +580,36 @@ depends-nominal:
 - "P6Eureka12BaseCellType"
 - "C6Eureka7BaseRow"
 - "P6Eureka11BaseRowType"
-- "Ps11CVarArgType"
+- !private "Sb"
+- "PSo15CALayerDelegate"
+- !private "VSC6CGRect"
+- "Ps7CVarArg"
 - "C6Eureka4Cell"
 - "P6Eureka8CellType"
-- !private "O6Eureka18ControllerProvider"
+- "O6Eureka18ControllerProvider"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "P6Eureka11Disableable"
 - "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "P6Eureka12FormDelegate"
 - !private "C6Eureka18FormViewController"
 - !private "P6Eureka26FormViewControllerProtocol"
 - "Ps8Hashable"
 - "P6Eureka7Hidable"
+- !private "SQ"
 - !private "C6Eureka13ListCheckCell"
 - !private "C6Eureka12ListCheckRow"
 - "PSo8NSCoding"
 - !private "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "Ps21NilLiteralConvertible"
-- !private "Sq"
+- !private "Os5Never"
+- "Sq"
 - "C6Eureka10OptionsRow"
 - "C6Eureka18PopoverSelectorRow"
 - !private "O6Eureka16PresentationMode"
@@ -575,14 +631,17 @@ depends-nominal:
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UILabel"
 - !private "CSo31UIPopoverPresentationController"
 - !private "CSo24UIPresentationController"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
 - !private "PSo20UIScrollViewDelegate"
 - !private "PSo16UIStateRestoring"
@@ -593,19 +652,27 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - !private "CSo16UIViewController"
+- !private "Su"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 - "C6Eureka19_PopoverSelectorRow"
-- "Ps12_Reflectable"
 - !private "C6Eureka23_SelectorViewController"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/capitalhigh/Desktop/Eureka-master/Source/Eureka.h"
 - "/Users/capitalhigh/Desktop/EducatorEval/EdEval/DerivedData/EdEval/Build/Intermediates/Eureka.build/Debug-iphonesimulator/Eureka.build/unextended-module.modulemap"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode-beta 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "478ba79ef46bf42800320e183ad8ba85"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "c713011a5d9deeee6a34ff84cfe2074a"

@@ -28,7 +28,7 @@ Migration block used to migrate a Realm.
                        existing objects which require migration.
 - parameter oldSchemaVersion: The schema version of the `Realm` being migrated.
 */
-public typealias MigrationBlock = (migration: Migration, oldSchemaVersion: UInt64) -> Void
+public typealias MigrationBlock = (_ migration: Migration, _ oldSchemaVersion: UInt64) -> Void
 
 /// Object class used during migrations.
 public typealias MigrationObject = DynamicObject
@@ -40,7 +40,7 @@ accessed using subscripting.
 - parameter oldObject: Object in original `Realm` (read-only).
 - parameter newObject: Object in migrated `Realm` (read-write).
 */
-public typealias MigrationObjectEnumerateBlock = (oldObject: MigrationObject?, newObject: MigrationObject?) -> Void
+public typealias MigrationObjectEnumerateBlock = (_ oldObject: MigrationObject?, _ newObject: MigrationObject?) -> Void
 
 /**
 Get the schema version for a Realm at a given local URL.
@@ -52,9 +52,9 @@ Get the schema version for a Realm at a given local URL.
 
 - returns: The version of the Realm at `fileURL`.
 */
-public func schemaVersionAtURL(fileURL: NSURL, encryptionKey: NSData? = nil) throws -> UInt64 {
+public func schemaVersionAtURL(_ fileURL: URL, encryptionKey: Data? = nil) throws -> UInt64 {
     var error: NSError? = nil
-    let version = RLMRealm.schemaVersionAtURL(fileURL, encryptionKey: encryptionKey, error: &error)
+    let version = RLMRealm.schemaVersion(at: fileURL, encryptionKey: encryptionKey, error: &error)
     if let error = error {
         throw error
     }
@@ -76,8 +76,8 @@ exactly when and how migrations are performed.
 - returns: `nil` if the migration was successful, or an `NSError` object that describes the problem
            that occurred otherwise.
 */
-public func migrateRealm(configuration: Realm.Configuration = Realm.Configuration.defaultConfiguration) -> NSError? {
-    return RLMRealm.migrateRealm(configuration.rlmConfiguration)
+public func migrateRealm(_ configuration: Realm.Configuration = Realm.Configuration.defaultConfiguration) -> NSError? {
+    return RLMRealm.migrateRealm(configuration.rlmConfiguration) as NSError?
 }
 
 
@@ -108,10 +108,10 @@ public final class Migration {
     - parameter objectClassName: The name of the `Object` class to enumerate.
     - parameter block:           The block providing both the old and new versions of an object in this Realm.
     */
-    public func enumerate(objectClassName: String, _ block: MigrationObjectEnumerateBlock) {
+    public func enumerate(_ objectClassName: String, _ block: @escaping MigrationObjectEnumerateBlock) {
         rlmMigration.enumerateObjects(objectClassName) {
-            block(oldObject: unsafeBitCast($0, MigrationObject.self),
-                  newObject: unsafeBitCast($1, MigrationObject.self))
+            block(unsafeBitCast($0, to: MigrationObject.self),
+                  unsafeBitCast($1, to: MigrationObject.self))
         }
     }
 
@@ -127,8 +127,8 @@ public final class Migration {
 
     - returns: The created object.
     */
-    public func create(className: String, value: AnyObject = [:]) -> MigrationObject {
-        return unsafeBitCast(rlmMigration.createObject(className, withValue: value), MigrationObject.self)
+    public func create(_ className: String, value: AnyObject = [:]) -> MigrationObject {
+        return unsafeBitCast(rlmMigration.createObject(className, withValue: value), to: MigrationObject.self)
     }
 
     /**
@@ -137,7 +137,7 @@ public final class Migration {
 
     - parameter object: Object to be deleted from the Realm being migrated.
     */
-    public func delete(object: MigrationObject) {
+    public func delete(_ object: MigrationObject) {
         RLMDeleteObjectFromRealm(object, RLMObjectBaseRealm(object))
     }
 
@@ -150,8 +150,8 @@ public final class Migration {
 
     - returns: `true` if there was any data to delete.
     */
-    public func deleteData(objectClassName: String) -> Bool {
-        return rlmMigration.deleteDataForClassName(objectClassName)
+    public func deleteData(_ objectClassName: String) -> Bool {
+        return rlmMigration.deleteData(forClassName: objectClassName)
     }
 
     /**
@@ -164,11 +164,11 @@ public final class Migration {
     - parameter newName:   New name for the property to be renamed. Must not be present
                            in the old Realm.
     */
-    public func renamePropertyForClass(className: String, oldName: String, newName: String) {
-        rlmMigration.renamePropertyForClass(className, oldName: oldName, newName: newName)
+    public func renamePropertyForClass(_ className: String, oldName: String, newName: String) {
+        rlmMigration.renameProperty(forClass: className, oldName: oldName, newName: newName)
     }
 
-    private init(_ rlmMigration: RLMMigration) {
+    fileprivate init(_ rlmMigration: RLMMigration) {
         self.rlmMigration = rlmMigration
     }
 }
@@ -176,7 +176,7 @@ public final class Migration {
 
 // MARK: Private Helpers
 
-internal func accessorMigrationBlock(migrationBlock: MigrationBlock) -> RLMMigrationBlock {
+internal func accessorMigrationBlock(_ migrationBlock: @escaping MigrationBlock) -> RLMMigrationBlock {
     return { migration, oldVersion in
         // set all accessor classes to MigrationObject
         for objectSchema in migration.oldSchema.objectSchema {
@@ -191,6 +191,6 @@ internal func accessorMigrationBlock(migrationBlock: MigrationBlock) -> RLMMigra
         }
 
         // run migration
-        migrationBlock(migration: Migration(migration), oldSchemaVersion: oldVersion)
+        migrationBlock(Migration(migration), oldVersion)
     }
 }

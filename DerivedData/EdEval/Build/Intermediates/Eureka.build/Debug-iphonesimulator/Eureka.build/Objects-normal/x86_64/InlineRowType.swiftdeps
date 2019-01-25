@@ -19,13 +19,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "TypedRowType"
+- "InlineRowType"
+- "BaseRow"
+- "RowType"
+- "BaseInlineRowType"
+- !private "??"
 - !private "Form"
 - !private "+"
-- "InlineRowType"
-- "BaseInlineRowType"
-- "RowType"
-- !private "??"
-- "BaseRow"
 depends-member:
 - !private ["Ps9AnyObject", "BaseInlineRowType"]
 - ["Ps9AnyObject", "BaseRow"]

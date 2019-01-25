@@ -64,7 +64,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     
     
     var timeInTextSliderValue = 2
-    @IBAction func timeInTextSliderValueChanged(sender: AnyObject) {
+    @IBAction func timeInTextSliderValueChanged(_ sender: AnyObject) {
         timeInTextSliderValue = Int(timeInTextSlider.value)
         if timeInTextSliderValue == 1{
             timeInTextSliderLabel.text = "Less than 1 minute"
@@ -80,7 +80,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     
     
     var writingInResponsesToReadingValue = 3
-    @IBAction func writingInResponsesToReadingSliderValueChanged(sender: AnyObject) {
+    @IBAction func writingInResponsesToReadingSliderValueChanged(_ sender: AnyObject) {
         writingInResponsesToReadingValue = Int(writingInResponsesToReadingSlider.value)
         if writingInResponsesToReadingValue == 1{
             writingInResponsesToReadingSliderLabel.text = "Words"
@@ -101,7 +101,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     }
  
     var checksForUnderstandingValue = 1
-    @IBAction func checksForUnderstandingSliderValueChanged(sender: AnyObject) {
+    @IBAction func checksForUnderstandingSliderValueChanged(_ sender: AnyObject) {
         checksForUnderstandingValue = Int(checksForUnderstandingSlider.value)
         if checksForUnderstandingValue == 1 {
             checksForUnderstandingSliderLabel.text = "Whole Class"
@@ -118,7 +118,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     }
     
     var engagementValue = 3
-    @IBAction func engagementSliderValueChanged(sender: AnyObject) {
+    @IBAction func engagementSliderValueChanged(_ sender: AnyObject) {
         engagementValue = Int(engagementSlider.value)
         if engagementValue == 1 {
             engagementSliderLabel.text = "Less than 50%"
@@ -138,7 +138,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     }
     
     var complianceValue = 3
-    @IBAction func complianceSliderValueChanged(sender: AnyObject) {
+    @IBAction func complianceSliderValueChanged(_ sender: AnyObject) {
         complianceValue = Int(complianceSlider.value)
         if complianceValue == 1 {
             complianceSliderLabel.text = "Less than 50%"
@@ -158,7 +158,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     }
     
     var positiveReinforcementValue = 3
-    @IBAction func positiveReinforcementSliderValueChanged(sender: AnyObject) {
+    @IBAction func positiveReinforcementSliderValueChanged(_ sender: AnyObject) {
         positiveReinforcementValue = Int(positiveReinforcementSlider.value)
         if positiveReinforcementValue == 1 {
             positiveReinforcementSliderLabel.text = "0"
@@ -189,41 +189,41 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
         
         componentOfReadingLabel.text = "Component of Reading"
         
-        self.check0.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.check0.color(UIColor.black, forState: UIControlState())
         self.check0.textLabel.text = "Phonomic Awareness"
-        self.check0.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.check0.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
 
-        self.check1.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.check1.color(UIColor.black, forState: UIControlState())
         self.check1.textLabel.text = "Phonics"
-        self.check1.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.check1.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.check2.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.check2.color(UIColor.black, forState: UIControlState())
         self.check2.textLabel.text = "Vocabulary"
-        self.check2.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.check2.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.check3.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.check3.color(UIColor.black, forState: UIControlState())
         self.check3.textLabel.text = "Fluency"
-        self.check3.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.check3.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
 
-        self.check4.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.check4.color(UIColor.black, forState: UIControlState())
         self.check4.textLabel.text = "Comprehension"
-        self.check4.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.check4.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
 
         self.timeInTextLabel.text = "Time in Text"
-        self.timeInTextCheck.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.timeInTextCheck.color(UIColor.black, forState: UIControlState())
         self.timeInTextCheck.textLabel.text = "Observed Time in Text"
-        self.timeInTextCheck.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.timeInTextCheck.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
         self.writingInResponsesToReadingLabel.text = "Writing in Responses to Reading"
-        self.writingInResponsesToReadingCheck.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.writingInResponsesToReadingCheck.color(UIColor.black, forState: UIControlState())
         self.writingInResponsesToReadingCheck.textLabel.text = "Observed Writing in Responses to Reading"
-        self.writingInResponsesToReadingCheck.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.writingInResponsesToReadingCheck.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
         
         self.checksForUnderstandingLabel.text = "Checks for Understanding"
-        self.checksForUnderstandingCheck.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.checksForUnderstandingCheck.color(UIColor.black, forState: UIControlState())
         self.checksForUnderstandingCheck.textLabel.text = "Observed Checking for Understanding"
-        self.checksForUnderstandingCheck.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.checksForUnderstandingCheck.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
         
         self.engagementLabel.text = "Engagement"
@@ -233,34 +233,34 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
         self.positiveReinforcementLabel.text = "Positive Reinforcement"
         
         self.guidedPracticeLabel.text = "Guided Practice"
-        self.guidedPracticeCheck0.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.guidedPracticeCheck0.color(UIColor.black, forState: UIControlState())
         self.guidedPracticeCheck0.textLabel.text = "I Do"
-        self.guidedPracticeCheck0.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.guidedPracticeCheck0.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.guidedPracticeCheck1.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.guidedPracticeCheck1.color(UIColor.black, forState: UIControlState())
         self.guidedPracticeCheck1.textLabel.text = "We Do"
-        self.guidedPracticeCheck1.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.guidedPracticeCheck1.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.guidedPracticeCheck2.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.guidedPracticeCheck2.color(UIColor.black, forState: UIControlState())
         self.guidedPracticeCheck2.textLabel.text = "You Do"
-        self.guidedPracticeCheck2.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.guidedPracticeCheck2.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
         self.responsesLabel.text = "Responses"
-        self.responsesCheck0.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.responsesCheck0.color(UIColor.black, forState: UIControlState())
         self.responsesCheck0.textLabel.text = "Individual"
-        self.responsesCheck0.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.responsesCheck0.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.responsesCheck1.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.responsesCheck1.color(UIColor.black, forState: UIControlState())
         self.responsesCheck1.textLabel.text = "Partner"
-        self.responsesCheck1.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.responsesCheck1.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.responsesCheck2.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.responsesCheck2.color(UIColor.black, forState: UIControlState())
         self.responsesCheck2.textLabel.text = "Small Group"
-        self.responsesCheck2.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.responsesCheck2.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
-        self.responsesCheck3.color(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.responsesCheck3.color(UIColor.black, forState: UIControlState())
         self.responsesCheck3.textLabel.text = "Whole Group Choral Responses"
-        self.responsesCheck3.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        self.responsesCheck3.addTarget(self, action: #selector(Readingk6ViewController.tapCheck(_:)), for: UIControlEvents.valueChanged)
         
     //    self.newCheck.checkboxTotal = 5
     //    self.newCheck.arrayOfCheckboxTitles = ["Phonemic awareness","Phonics","Vocabulary","Fluency","Comprehension"]       
@@ -273,7 +273,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
 
     }
     
-    func tapCheck(checkBox: SCheckBox!){
+    func tapCheck(_ checkBox: SCheckBox!){
         print("\(checkBox.checked)")
     }
 
@@ -281,8 +281,8 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     
     //MARK: Navigation
 
-    @IBAction func cancel(sender: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
         
     }
     
@@ -290,7 +290,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
    // override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      //   if (segue.identifier == "sliderSegue") {
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if saveButton === sender {
             ///A Poop-load of save stuff goes here...
             let label1 = componentOfReadingLabel.text
@@ -310,7 +310,7 @@ class Readingk6ViewController: UIViewController, UITextFieldDelegate, UINavigati
     }
 
     
-    @IBAction func unwindToReadingk6(sender: UIStoryboardSegue) {
+    @IBAction func unwindToReadingk6(_ sender: UIStoryboardSegue) {
         
     }
     
